@@ -1,12 +1,11 @@
-/* 
-	jQuery Mobile Boilerplate
-	application.js
-*/
-$(document).on("pageinit", function(event){
-	// custom code goes here
+// remap jQuery to $
+(function($){})(window.jQuery);
 
-$(window).load(function(){
-    $.preloadCssImages();
-});
+  
+
+/* trigger when page is ready */
+$(document).ready(function (){
+
+  $.preloadCssImages();
 
 });
