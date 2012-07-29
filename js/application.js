@@ -5,6 +5,8 @@
 $(document).on("pageinit", function(event){
 	// custom code goes here
 
-
+$(window).load(function(){
+    $.preloadCssImages();
+});
 
 });
