@@ -1,0 +1,387 @@
+/* @override 
+	http://adamprocter.co.uk/wip/tkmaxxquiz/css/custom.css */
+
+	/*
+	jQuery Mobile Boilerplate
+	css/custom.css
+*/
+
+/*----------------------------------------------------------------
+	START
+----------------------------------------------------------------*/
+
+body { 
+	font-size: 16px;
+	line-height: 24px; }
+
+.ui-content { padding: 0; }
+
+.ui-body-c .ui-link:visited { color: #000; }
+.ui-body-c .ui-link:active { color: #05d700; }
+
+.clear:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+
+@font-face {
+    font-family: 'dearJoe';
+    src: url('../fonts/dj2trial-webfont.eot');
+    src: url('../fonts/dj2trial-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dj2trial-webfont.woff') format('woff'),
+         url('../fonts/dj2trial-webfont.ttf') format('truetype'),
+         url('../fonts/dj2trial-webfont.svg#dearJoe2Regular') format('svg');
+    font-weight: normal;
+    font-style: normal; }
+
+h3 { 
+	font: 36px/44px 'dearJoe', Georgia, serif;
+	text-shadow: none; }
+
+.damagedevil {
+	margin: -8% 0 -6% 55%;
+	width: 35%; }
+
+/*----------------------------------------------------------------
+	WELCOME SCREEN
+----------------------------------------------------------------*/
+
+#welcome {	
+	background: url("../images/tkmaxx/welcome_ipad.png") no-repeat;
+	background-size: 768px 1024px;
+	width: 768px; }
+
+	#content { height: 1024px; }
+
+	#playgame, #how-button , #info-button {
+	text-transform: uppercase; 
+	top: 550px; }
+
+		#playgame {
+			left: 125px;
+			margin: 0 250px 50px 0;
+			padding: 10px 0 10px 0; }
+
+		#how-button, #info-button {
+			left: 225px;
+			margin: 10px 450px 10px 0; }
+
+/*----------------------------------------------------------------
+	QUESTION PAGES
+----------------------------------------------------------------*/
+
+/*--------------- BACKGROUNDS ---------------*/
+
+.question-blue {	
+	background: url("../images/tkmaxx/texture_blue_ipad.png") no-repeat;
+	background-size: 768px 1024px;
+	width: 768px; }
+
+.question-red {	
+	background: url("../images/tkmaxx/texture_red.jpg") repeat;
+	background-size: 1191px;
+	width: 768px; }
+
+.question-wood {	
+	background: url("../images/tkmaxx/texture_wood_ipad.jpg") no-repeat;
+	background-size: 768px 1024px;
+	width: 768px; }
+
+/*--------------- TITLE BAR ---------------*/
+
+#header {	
+	background: url("../images/tkmaxx/header_ipad.png") no-repeat top left;
+	background-size: 768px;	
+	border: none;
+	color: #ff4444;
+	height: 58px;
+	text-align: center;
+	text-transform: uppercase; }
+
+	#header h1 {
+		color: #ed1b2e;
+		font-family: Helvetica, Arial, sans-serif;
+		font-size: 28px;
+		line-height: 100%;
+		margin: 0 0 0 0;
+		padding: 13px 0 0 0;
+		text-shadow: none; }
+
+		#header h2 {
+			color: #a3a3a3;
+			font: 18px/100% Helvetica, Arial, sans-serif;
+			float: right;
+			margin: -25px 0 0;
+			padding-right: 50px;
+		}
+
+			#header h2 em { text-transform: lowercase; }
+			#header h2 span { color: #ed1b2e;}
+
+/*--------------- NOTEPAD COIL AND SHADOWS ---------------*/
+
+.question-top {
+	background: url("../images/tkmaxx/notepadheader_ipad.png") no-repeat 0 0;
+	background-size: 100%;
+	margin: 40px auto 0 auto;
+	padding: 5.5% 0 0 0;
+	width: 85%; }
+
+.question-bottom {
+	background: url("../images/tkmaxx/notepadfooter_ipad.png") no-repeat 0 0;
+	background-size: 100%;
+	margin: 0 auto;
+	padding: 4% 0 0 0;
+	width: 85%; }
+
+/*--------------- WHITE BOX ---------------*/
+
+.question-box {
+	background-color: #fff;
+	/*box-shadow: 0 0 5px #bababa;*/
+	margin: 0 auto 0 auto;
+	padding: 0 0 10px 0;
+	width: 85%; }
+
+	/*--------------- HORIZONTAL QUESTION NUMBERS ---------------*/
+
+	ul.question-numbers { 
+		margin: 0 0 5% 5%;
+		padding: 20px 0 0 0; }
+
+		ul.question-numbers li {
+			color: #bfbfbf;
+			display: inline;
+			font: 25px/100% 'dearJoe', serif;
+			padding: 10px 8px; }
+
+			ul.question-numbers li.correct {
+				background: url("../images/tkmaxx/correct.png") no-repeat center center;
+				background-size: 15px;
+				color: #000; }
+
+			ul.question-numbers li.selected {
+				background: url("../images/tkmaxx/selected.png") no-repeat center center;
+				background-size: 23px;
+				color: #000; }
+
+	/*--------------- THE WRITTEN QUESTION ---------------*/
+
+	h3.question, h3.title {
+		background: #fff;
+		margin: 0 auto 4% auto;
+		padding: 0;
+		width: 90%; }
+
+		h3.title { padding: 40px 0 0 0; }
+
+	/*--------------- MULTIPLE CHOICE  ---------------*/
+
+	.question-multiple { 
+		margin: 0 auto;
+		width: 90%; }
+
+		.ui-controlgroup-label {
+			color: #9ca6ae;
+			font-family: Helvetica, sans-serif;
+			font-size: 12px;
+			margin: 0 0 20px 0;
+			padding: 0; }
+
+	h3.stuck-text {
+		color: #ed1b2e;
+		margin: 60px 0 0px 5%; }
+
+	a.stuck-button { 
+		margin: -50px auto 40px auto;
+		text-transform: uppercase;
+		width: 57%; }
+
+	/*--------------- MULTIPLE CHOICE WITH IMAGES ---------------*/
+
+	ul.question-multipleimage { 
+		margin: 0 auto; 
+		width: 90%; }
+
+		ul.question-multipleimage li { 
+			background: url("../images/tkmaxx/image-background.png") no-repeat 0 0;
+			background-size: 100%;
+			float: left; 
+			list-style: none;
+			margin: 0 9% 7% -20px;
+			width: 29%; }
+
+			ul.question-multipleimage li:nth-child(3n) { margin: 0 0 7% -20px; }
+
+			ul.question-multipleimage li a { 
+				color: #000;
+				display: block;
+				line-height: 22px;
+				padding: 10px 10px 0px 10px;
+				text-align: center;
+				text-decoration: none;
+				text-shadow: none; }
+
+				ul.question-multipleimage li a:active { 
+					background: url("../images/tkmaxx/image-background-selected.png") no-repeat 0 0;
+					background-size: 100%;
+					color: #f00; }
+
+	/*--------------- IMAGES WITH LISTS ---------------*/
+
+	ul.question-imagelist {
+		margin: 0 auto;
+		width: 100%; }
+
+		ul.question-imagelist li {
+			float: left;
+			list-style: none;
+			margin: 0 9% 0 0;
+			padding: 0;
+			width: 36%; }
+
+			ul.question-imagelist li:nth-child(2n) { margin: 0 0 0 0; } 
+
+			ul.question-imagelist li img {
+				background: url("../images/tkmaxx/image-background.png") no-repeat 0 0;
+				background-size: 100%;
+				padding: 7% 7% 13% 7% }
+
+		.ui-select { 
+			margin: -5px 0 20px 0;
+			padding: 0;
+			position: relative;
+			width: 100% }		
+
+	/*--------------- FREE TEXT ---------------*/
+
+	.question-textarea { 
+		margin: 0 auto;
+		width: 90%; }
+
+		#textarea { 
+			height: 400px;
+			padding: 20px;
+			text-shadow: none; }
+
+		#textarea-small { 
+			height: 80px;
+			padding: 20px;
+			text-shadow: none; }
+
+/*--------------- NEXT QUESTION BUTTON ---------------*/
+
+.nextquestion { 
+	margin: 5% auto 10% auto;
+	text-transform: uppercase;
+	width: 55%; }
+
+/*--------------- SUBMIT SCORE BUTTON ---------------*/
+/*notworking ?*/
+
+.submitscore {
+	margin: 5% auto 10% auto;
+	text-transform: uppercase;
+	width: 55%;
+}
+
+/*--------------- FOOTER ---------------*/
+
+#footer {	
+	background: url("../images/tkmaxx/footer_ipad.png") no-repeat;
+	background-size: 768px;
+	border: none;
+	bottom: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 28px;
+	height: 54px;
+	position: fixed;
+	text-shadow: none;
+	width: 100%;
+	z-index: 50; }
+
+	#footer p {
+		background: url("../images/tkmaxx/timer.png") no-repeat 10px 10px; 
+		background-size: 25px;
+		color: #000;
+		margin: 0 auto; 
+		padding:15px 0 0;
+		text-align: center;
+		width: 20%;
+		height: 100%;
+	}
+
+/*----------------------------------------------------------------
+	SCORE CARD
+----------------------------------------------------------------*/
+
+.congratulations { 
+	color: #fff;
+	text-align: center;
+	text-shadow: 1px 1px 1px #000; }
+
+	.congratulations h4 { 
+		font: 60px/100% Helvetica, Arial, sans-serif;
+		font-weight: bold;
+		margin: 120px 0 0 0;
+		padding: 0;
+		text-transform: uppercase; }
+
+	p.scorecard-title {
+		font: 40px/100% Helvetica, Arial, sans-serif; 
+		font-weight: bold;
+		margin: 40px 0 0 0;
+		padding: 0;
+		text-transform: uppercase; }
+
+	p.scorecard-score {
+		background: url("../images/tkmaxx/scorecard.png") no-repeat 0 0;
+		background-size: 134px;
+		font: 84px/100% Helvetica, Arial, sans-serif;
+		font-weight: bold;
+		margin: 30px auto 0 auto;
+		padding: 30px 0;
+		width: 134px; }
+
+	p.scorecard-text {
+		font: 34px/40px Helvetica, Arial, sans-serif; 
+		font-weight: bold;
+		margin: 40px auto 0 auto;
+		width: 80%; }
+
+	p.scorecard-charges {
+		font: 12px/100% Helvetica, Arial, sans-serif; 
+		font-weight: normal;
+		margin: 20px 0 0 0; }
+
+/*----------------------------------------------------------------
+	PAGES
+----------------------------------------------------------------*/
+
+.page-content {
+	margin: 0 auto 10px auto;
+	width: 90%; }
+
+/*----------------------------------------------------------------
+	HOW IT WORKS PAGE
+----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------
+	MORE INFO PAGE
+----------------------------------------------------------------*/
+
+.info-buttons { 
+	margin: 0 auto 10px auto;
+	width: 90%; }
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns		= "http://www.w3.org/ns/widgets"
+	xmlns:gap	= "http://phonegap.com/ns/1.0"
+	id		= "uk.co.groovyapps.tkmaxxonboard"
+	version 	= "0.1">
+
+	<name>TKMaxx</name>
+
+	<description>
+TKMaxx OnBoard - Mark Applin and Adam Procter.
+	http://www.intermediasolutions.com
+	@IntermediaSolutions
+	</description>
+
+	<author href="http://www.intermediasolutions.com"
+		email="nikki@intermediasolutions.com">
+		Nikki
+	</author>
+
+	<gap:platforms>
+		<gap:platform name="android" minVersion="2.1" />
+		<gap:platform name="webos" />
+		<gap:platform name="symbian.wrt" />
+<!--		<gap:platform name="blackberry" project="widgets"/>-->
+	</gap:platforms>
+
+	<!-- if a single splash screen is specified the build will use it for 
+	all builds. Currently, all platforms except ios use a single splash 
+	screen -->
+	    <gap:splash src="splash.png" />
+		<gap:splash src="splash/ios/Default.png" width="320" height="480" />
+		<gap:splash src="splash/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
+	
+	<!-- if a single icon is specified then Build will use it for all platforms -->
+	    <icon src="icons/icon.png" />
+	
+	<!-- the following is useful for Build when you have many icons; this way
+	    Blackberry will use the correct icon --> 
+	    <icon src="icons/icon.png" default="true" />
+	    <icon src="icons/icon-hover.png" hover="true" />
+	
+	<!-- iOS requires specific dimensions for splash screens; classic iPhone screens, Retina 
+	      Screens, and iPad screen respectively -->
+	    <icon src="icons/icon-iphone-57.png" width="57" height="57"/> 
+	    <icon src="icons/icon-iphone-72.png" width="72" height="72"/> 
+	    <icon src="icons/icon-iphone-114.png" width="114" height="114"/> 
+	
+	<!-- Android requires specific dimensions; ldpi, mdpi, and hdpi respecitvely. --> 
+	    <icon src="icons/icon-android-36.png" width="36" height="36"/> 
+	    <icon src="icons/icon-android-48.png" width="48" height="48"/> 
+	    <icon src="icons/icon-android-72.png" width="72" height="72"/> 
+
+	
+	<!-- to enable single features use the following examples -->
+	    <feature name="http://api.phonegap.com/1.0/camera"/>
+	    <feature name="http://api.phonegap.com/1.0/file"/>
+	    <feature name="http://api.phonegap.com/1.0/media"/>
+	    <feature name="http://api.phonegap.com/1.0/network"/>
+	    <feature name="http://plugins.phonegap.com/ChildBrowser/2.0.1" />
+	        
+	    <preference name="orientation" value="portrait"/>
+	    <preference name="target-device" value="tablet" />
+
+</widget>
