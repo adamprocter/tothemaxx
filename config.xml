@@ -57,8 +57,9 @@ TKMaxx OnBoard - Mark Applin and Adam Procter.
 	    <feature name="http://api.phonegap.com/1.0/media"/>
 	    <feature name="http://api.phonegap.com/1.0/network"/>
 <!--	    <feature name="http://plugins.phonegap.com/ChildBrowser/2.0.1" />-->
+	        
+	    <access origin="http://adamprocter.co.uk" subdomains="true" />
 	    <access origin="http://www.adamprocter.co.uk" subdomains="true" />
-	    
 	    <preference name="orientation" value="portrait"/>
 	    <preference name="target-device" value="tablet" />
 
