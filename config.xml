@@ -2,7 +2,7 @@
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
 	id		= "uk.co.groovyapps.tkmaxxonboard"
-	version 	= "0.2">
+	version 	= "0.3">
 
 	<name>TKMaxx</name>
 
@@ -25,14 +25,14 @@ TKMaxx OnBoard - Mark Applin and Adam Procter.
 	</gap:platforms>
 
 	<!-- if a single splash screen is specified the build will use it for 
-	all builds. Currently, all platforms except ios use a single splash 
-	screen -->
-	    <gap:splash src="splash.png" />
-		<gap:splash src="splash/ios/Default.png" width="320" height="480" />
-		<gap:splash src="splash/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
-	
-	<!-- if a single icon is specified then Build will use it for all platforms -->
-	    <icon src="icons/icon.png" />
+	all builds.  -->
+    <gap:splash src="splash/ios/Default.png" width="320" height="480" />
+    <gap:splash src="splash/ios/Default_at_2x.png" width="640" height="960" />
+    <gap:splash src="splash/ios/Default-Portrait.png" width="768" height="1024" />		
+    <gap:splash src="splash/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
+    <gap:splash src="splash/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
+    <gap:splash src="splash/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+
 	
 	<!-- the following is useful for Build when you have many icons; this way
 	    Blackberry will use the correct icon --> 

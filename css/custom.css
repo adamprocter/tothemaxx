@@ -58,17 +58,18 @@ h3 {
 	#content { height: 1024px; }
 
 	#playgame, #how-button , #info-button {
-	text-transform: uppercase; 
-	top: 550px; }
+		margin: 0 auto;
+		text-transform: uppercase; 
+		top: 550px; }
 
 		#playgame {
-			left: 125px;
-			margin: 0 250px 50px 0;
-			padding: 10px 0 10px 0; }
+			margin: 0 auto 50px auto;
+			padding: 10px 0;
+			width: 80%; }
 
 		#how-button, #info-button {
-			left: 225px;
-			margin: 10px 450px 10px 0; }
+			margin: 10px auto;
+			width: 50%; }
 
 /*----------------------------------------------------------------
 	QUESTION PAGES
@@ -108,7 +109,7 @@ h3 {
 		font-size: 28px;
 		line-height: 100%;
 		margin: 0 0 0 0;
-		padding: 13px 0 0 0;
+		padding: 16px 0 0 0;
 		text-shadow: none; }
 
 		#header h2 {
@@ -286,8 +287,7 @@ h3 {
 .submitscore {
 	margin: 5% auto 10% auto;
 	text-transform: uppercase;
-	width: 55%;
-}
+	width: 55%; }
 
 /*--------------- FOOTER ---------------*/
 
@@ -367,10 +367,6 @@ h3 {
 	width: 90%; }
 
 /*----------------------------------------------------------------
-	HOW IT WORKS PAGE
-----------------------------------------------------------------*/
-
-/*----------------------------------------------------------------
 	MORE INFO PAGE
 ----------------------------------------------------------------*/
 
@@ -378,9 +374,214 @@ h3 {
 	margin: 0 auto 10px auto;
 	width: 90%; }
 
+/*----------------------------------------------------------------
+	MEDIA QUERIES
+----------------------------------------------------------------*/
 
+@media screen and (max-width: 710px) {
 
+	/*--------------- BUTTONS ---------------*/
 
+	.ui-btn { padding: 0; }
+	.ui-btn-inner { 
+		font-size: 12px;
+		line-height: 16px;
+		padding: 3%; }
+	.ui-btn-text { font-size: 12px; }
+
+	/*--------------- BACKGROUNDS ---------------*/
+
+	.question-red {	
+		background: url("../images/tkmaxx/texture_red.jpg") repeat;
+		background-size: 620px;
+		width: 720px; }
+
+	/*--------------- WELCOME ---------------*/
+
+	#welcome {	
+		background: url("../images/tkmaxx/welcome_iphone.png") no-repeat;
+		background-size: 100%;
+		height: 640px;
+		width: 100%; }
+
+	#content { height: 100%; }
+
+	#playgame, #how-button , #info-button {
+		margin: 3% 7% 3% 43%;
+		top: 60%;
+		width: 50%; }
+
+		#playgame {
+			left: 0;
+			padding: 0; }
+
+		#how-button, #info-button {
+			left: 0; }
+
+	/*--------------- HEADER ---------------*/
+
+	#header {	
+		background: url("../images/tkmaxx/header_ipad.png") no-repeat bottom right;
+		background-size: 768px;	
+		height: 50px }
+
+	#header h1 {
+		float: left; 
+		font-size: 24px;
+		padding: 15px 0 0 10%; }
+
+		#header h2 {
+			font: 12px/100% Helvetica, Arial, sans-serif;
+			float: right;
+			margin: 0;
+			padding: 19px 10% 0 0; }
+
+	/*--------------- NOTEPAD COIL AND SHADOWS ---------------*/
+
+	.question-top {
+		background: url("../images/tkmaxx/notepadheader_iphone.png") no-repeat 0 0;
+		background-size: 100%;
+		margin: 5% auto 0 auto;
+		padding: 7% 0 0 0; }
+
+	/*--------------- HORIZONTAL QUESTION NUMBERS ---------------*/
+
+	ul.question-numbers { 
+		padding: 3% 0 0 0; }
+
+		ul.question-numbers li {
+			font: 18px/100% 'dearJoe', serif;
+			padding: 10px 4px; }
+
+			ul.question-numbers li.correct {
+				background: url("../images/tkmaxx/correct.png") no-repeat center center;
+				background-size: 10px; }
+
+			ul.question-numbers li.selected {
+				background: url("../images/tkmaxx/selected.png") no-repeat center center;
+				background-size: 15px; }
+
+	/*--------------- THE WRITTEN QUESTION ---------------*/
+
+	h3.question, h3.title {
+		background: #fff;
+		margin: 0 auto 4% auto;
+		padding: 0;
+		width: 90%; }
+
+		h3.title { padding: 40px 0 0 0; }
+
+	/*--------------- QUESTIONS ---------------*/
+
+	h3.question { 
+		font-size: 24px;
+		line-height: 28px; }
+
+	h3.stuck-text {
+		font-size: 24px;
+		margin: 10px 0 0 5%; }
+
+	a.stuck-button { 
+		margin: 0 auto 3% auto;
+		text-transform: uppercase;
+		width: 90%; }
+
+	/*--------------- TEXT AREA ---------------*/
+
+	.question-textarea { margin: 0 auto; }
+
+		#textarea { 
+			height: 200px;
+			padding: 6px; }
+
+		#textarea-small { 
+			height: 40px;
+			padding: 6px; }
+
+	/*--------------- NEXT QUESTION BUTTON ---------------*/
+
+	.nextquestion { 
+		margin: 5% auto 5% auto; }
+
+	/*--------------- SUBMIT SCORE BUTTON ---------------*/
+
+		.ui-submit {
+			margin: 5% auto 5% auto;
+			text-transform: uppercase;
+			width: 55%; }
+
+	/*--------------- FOOTER ---------------*/
+
+	#footer {	
+		background: url("../images/tkmaxx/footer_ipad.png") no-repeat;
+		background-size: 768px;
+		font-size: 24px;
+		height: 50px; }
+
+		#footer p {
+			background: none; 
+		}
+
+}
+
+@media screen and (max-width: 480px) {
+
+	span.section-marker { display: none; }
+
+	/*--------------- HEADER ---------------*/
+
+	#header {	
+		background: url("../images/tkmaxx/header_ipad.png") no-repeat bottom right;
+		background-size: 768px;	
+		height: 40px }
+
+	#header h1 {
+		float: left; 
+		font-size: 14px;
+		padding: 13px 0 0 10%; }
+
+		#header h2 {
+			font: 12px/100% Helvetica, Arial, sans-serif;
+			float: right;
+			margin: 0;
+			padding: 13px 10% 0 0; }
+
+	/*--------------- FOOTER ---------------*/
+
+	#footer {	
+		background: url("../images/tkmaxx/footer_ipad.png") no-repeat;
+		background-size: 768px;
+		font-size: 14px;
+		height: 40px; }
+
+		#footer p { 
+			background: none;
+			padding: 9px 0 0 0; }
+
+	/*--------------- NOTEPAD COIL AND SHADOWS ---------------*/
+
+	.question-top {	margin: 3% auto 0 auto; }
+
+	/*--------------- QUESTIONS ---------------*/
+
+	h3.stuck-text { display: none; }
+
+	a.stuck-button { margin: 5% auto 1% auto; }
+
+	/*--------------- IMAGES WITH LISTS ---------------*/
+
+	ul.question-imagelist {
+		margin: 0 auto;
+		width: 100%; }
+
+		ul.question-imagelist li {
+			float: left;
+			list-style: none;
+			margin: 0 10% 0 -5%;
+			padding: 0;
+			width: 36%; }
+
+}
 
 
 
