@@ -1,0 +1,2691 @@
+<!--
+	jQuery Mobile Boilerplate
+	index.html
+-->
+<!doctype html>
+<html>
+<head>
+	<title>Do The Right Thing HS</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<!--<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+	
+
+	<!-- jQuery Mobile CSS bits -->
+	<link rel="stylesheet" href="css/jquery.mobile-1.1.1.min.css" />
+
+	<!-- Custom css -->
+	<link rel="stylesheet" href="css/custom.css" />
+
+</head> 
+<body> 
+<form action="http://www.adamprocter.co.uk/wip/tkmaxxquiz/grade.php" method="post">
+
+	<div data-role="page" id="welcome">
+		<!--<div data-role="header">
+			<h1>TK MAXX</h1>
+		</div>-->
+
+		<div data-role="content" id="content">
+			<a href="#s0q0" id="playgame" data-role="button" data-icon="arrow-r" data-iconpos="right">Play the game</a>
+			<a href="#how" id="how-button" data-rel="dialog" data-role="button">How it works</a>
+			<a href="#info" id="info-button" data-role="button">More info</a>
+		</div>
+		
+		<!--<div data-role="footer" data-theme="c">
+			<p>&copy; 2012 - jQuery Mobile Boilerplate</p>
+		</div>	-->		
+	</div>
+
+	<div data-role="page" id="s0q0" class="question-wood">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Before we begin</h1>
+		</div>
+	
+		<div data-role="content">
+		
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+				
+				</ul>
+
+				<h3 class="question">Can we have your name, store name and passphrase?</h3>
+
+				<div class="question-textarea">
+					<legend>Name:</legend>
+					<textarea cols="80" rows="20" name="textarea-name" id="textarea-small"></textarea>
+				</div>
+
+				<div class="question-textarea">
+					<legend><br />Store name:</legend>
+					<textarea cols="80" rows="20" name="textarea-store" id="textarea-small"></textarea>
+				</div>
+			
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s1q1" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Begin</a>
+			
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">
+			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s1q1" class="question-blue">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Intro to shrink</h1>
+			<h2><span class="section-marker">Section</span> <span>1</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+		
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="selected">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+				</ul>
+
+				<h3 class="question">What do we mean by Shrink at TJX Europe?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select the correct answer:</legend>
+						<input type="radio" name="radio-s1q1" id="radio-s1q1a" value="correct" />
+						<label for="radio-s1q1a">'Unknown loss' and is the cash difference between what should be in the store and what actually is in the store. This is calculated once a year at inventory</label>
+
+						<input type="radio" name="radio-s1q1" id="radio-s1q1b" value="wrong2"  />
+						<label for="radio-s1q1b">What happens when clothes are washed too hot</label>
+
+						<input type="radio" name="radio-s1q1" id="radio-s1q1c" value="wrong3"  />
+						<label for="radio-s1q1c">A psychiatrist</label>
+				   	</fieldset>
+			   </div>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s1q2" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right" >Next Question</a>
+			
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">
+			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s1q2" class="question-blue">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Intro to shrink</h1>
+			<h2><span class="section-marker">Section</span> <span>1</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="selected">2</li>
+					<li>3</li>
+					<li>4</li>
+				</ul>
+
+				<h3 class="question">What are the causes of Shrink at TJX Europe?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select all that apply:</legend>
+						<input type="checkbox" name="checkbox-s1q2a" id="checkbox-s1q2a" class="custom" value="correct" />
+						<label for="checkbox-s1q2a">External theft</label>
+
+						<input type="checkbox" name="checkbox-s1q2b" id="checkbox-s1q2b" class="custom" value="correct" />
+						<label for="checkbox-s1q2b">Internal theft</label>
+
+						<input type="checkbox" name="checkbox-s1q2c" id="checkbox-s1q2c" class="custom" value="correct" />
+						<label for="checkbox-s1q2c">Human error</label>
+
+						<input type="checkbox" name="checkbox-s1q2d" id="checkbox-s1q2d" class="custom" value="wrongD"/>
+						<label for="checkbox-s1q2d">Broken washing machines</label>
+				   	</fieldset>
+			   </div>
+		
+				<h3 class="stuck-text">Stuck?</h3>
+				<a href="#" class="stuck-button" data-role="button">Remove 1 Option but lose a point</a>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s1q3" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s1q3" class="question-blue">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Intro to shrink</h1>
+			<h2><span class="section-marker">Section</span> <span>1</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="selected">3</li>
+					<li>4</li>
+				</ul>
+
+				<h3 class="question">lf we reduce shrink, what could we do with the savings?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select all that apply:</legend>
+						<input type="checkbox" name="checkbox-s1q3" id="checkbox-s1q3a" class="custom" value="benefits"/>
+						<label for="checkbox-s1q3a">Better benefits</label>
+
+						<input type="checkbox" name="checkbox-s1q3" id="checkbox-s1q3b" class="custom" value="associates"/>
+						<label for="checkbox-s1q3b">More associates</label>
+
+						<input type="checkbox" name="checkbox-s1q3" id="checkbox-s1q3c" class="custom" value="Facilities"/>
+						<label for="checkbox-s1q3c">Better Store Facilities</label>
+				   	</fieldset>
+			   </div>
+		
+				<h3 class="stuck-text">Stuck?</h3>
+				<a href="#" class="stuck-button" data-role="button">Remove 1 Option but lose a point</a>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s1q4" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s1q4" class="question-blue">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Intro to shrink</h1>
+			<h2><span class="section-marker">Section</span> <span>1</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="correct">3</li>
+					<li class="selected">4</li>
+				</ul>
+
+				<h3 class="question">Whose responsibility is shrink?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select all that apply:</legend>
+						<input type="checkbox" name="checkbox-s1q4" id="checkbox-s1q4a" value="LP"  />
+						<label for="checkbox-s1q4a">Loss Prevention</label>
+
+						<input type="checkbox" name="checkbox-s1q4" id="checkbox-s1q4b" value="manager"  />
+						<label for="checkbox-s1q4b">Store manager</label>
+
+						<input type="checkbox" name="checkbox-s1q4" id="checkbox-s1q4c" value="supervisor"  />
+						<label for="checkbox-s1q4c">My supervisor</label>
+
+						<input type="checkbox" name="checkbox-s1q4" id="checkbox-s1q4d" value="everyone"  />
+						<label for="checkbox-s1q4d">Everyone</label>
+				   	</fieldset>
+			   </div>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s1score" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Section score</a>
+			
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s1score" class="question-score">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Score card</h1>
+			<h2><span class="section-marker">Section</span> <span>1</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="congratulations">
+				<h4>Section 1 score</h4>
+
+				<p class="scorecard-score">54</p>
+
+				<p class="scorecard-wrong">You got these questions wrong:</p>
+
+				<div class="question-top"></div>
+				<div class="question-box">
+					<div class="scorecard-answers">
+						<h5>3. What tools do TK Maxx use to stop internal theft?</h5>
+
+						<ul class="wrong-answers">
+							<li>Your answer:</li>
+							<li>Guard Dogs</li>
+							<li>HO Reporting</li>
+						</ul>
+
+						<ul class="correct-answers">
+							<li>Correct answer:</li>
+							<li>CCTV</li>
+							<li>Hidden Cameras</li>
+						</ul>
+					</div>
+					<div class="scorecard-answers">
+						<h5>3. What tools do TK Maxx use to stop internal theft?</h5>
+
+						<ul class="wrong-answers">
+							<li>Your answer:</li>
+							<li>Guard Dogs</li>
+							<li>HO Reporting</li>
+						</ul>
+
+						<ul class="correct-answers">
+							<li>Correct answer:</li>
+							<li>CCTV</li>
+							<li>Hidden Cameras</li>
+						</ul>
+					</div>
+				</div>
+				<div class="question-bottom"></div>
+
+			</div>
+			
+			<a href="#s2q1" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Section</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed"></div>				
+	</div>
+
+	<div data-role="page" id="s2q1" class="question-red">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>External theft</h1>
+			<h2><span class="section-marker">Section</span> <span>2</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="selected">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>10</li>
+					<li>11</li>
+					<li>12</li>
+					<li>13</li>
+					<li>14</li>
+				</ul>
+
+				<h3 class="question">What percentage of our customers steal?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select the correct answer:</legend>
+						<input type="radio" name="radio-s2q1" id="radio-s2q1a" value="correct"  />
+						<label for="radio-s2q1a">Unknown</label>
+
+						<input type="radio" name="radio-s2q1" id="radio-s2q1b" value="wrongB"  />
+						<label for="radio-s2q1b">5%</label>
+
+						<input type="radio" name="radio-s2q1" id="radio-s2q1c" value="wrongC"  />
+						<label for="radio-s2q1c">10%</label>
+
+						<input type="radio" name="radio-s2q1" id="radio-s2q1d" value="wrongD"  />
+						<label for="radio-s2q1d">100%</label>
+				   	</fieldset>
+			   </div>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s2q2" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+	
+	<div data-role="page" id="s2q2" class="question-red">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>External Theft</h1>
+			<h2><span class="section-marker">Section</span> <span>2</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="selected">2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>10</li>
+					<li>11</li>
+					<li>12</li>
+					<li>13</li>
+					<li>14</li>
+				</ul>
+
+				<h3 class="question">What must you do when the EAS alarm sounds at the store entrance / exit?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select all that apply:</legend>
+						<input type="checkbox" name="checkbox-s2q2a" id="checkbox-s2q2a" class="custom" value="wrongA" />
+						<label for="checkbox-s2q2a">Chase the customer down the street shouting 'thief'</label>
+
+						<input type="checkbox" name="checkbox-s2q2b" id="checkbox-s2q2b" class="custom" value="correct" />
+						<label for="checkbox-s2q2b">Approach the customer calmly and offer your assistance</label>
+
+						<input type="checkbox" name="checkbox-s2q2c" id="checkbox-s2q2c" class="custom" value="correct" />
+						<label for="checkbox-s2q2c">If a tag has been left on the item politely ask the customer to check their receipt and have the tag removed if the item has been paid for</label>
+
+						<input type="checkbox" name="checkbox-s2q2d" id="checkbox-s2q2d" class="custom" value="correct" />
+						<label for="checkbox-s2q2d">Contact a manager or Loss Prevention if there is a problem</label>
+				   	</fieldset>
+			   </div>
+		
+				<h3 class="stuck-text">Stuck?</h3>
+				<a href="#" class="stuck-button" data-role="button">Remove 1 Option but lose a point</a>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s2q3" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s2q3" class="question-red">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>External theft</h1>
+			<h2><span class="section-marker">Section</span> <span>2</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="selected">3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>10</li>
+					<li>11</li>
+					<li>12</li>
+					<li>13</li>
+					<li>14</li>
+				</ul>
+
+				<h3 class="question">Which of the following is not an Alert Signal?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select the odd one out:</legend>
+						<input type="radio" name="radio-s2q3" id="radio-s2q3a" value="wrongA"  />
+						<label for="radio-s2q3a">Looking for cameras</label>
+
+						<input type="radio" name="radio-s2q3" id="radio-s2q3b" value="wrongB"  />
+						<label for="radio-s2q3b">Someone continually returning to the same area of the store</label>
+
+						<input type="radio" name="radio-s2q3" id="radio-s2q3c" value="correct"  />
+						<label for="radio-s2q3c">A siren that sounds when we suspect a theft</label>
+
+						<input type="radio" name="radio-s2q3" id="radio-s2q3d" value="wrongD"  />
+						<label for="radio-s2q3d">Wearing a big coat when its hot outside</label>
+				   	</fieldset>
+			   </div>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s2q4" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s2q4" class="question-red">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>External theft</h1>
+			<h2><span class="section-marker">Section</span> <span>2</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="correct">3</li>
+					<li class="selected">4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>10</li>
+					<li>11</li>
+					<li>12</li>
+					<li>13</li>
+					<li>14</li>
+				</ul>
+
+				<h3 class="question">Which of the following is also not an Alert Signal?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select all that apply:</legend>
+						<input type="checkbox" name="checkbox-s2q4" id="checkbox-s2q4a" value="correct"  />
+						<label for="checkbox-s2q4a">Discarded tags and tickets</label>
+
+						<input type="checkbox" name="checkbox-s2q4" id="checkbox-s2q4b" value="wrongB"  />
+						<label for="checkbox-s2q4b">A secret signal only associates know</label>
+
+						<input type="checkbox" name="checkbox-s2q4" id="checkbox-s2q4c" value="correct"  />
+						<label for="checkbox-s2q4c">Watching for associates</label>
+
+						<input type="checkbox" name="checkbox-s2q4" id="checkbox-s2q4d" value="correct"  />
+						<label for="checkbox-s2q4d">Acting nervously</label>
+				   	</fieldset>
+			   </div>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s2q5" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s2q5" class="question-red">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>External Theft</h1>
+			<h2><span class="section-marker">Section</span> <span>2</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="correct">3</li>
+					<li class="correct">4</li>
+					<li class="selected">5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>10</li>
+					<li>11</li>
+					<li>12</li>
+					<li>13</li>
+				</ul>
+
+				<h3 class="question">What should you do if you see something suspicious?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select all that apply:</legend>
+						<input type="checkbox" name="checkbox-s2q5a" id="checkbox-s2q5a" class="custom" value="correct"/>
+						<label for="checkbox-s2q5a">Report it to manager or Loss Prevention</label>
+
+						<input type="checkbox" name="checkbox-s2q5b" id="checkbox-s2q5b" class="custom" value="correct" />
+						<label for="checkbox-s2q5b">Approach them and ask if they need any help</label>
+
+						<input type="checkbox" name="checkbox-s2q5c" id="checkbox-s2q5c" class="custom" value="wrongC"/>
+						<label for="checkbox-s2q5c">Accuse them of shop lifting</label>
+
+						<input type="checkbox" name="checkbox-s2q5d" id="checkbox-s2q5d" class="custom" value="wrongD" />
+						<label for="checkbox-s2q5d">Phone the police</label>
+				   	</fieldset>
+			   </div>
+		
+				<h3 class="stuck-text">Stuck?</h3>
+				<a href="#" class="stuck-button" data-role="button">Remove 1 Option but lose a point</a>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s2q6" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s2q6" class="question-red">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>External Theft</h1>
+			<h2><span class="section-marker">Section</span> <span>2</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="correct">3</li>
+					<li class="correct">4</li>
+					<li class="correct">5</li>
+					<li class="selected">6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>10</li>
+					<li>11</li>
+					<li>12</li>
+					<li>13</li>
+					<li>14</li>
+				</ul>
+
+				<h3 class="question">What should you do if you see someone conceal something?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select all that apply:</legend>
+						<input type="checkbox" name="checkbox-s2q6a" id="checkbox-s2q6a" class="custom" value="wrongA"/>
+						<label for="checkbox-s2q6a">Point at them and wave your arms</label>
+
+						<input type="checkbox" name="checkbox-s2q6b" id="checkbox-s2q6b" class="custom" value="wrongB"/>
+						<label for="checkbox-s2q6b">Take a coffee break so you don't have to deal with it</label>
+
+						<input type="checkbox" name="checkbox-s2q6c" id="checkbox-s2q6c" class="custom" value="correct"/>
+						<label for="checkbox-s2q6c">Approach them and ask if they need any help</label>
+
+						<input type="checkbox" name="checkbox-s2q6d" id="checkbox-s2q6d" class="custom" value="correct"/>
+						<label for="checkbox-s2q6d">Ask them if they need a basket</label>
+				   	</fieldset>
+			   </div>
+		
+				<h3 class="stuck-text">Stuck?</h3>
+				<a href="#" class="stuck-button" data-role="button">Remove 1 Option but lose a point</a>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s2q7" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s2q7" class="question-red">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>External theft</h1>
+			<h2><span class="section-marker">Section</span> <span>2</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="correct">3</li>
+					<li class="correct">4</li>
+					<li class="correct">5</li>
+					<li class="correct">6</li>
+					<li class="selected">7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>10</li>
+					<li>11</li>
+					<li>12</li>
+					<li>13</li>
+					<li>14</li>
+				</ul>
+
+				<h3 class="question">Should you accuse someone of shoplifting?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select the correct answer:</legend>
+						<input type="radio" name="radio-s2q10" id="radio-s2q10a" value="wrong"  />
+						<label for="radio-s2q10a">Yes</label>
+
+						<input type="radio" name="radio-s2q10" id="radio-s2q10b" value="correct"  />
+						<label for="radio-s2q10b">No</label>
+				   	</fieldset>
+			   </div>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s2q11" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s2q8" class="question-red">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>External Theft</h1>
+			<h2><span class="section-marker">Section</span> <span>2</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="correct">3</li>
+					<li class="correct">4</li>
+					<li class="correct">5</li>
+					<li class="correct">6</li>
+					<li class="correct">7</li>
+					<li class="selected">8</li>
+					<li>9</li>
+					<li>10</li>
+					<li>11</li>
+					<li>12</li>
+					<li>13</li>
+					<li>14</li>
+				</ul>
+
+				<h3 class="question">What should you do if you think someone has stolen something?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select all that apply:</legend>
+						<input type="checkbox" name="checkbox-s2q11a" id="checkbox-s2q11a" class="custom" value="wrongA"/>
+						<label for="checkbox-s2q11a">Assemble a team meeting to discuss what to do</label>
+
+						<input type="checkbox" name="checkbox-s2q11b" id="checkbox-s2q11b" class="custom" value="correct"/>
+						<label for="checkbox-s2q11b">Report it to your manager or Loss Prevention right away</label>
+
+						<input type="checkbox" name="checkbox-s2q11c" id="checkbox-s2q11c" class="custom" value="wrongC"/>
+						<label for="checkbox-s2q11c">Do nothing, it's not your money</label>
+				   	</fieldset>
+			   </div>
+		
+				<h3 class="stuck-text">Stuck?</h3>
+				<a href="#" class="stuck-button" data-role="button">Remove 1 Option but lose a point</a>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s2q12" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s2q9" class="question-red">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>External Theft</h1>
+			<h2><span class="section-marker">Section</span> <span>2</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="correct">3</li>
+					<li class="correct">4</li>
+					<li class="correct">5</li>
+					<li class="correct">6</li>
+					<li class="correct">7</li>
+					<li class="correct">8</li>
+					<li class="selected">9</li>
+					<li>10</li>
+					<li>11</li>
+					<li>12</li>
+					<li>13</li>
+					<li>14</li>
+				</ul>
+
+				<h3 class="question">Ask a colleague to explain what ticket switching is</h3>
+				
+				<div class="question-textarea">
+					<textarea cols="80" rows="20" name="textareaTS" id="textarea"></textarea>
+				</div>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s2q13" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s2q10" class="question-red">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>External Theft</h1>
+			<h2><span class="section-marker">Section</span> <span>2</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="correct">3</li>
+					<li class="correct">4</li>
+					<li class="correct">5</li>
+					<li class="correct">6</li>
+					<li class="correct">7</li>
+					<li class="correct">8</li>
+					<li class="correct">9</li>
+					<li class="selected">10</li>
+					<li>11</li>
+					<li>12</li>
+					<li>13</li>
+					<li>14</li>
+				</ul>
+
+				<h3 class="question">How have these tickets been switched?</h3>
+			
+				<ul class="question-imagelist clear">
+					<li>
+						<img src="images/tkmaxx/switch-switch.jpg" class="image" width="87%" alt="Switched white" />
+						<select name="select-s2q13a" id="select-choice-s2q13a">
+							<option>Select...</option>
+							<option value="wrong_1a">Red Ticket doesn't match the original ticket data</option>
+							<option value="correct">The ticket has not been switched</option>
+							<option value="wrong_1c">The white ticket has been switched</option>
+							<option value="wrong_1d">The ticket does not match the price indicator</option>							
+						</select>
+					</li>
+					<li>
+						<img src="images/tkmaxx/switch-price.jpg" width="87%" alt="1" />
+						<select name="select-s2q13b" id="select-choice-s2q13b">
+							<option>Select...</option>
+							<option value="wrong_1a">Red Ticket doesn't match the original ticket data</option>
+							<option value="correct">The ticket has not been switched</option>
+							<option value="wrong_1c">The white ticket has been switched</option>
+							<option value="wrong_1d">The ticket does not match the price indicator</option>							
+						</select>
+					</li>
+					<li>
+						<img src="images/tkmaxx/switch-nothing.jpg" width="87%" alt="1" />
+						<select name="select-s2q13c" id="select-choice-s2q13c">
+							<option>Select...</option>
+							<option value="wrong_1a">Red Ticket doesn't match the original ticket data</option>
+							<option value="correct">The ticket has not been switched</option>
+							<option value="wrong_1c">The white ticket has been switched</option>
+							<option value="wrong_1d">The ticket does not match the price indicator</option>							
+						</select>
+					</li>
+					<li>
+						<img src="images/tkmaxx/switch-sticker.jpg" width="87%" alt="1" />
+						<select name="select-s2q13d" id="select-choice-s2q13d">
+							<option>Select...</option>
+							<option value="wrong_1a">Red Ticket doesn't match the original ticket data</option>
+							<option value="correct">The ticket has not been switched</option>
+							<option value="wrong_1c">The white ticket has been switched</option>
+							<option value="wrong_1d">The ticket does not match the price indicator</option>							
+						</select>
+					</li>
+				</ul>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s2q14" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p>0:59</p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s2q11" class="question-red">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>External theft</h1>
+			<h2><span class="section-marker">Section</span> <span>2</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="correct">3</li>
+					<li class="correct">4</li>
+					<li class="correct">5</li>
+					<li class="correct">6</li>
+					<li class="correct">7</li>
+					<li class="correct">8</li>
+					<li class="correct">9</li>
+					<li class="correct">10</li>
+					<li class="selected">11</li>
+					<li>12</li>
+					<li>13</li>
+					<li>14</li>
+				</ul>
+
+				<h3 class="question">When should you guess the price?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select the correct answer:</legend>
+						<input type="radio" name="radio-s2q14" id="radio-s2q14a" value="wrong"  />
+						<label for="radio-s2q14a">If there's a big queue, yes</label>
+
+						<input type="radio" name="radio-s2q14" id="radio-s2q14b" value="correct"  />
+						<label for="radio-s2q14b">Never</label>
+				   	</fieldset>
+			   </div>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s2q15" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s2q12" class="question-red">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>External Theft</h1>
+			<h2><span class="section-marker">Section</span> <span>2</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="correct">3</li>
+					<li class="correct">4</li>
+					<li class="correct">5</li>
+					<li class="correct">6</li>
+					<li class="correct">7</li>
+					<li class="correct">8</li>
+					<li class="correct">9</li>
+					<li class="correct">10</li>
+					<li class="correct">11</li>
+					<li class="selected">12</li>
+					<li>13</li>
+					<li>14</li>
+				</ul>
+
+				<h3 class="question">What is the tag type?</h3>
+			
+				<ul class="question-imagelist clear">
+					<li>
+						<img src="images/tkmaxx/tag-clamshell.jpg" width="87%" alt="Clamshell" />
+						<select name="select-s2q15a" id="select-s2q15a">
+							<option>Select...</option>
+							<option value="wrong_1a">Lanyard Tag</option>
+							<option value="wrong_1b">Ink and Pin</option>
+							<option value="wrong_1c">Loop Alarm</option>
+							<option value="wrong_1d">Soft Tag</option>
+							<option value="correct">Clamshell</option>
+							<option value="wrong_1f">Gold Pen</option>
+						</select>
+					</li>
+					<li>
+						<img src="images/tkmaxx/tag-soft.jpg" width="87%" alt="Soft Tag" />
+						<select name="select-s2q15b" id="select-s2q15b">
+							<option>Select...</option>
+							<option value="wrong_2a">Lanyard Tag</option>
+							<option value="wrong_2b">Ink and Pin</option>
+							<option value="wrong_2c">Loop Alarm</option>
+							<option value="correct">Soft Tag</option>
+							<option value="wrong_2e">Clamshell</option>
+							<option value="wrong_2f">Gold Pen</option>
+						</select>
+					</li>
+					<li>
+						<img src="images/tkmaxx/tag-lanyard.jpg" width="87%" alt="Lanyard Tag" />
+						<select name="select-s2q15c" id="select-s2q15c">
+							<option>Select...</option>
+							<option value="correct">Lanyard Tag</option>
+							<option value="wrong_3b">Ink and Pin</option>
+							<option value="wrong_3c">Loop Alarm</option>
+							<option value="wrong_3d">Soft Tag</option>
+							<option value="wrong_2e">Clamshell</option>
+							<option value="wrong_2f">Gold Pen</option>
+						</select>
+					</li>
+					<li>
+						<img src="images/tkmaxx/tag-pen.jpg" width="87%" alt="Gold Pen" />
+						<select name="select-s2q15d" id="select-s2q15d">
+							<option>Select...</option>
+							<option value="wrong_4a">Lanyard Tag</option>
+							<option value="wrong_4b">Ink and Pin</option>
+							<option value="wrong_4c">Loop Alarm</option>
+							<option value="wrong_4d">Soft Tag</option>
+							<option value="wrong_4e">Clamshell</option>
+							<option value="correct">Gold Pen</option>
+						</select>
+					</li>
+				</ul>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s2q16" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p>0:59</p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s2q13" class="question-red">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>External Theft</h1>
+			<h2><span class="section-marker">Section</span> <span>2</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="correct">3</li>
+					<li class="correct">4</li>
+					<li class="correct">5</li>
+					<li class="correct">6</li>
+					<li class="correct">7</li>
+					<li class="correct">8</li>
+					<li class="correct">9</li>
+					<li class="correct">10</li>
+					<li class="correct">11</li>
+					<li class="correct">12</li>
+					<li class="selected">13</li>
+					<li>14</li>
+				</ul>
+
+				<h3 class="question">Which of the following departments do we use the tag on?</h3>
+
+				<div class="question-textarea">
+					<span class="ui-controlgroup-label">Select one correct answer in each:<br /><br /></legend>
+				</div>
+				<ul class="question-imagelist clear">
+					<li>
+						<img src="images/tkmaxx/tag-pen.jpg" width="87%" alt="Gold Pen" />
+						<select name="select-s2q16a" id="select-s2q16a">
+							<option>Select...</option>
+							<option value="correct">25</option>
+							<option value="wrongB">19</option>
+							<option value="wrongC">79</option>
+							<option value="correct">68</option>
+							<option value="wrongE">85</option>
+						</select>
+					</li>
+					<li>
+						<img src="images/tkmaxx/tag-soft.jpg" width="87%" alt="Soft Tag" />
+						<select name="select-s2q16b" id="select-s2q16b">
+							<option>Select...</option>
+							<option value="wrongA">85</option>
+							<option value="wrongB">76</option>
+							<option value="wrongC">82</option>
+							<option value="correct">42</option>
+							<option value="correct">79</option>
+						</select>
+					</li>
+					<li>
+						<img src="images/tkmaxx/tag-lanyard.jpg" width="87%" alt="Lanyard Tag" />
+						<select name="select-s2q16c" id="select-s2q16c">
+							<option>Select...</option>
+							<option value="correct">13</option>
+							<option value="wrongB">24</option>
+							<option value="wrongC">34</option>
+							<option value="wrongD">36</option>
+							<option value="correct">10</option>
+							<option value="wrongF">20</option>
+						</select>
+					</li>
+				</ul>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s2q17" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p>0:59</p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s2q14" class="question-red">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>External theft</h1>
+			<h2><span class="section-marker">Section</span> <span>2</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="correct">3</li>
+					<li class="correct">4</li>
+					<li class="correct">5</li>
+					<li class="correct">6</li>
+					<li class="correct">7</li>
+					<li class="correct">8</li>
+					<li class="correct">9</li>
+					<li class="correct">10</li>
+					<li class="correct">11</li>
+					<li class="correct">12</li>
+					<li class="correct">13</li>
+					<li class="selected">14</li>
+				</ul>
+
+				<h3 class="question">When processing a customers purchase don't forget to:</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select the odd one out:</legend>
+						<input type="radio" name="radio-s2q17" id="radio-s2q17a" value="wrongA"  />
+						<label for="radio-s2q17a">Remove/de-activate the tag</label>
+
+						<input type="radio" name="radio-s2q17" id="radio-s2q17b" value="wrongB"  />
+						<label for="radio-s2q17b">Use double checker</label>
+
+						<input type="radio" name="radio-s2q17" id="radio-s2q17c" value="correct"  />
+						<label for="radio-s2q17c">Each your lunch</label>
+				   	</fieldset>
+			   </div>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s2score" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Section score</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s2score" class="question-score">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Score card</h1>
+			<h2><span class="section-marker">Section</span> <span>1</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="congratulations">
+				<h4>Section 2 score</h4>
+
+				<p class="scorecard-score">54</p>
+
+				<p class="scorecard-wrong">You got these questions wrong:</p>
+
+				<div class="question-top"></div>
+				<div class="question-box">
+					<div class="scorecard-answers">
+						<h5>3. What tools do TK Maxx use to stop internal theft?</h5>
+
+						<ul class="wrong-answers">
+							<li>Your answer:</li>
+							<li>Guard Dogs</li>
+							<li>HO Reporting</li>
+						</ul>
+
+						<ul class="correct-answers">
+							<li>Correct answer:</li>
+							<li>CCTV</li>
+							<li>Hidden Cameras</li>
+						</ul>
+					</div>
+					<div class="scorecard-answers">
+						<h5>3. What tools do TK Maxx use to stop internal theft?</h5>
+
+						<ul class="wrong-answers">
+							<li>Your answer:</li>
+							<li>Guard Dogs</li>
+							<li>HO Reporting</li>
+						</ul>
+
+						<ul class="correct-answers">
+							<li>Correct answer:</li>
+							<li>CCTV</li>
+							<li>Hidden Cameras</li>
+						</ul>
+					</div>
+				</div>
+				<div class="question-bottom"></div>
+
+			</div>
+			
+			<a href="#s3q1" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Section</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed"></div>				
+	</div>
+
+	<div data-role="page" id="s3q1" class="question-wood">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Internal theft</h1>
+			<h2><span class="section-marker">Section</span> <span>3</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="selected">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>10</li>
+					<li>11</li>
+					<li>12</li>
+				</ul>
+
+				<h3 class="question">What has the greatest effect on morale in your store?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select the correct answer:</legend>
+						<input type="radio" name="radio-s3q1" id="radio-s3q1a" value="correct"  />
+						<label for="radio-s3q1a">Associate dishonesty</label>
+
+						<input type="radio" name="radio-s3q1" id="radio-s3q1b" value="correct"  />
+						<label for="radio-s3q1b">Customer theft</label>
+				   	</fieldset>
+			   </div>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s3q2" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s3q2" class="question-wood">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Internal Theft</h1>
+			<h2><span class="section-marker">Section</span> <span>3</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="selected">2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>10</li>
+					<li>11</li>
+					<li>12</li>
+				</ul>
+
+				<h3 class="question">What are the signs that an associate might be dishonest?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select all that apply:</legend>
+						<input type="checkbox" name="checkbox-s3q2a" id="checkbox-s3q2a" class="custom" value="wrongA"/>
+						<label for="checkbox-s3q2a">They have bad dress sense</label>
+
+						<input type="checkbox" name="checkbox-s3q2b" id="checkbox-s3q2b" class="custom" value="correct"/>
+						<label for="checkbox-s3q2b">Bragging about or inviting you to join a scam to steal stuff</label>
+
+						<input type="checkbox" name="checkbox-s3q2c" id="checkbox-s3q2c" class="custom" value="wrongC" />
+						<label for="checkbox-s3q2c">They have a nice phone</label>
+
+						<input type="checkbox" name="checkbox-s3q2d" id="checkbox-s3q2d" class="custom" value="correct"/>
+						<label for="checkbox-s3q2d">Appearing to spend money beyond their means</label>
+
+						<input type="checkbox" name="checkbox-s3q2e" id="checkbox-s3q2e" class="custom" value="correct"/>
+						<label for="checkbox-s3q2e">They always say they have no money, but always have lots of new expensive things</label>
+				   	</fieldset>
+			   </div>
+		
+				<h3 class="stuck-text">Stuck?</h3>
+				<a href="#" class="stuck-button" data-role="button">Remove 1 Option but lose a point</a>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s3q3" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s3q3" class="question-wood">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Internal theft</h1>
+			<h2><span class="section-marker">Section</span> <span>3</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="selected">3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>10</li>
+					<li>11</li>
+					<li>12</li>
+				</ul>
+
+				<h3 class="question">What should you do if you are suspicious about a colleague?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select the odd one out:</legend>
+						<input type="radio" name="radio-s3q3" id="radio-s3q3a" value="wrongA"  />
+						<label for="radio-s3q3a">Talk to a Manager</label>
+
+						<input type="radio" name="radio-s3q3" id="radio-s3q3b" value="wrongB"  />
+						<label for="radio-s3q3b">Call CrimeLine</label>
+
+						<input type="radio" name="radio-s3q3" id="radio-s3q3c" value="wrongC"  />
+						<label for="radio-s3q3c">Talk to Loss Prevention</label>
+
+						<input type="radio" name="radio-s3q3" id="radio-s3q3d" value="correct"  />
+						<label for="radio-s3q3d">Phone a friend and ask what to do</label>
+				   	</fieldset>
+			   </div>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s3q4" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s3q4" class="question-wood">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Internal Theft</h1>
+			<h2><span class="section-marker">Section</span> <span>3</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="correct">3</li>
+					<li class="selected">4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>10</li>
+					<li>11</li>
+					<li>12</li>
+				</ul>
+
+				<h3 class="question">What do you know about CrimeLine?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select all that apply (hint - ask a colleague first):</legend>
+						<input type="checkbox" name="checkbox-s3q4a" id="checkbox-s3q4a" class="custom" value="correct" />
+						<label for="checkbox-s3q4a">You can get a reward</label>
+
+						<input type="checkbox" name="checkbox-s3q4b" id="checkbox-s3q4b" class="custom" value="correct"/>
+						<label for="checkbox-s3q4b">It's OK if someone calls for you</label>
+
+						<input type="checkbox" name="checkbox-s3q4c" id="checkbox-s3q4c" class="custom" value="wrongC"/>
+						<label for="checkbox-s3q4c">Everyone finds out you have called</label>
+
+						<input type="checkbox" name="checkbox-s3q4d" id="checkbox-s3q4d" class="custom" value="correct" />
+						<label for="checkbox-s3q4d">You don't have to see or hear anything. You can just report a suspicion</label>
+				   	</fieldset>
+			   </div>
+		
+				<h3 class="stuck-text">Stuck?</h3>
+				<a href="#" class="stuck-button" data-role="button">Remove 1 Option but lose a point</a>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s3q5" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s3q5" class="question-wood">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Internal Theft</h1>
+			<h2><span class="section-marker">Section</span> <span>3</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="correct">3</li>
+					<li class="correct">4</li>
+					<li class="selected">5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>10</li>
+					<li>11</li>
+					<li>12</li>
+				</ul>
+
+				<h3 class="question">What tools do TKMaxx use to stop internal theft?</h3>
+				
+				<ul class="question-multipleimage clear">
+					<li>
+						<a href=""><img src="images/tkmaxx/tools-cctv.jpg" width="100%" alt="CCTV" /><br /><br />CCTV</a>
+					</li>
+					<li>
+						<a href=""><img src="images/tkmaxx/tools-dogs.jpg" width="100%" alt="Guard Dogs" /><br /><br />Guard Dogs</a>
+					</li>
+					<li>
+						<a href=""><img src="images/tkmaxx/tools-cameras.jpg" width="100%" alt="Hidden Cameras" /><br /><br />Hidden Cameras</a>
+					</li>
+					<li>
+						<a href=""><img src="images/tkmaxx/tools-reports.jpg" width="100%" alt="Reports" /><br /><br />Reports</a>
+					</li>
+					<li>
+						<a href=""><img src="images/tkmaxx/tools-ho.jpg" width="100%" alt="HO Reporting" /><br /><br />HO Reporting</a>
+					</li>
+				</ul>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s3q6" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p>2:49</p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s3q6" class="question-wood">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Internal Theft</h1>
+			<h2><span class="section-marker">Section</span> <span>3</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="correct">3</li>
+					<li class="correct">4</li>
+					<li class="correct">5</li>
+					<li class="selected">6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>10</li>
+					<li>11</li>
+					<li>12</li>
+				</ul>
+
+				<h3 class="question">How can you contact CrimeLine?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select all that apply:</legend>
+						<input type="checkbox" name="checkbox-s3q6a" id="checkbox-s3q6a" class="custom" value="correct"/>
+						<label for="checkbox-s3q6a">Phone</label>
+
+						<input type="checkbox" name="checkbox-s3q6b" id="checkbox-s3q6b" class="custom" value="correct"/>
+						<label for="checkbox-s3q6b">Email</label>
+
+						<input type="checkbox" name="checkbox-s3q6c" id="checkbox-s3q6c" class="custom" value="wrongC" />
+						<label for="checkbox-s3q6c">Text</label>
+				   	</fieldset>
+			   </div>
+		
+				<h3 class="stuck-text">Stuck?</h3>
+				<a href="#" class="stuck-button" data-role="button">Remove 1 Option but lose a point</a>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s3q7" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s3q7" class="question-wood">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Internal Theft</h1>
+			<h2><span class="section-marker">Section</span> <span>3</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="correct">3</li>
+					<li class="correct">4</li>
+					<li class="correct">5</li>
+					<li class="correct">6</li>
+					<li class="selected">7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>10</li>
+					<li>11</li>
+					<li>12</li>
+				</ul>
+
+				<h3 class="question">What is the CrimeLine phone number?</h3>
+				
+				<div class="question-textarea">
+					<textarea cols="80" rows="20" name="textareaCL" id="textarea-small"></textarea>
+				</div>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s3q8" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s3q8" class="question-wood">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Internal Theft</h1>
+			<h2><span class="section-marker">Section</span> <span>3</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="correct">3</li>
+					<li class="correct">4</li>
+					<li class="correct">5</li>
+					<li class="correct">6</li>
+					<li class="correct">7</li>
+					<li class="selected">8</li>
+					<li>9</li>
+					<li>10</li>
+					<li>11</li>
+					<li>12</li>
+				</ul>
+
+				<h3 class="question">Why do people steal?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select all that apply:</legend>
+						<input type="checkbox" name="checkbox-s3q8a" id="checkbox-s3q8a" class="custom" value="correct"/>
+						<label for="checkbox-s3q8a">Opportunity</label>
+
+						<input type="checkbox" name="checkbox-s3q8b" id="checkbox-s3q8b" class="custom" value="correct" />
+						<label for="checkbox-s3q8b">Job dissatisfaction</label>
+
+						<input type="checkbox" name="checkbox-s3q8c" id="checkbox-s3q8c" class="custom" value="correct"/>
+						<label for="checkbox-s3q8c">Peer pressure</label>
+
+						<input type="checkbox" name="checkbox-s3q8d" id="checkbox-s3q8d" class="custom" value="correct" />
+						<label for="checkbox-s3q8d">Need</label>
+
+						<input type="checkbox" name="checkbox-s3q8e" id="checkbox-s3q8e" class="custom" value="wrong"/>
+						<label for="checkbox-s3q8e">Because it is easy</label>
+				   	</fieldset>
+			   </div>
+		
+				<h3 class="stuck-text">Stuck?</h3>
+				<a href="#" class="stuck-button" data-role="button">Remove 1 Option but lose a point</a>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s3q9" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s3q9" class="question-wood">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Internal Theft</h1>
+			<h2><span class="section-marker">Section</span> <span>3</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="correct">3</li>
+					<li class="correct">4</li>
+					<li class="correct">5</li>
+					<li class="correct">6</li>
+					<li class="correct">7</li>
+					<li class="correct">8</li>
+					<li class="selected">9</li>
+					<li>10</li>
+					<li>11</li>
+					<li>12</li>
+				</ul>
+
+				<h3 class="question">What might an Associate steal?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select all that apply:</legend>
+						<input type="checkbox" name="checkbox-s3q9a" id="checkbox-s3q9a" class="custom" value="correct"/>
+						<label for="checkbox-s3q9a">Cash</label>
+
+						<input type="checkbox" name="checkbox-s3q9b" id="checkbox-s3q9b" class="custom" value="correct" />
+						<label for="checkbox-s3q9b">Merchandise</label>
+
+						<input type="checkbox" name="checkbox-s3q9c" id="checkbox-s3q9c" class="custom" value="correct" />
+						<label for="checkbox-s3q9c">Fixture and Fittings</label>
+
+						<input type="checkbox" name="checkbox-s3q9d" id="checkbox-s3q9d" class="custom" value="correct" />
+						<label for="checkbox-s3q9d">Stationary</label>
+
+						<input type="checkbox" name="checkbox-s3q9e" id="checkbox-s3q9e" class="custom" value="correct"/>
+						<label for="checkbox-s3q9e">Other Associates' property</label>
+				   	</fieldset>
+			   </div>
+		
+				<h3 class="stuck-text">Stuck?</h3>
+				<a href="#" class="stuck-button" data-role="button">Remove 1 Option but lose a point</a>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s3q10" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s3q10" class="question-wood">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Internal theft</h1>
+			<h2><span class="section-marker">Section</span> <span>3</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="correct">3</li>
+					<li class="correct">4</li>
+					<li class="correct">5</li>
+					<li class="correct">6</li>
+					<li class="correct">7</li>
+					<li class="correct">8</li>
+					<li class="correct">9</li>
+					<li class="selected">10</li>
+					<li>11</li>
+					<li>12</li>
+				</ul>
+
+				<h3 class="question">What could happen to an associate who steals from TJX Europe?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select all that apply:</legend>
+						<input type="checkbox" name="checkbox-s3q10" id="checkbox-s3q10a" value="correct"  />
+						<label for="checkbox-s3q10a">Criminal record</label>
+
+						<input type="checkbox" name="checkbox-s3q10" id="checkbox-s3q10b" value="correct"  />
+						<label for="checkbox-s3q10b">Lose job</label>
+
+						<input type="checkbox" name="checkbox-s3q10" id="checkbox-s3q10c" value="correct"  />
+						<label for="checkbox-s3q10c">Embarrassment</label>
+
+						<input type="checkbox" name="checkbox-s3q10" id="checkbox-s3q10d" value="wrongD"  />
+						<label for="checkbox-s3q10d">Not a lot</label>
+				   	</fieldset>
+			   </div>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s3q11" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s3q11" class="question-wood">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Internal Theft</h1>
+			<h2><span class="section-marker">Section</span> <span>3</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="correct">3</li>
+					<li class="correct">4</li>
+					<li class="correct">5</li>
+					<li class="correct">6</li>
+					<li class="correct">7</li>
+					<li class="correct">8</li>
+					<li class="correct">9</li>
+					<li class="correct">10</li>
+					<li class="selected">11</li>
+					<li>12</li>
+				</ul>
+
+				<h3 class="question">What can you do to make a difference?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select all that apply:</legend>
+						<input type="checkbox" name="checkbox-s3q11a" id="checkbox-s3q11a" class="custom" value="correct"/>
+						<label for="checkbox-s3q11a">Stay alert</label>
+
+						<input type="checkbox" name="checkbox-s3q11b" id="checkbox-s3q11b" class="custom" value="correct"/>
+						<label for="checkbox-s3q11b">Report it</label>
+
+						<input type="checkbox" name="checkbox-s3q11c" id="checkbox-s3q11c" class="custom" value="correct"/>
+						<label for="checkbox-s3q11c">Don't be pressured to do something you're uncomfortable with</label>
+
+						<input type="checkbox" name="checkbox-s3q11d" id="checkbox-s3q11d" class="custom" value="wrongD"/>
+						<label for="checkbox-s3q11d">It's not my problem</label>
+				   	</fieldset>
+			   </div>
+		
+				<h3 class="stuck-text">Stuck?</h3>
+				<a href="#" class="stuck-button" data-role="button">Remove 1 Option but lose a point</a>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s3q12" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s3q12" class="question-wood">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Internal Theft</h1>
+			<h2><span class="section-marker">Section</span> <span>3</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="correct">3</li>
+					<li class="correct">4</li>
+					<li class="correct">5</li>
+					<li class="correct">6</li>
+					<li class="correct">7</li>
+					<li class="correct">8</li>
+					<li class="correct">9</li>
+					<li class="correct">10</li>
+					<li class="correct">11</li>
+					<li class="selected">12</li>
+				</ul>
+
+				<h3 class="question">Spot what's wrong</h3>
+			
+				<ul class="question-imagelist clear">
+					<li>
+						<img src="images/tkmaxx/spot-cash.jpg" width="87%" alt="Register with money hidden" />
+						<select name="select-s3q12a" id="select-s3q12a">
+							<option>Select...</option>
+							<option value="correct">Register with money hidden</option>
+							<option value="wrong_1b">Merchandise in locker</option>
+							<option value="wrong_1c">Merchandise in rubbish</option>
+						</select>
+					</li>
+					<li>
+						<img src="images/tkmaxx/spot-rubbish.jpg" width="87%" alt="Merchandise in rubbish" />
+						<select name="select-s3q12b" id="select-s3q12b">
+							<option>Select...</option>
+							<option value="wrong_2a">Register with money hidden</option>
+							<option value="wrong_2b">Merchandise in locker</option>
+							<option value="correct">Merchandise in rubbish</option>
+						</select>
+					</li>
+					<li>
+						<img src="images/tkmaxx/spot-locker.jpg" width="87%" alt="Merchandise in locker" />
+						<select name="select-s3q12c" id="select-s3q12c">
+							<option>Select...</option>
+							<option value="wrong_3a">Register with money hidden</option>
+							<option value="correct">Merchandise in locker</option>
+							<option value="wrong_3c">Merchandise in rubbish</option>
+						</select>
+					</li>
+				</ul>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s3score" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Section score</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p>0:59</p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s3score" class="question-score">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Score card</h1>
+			<h2><span class="section-marker">Section</span> <span>1</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="congratulations">
+				<h4>Section 3 score</h4>
+
+				<p class="scorecard-score">54</p>
+
+				<p class="scorecard-wrong">You got these questions wrong:</p>
+
+				<div class="question-top"></div>
+				<div class="question-box">
+					<div class="scorecard-answers">
+						<h5>3. What tools do TK Maxx use to stop internal theft?</h5>
+
+						<ul class="wrong-answers">
+							<li>Your answer:</li>
+							<li>Guard Dogs</li>
+							<li>HO Reporting</li>
+						</ul>
+
+						<ul class="correct-answers">
+							<li>Correct answer:</li>
+							<li>CCTV</li>
+							<li>Hidden Cameras</li>
+						</ul>
+					</div>
+					<div class="scorecard-answers">
+						<h5>3. What tools do TK Maxx use to stop internal theft?</h5>
+
+						<ul class="wrong-answers">
+							<li>Your answer:</li>
+							<li>Guard Dogs</li>
+							<li>HO Reporting</li>
+						</ul>
+
+						<ul class="correct-answers">
+							<li>Correct answer:</li>
+							<li>CCTV</li>
+							<li>Hidden Cameras</li>
+						</ul>
+					</div>
+				</div>
+				<div class="question-bottom"></div>
+
+			</div>
+			
+			<a href="#s4q1" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Section</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed"></div>				
+	</div>
+
+	<div data-role="page" id="s4q1" class="question-blue">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Human error</h1>
+			<h2><span class="section-marker">Section</span> <span>4</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="selected">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>10</li>
+				</ul>
+
+				<h3 class="question">What is the tagging price point for sunglasses?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select the correct answer:</legend>
+						<input type="radio" name="radio-s4q1" id="radio-s4q1a" value="correct"  />
+						<label for="radio-s4q1a">All</label>
+
+						<input type="radio" name="radio-s4q1" id="radio-s4q1b" value="wrongB"  />
+						<label for="radio-s4q1b">£9.99</label>
+
+						<input type="radio" name="radio-s4q1" id="radio-s4q1c" value="wrongC"  />
+						<label for="radio-s4q1c">£14.99</label>
+				   	</fieldset>
+			   </div>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s4q2" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s4q2" class="question-blue">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Human error</h1>
+			<h2><span class="section-marker">Section</span> <span>4</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="selected">2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>10</li>
+				</ul>
+
+				<h3 class="question">You drop merchandise on the floor and it breaks, what do you do?</h3>
+
+				<img src="images/tkmaxx/damagedevil.png" class="damagedevil" width="100%" alt="Damage Devil" />
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select the odd one out:</legend>
+						<input type="radio" name="radio-s4q2" id="radio-s4q2a" value="correct"  />
+						<label for="radio-s4q2a">Hide the evidence as quickly as possible</label>
+
+						<input type="radio" name="radio-s4q2" id="radio-s4q2b" value="wrong"  />
+						<label for="radio-s4q2b">You call someone to help clean up</label>
+
+						<input type="radio" name="radio-s4q2" id="radio-s4q2c" value="wrong"  />
+						<label for="radio-s4q2c">Tell a Manager</label>
+
+						<input type="radio" name="radio-s4q2" id="radio-s4q2d" value="wrong"  />
+						<label for="radio-s4q2d">Make sure the breakage is recorded</label>
+				   	</fieldset>
+			   </div>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s4q3" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s4q3" class="question-blue">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Human error</h1>
+			<h2><span class="section-marker">Section</span> <span>4</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="selected">3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>10</li>
+				</ul>
+
+				<h3 class="question">Tagging the item may damage it, what should you do?</h3>
+
+				<img src="images/tkmaxx/damagedevil.png" class="damagedevil" width="100%" alt="Damage Devil" />
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select the correct answer:</legend>
+						<input type="radio" name="radio-s4q3" id="radio-s4q3a" value="wrong"  />
+						<label for="radio-s4q3a">Tag it anyway, better damaged than stolen</label>
+
+						<input type="radio" name="radio-s4q3" id="radio-s4q3b" value="correct"  />
+						<label for="radio-s4q3b">Do Not Tag It</label>
+				   	</fieldset>
+			   </div>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s4q4" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s4q4" class="question-blue">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Human error</h1>
+			<h2><span class="section-marker">Section</span> <span>4</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="correct">3</li>
+					<li class="selected">4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>10</li>
+				</ul>
+
+				<h3 class="question">What must be checked on an lBl?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Ask a colleague, select all that apply:</legend>
+						<input type="checkbox" name="checkbox-s4q4a" id="checkbox-s4q4a" class="custom" value="correct" />
+						<label for="checkbox-s4q4a">Tagged</label>
+
+						<input type="checkbox" name="checkbox-s34q4b" id="checkbox-s4q4b" class="custom" value="correct"/>
+						<label for="checkbox-s4q4b">Ticketed</label>
+
+						<input type="checkbox" name="checkbox-s4q4c" id="checkbox-s4q4c" class="custom" value="correct"/>
+						<label for="checkbox-s4q4c">Correct location</label>
+
+						<input type="checkbox" name="checkbox-s4q4d" id="checkbox-s4q4d" class="custom" value="wrongD"/>
+						<label for="checkbox-s4q4d">A nasty disease</label>
+				   	</fieldset>
+			   </div>
+		
+				<h3 class="stuck-text">Stuck?</h3>
+				<a href="#" class="stuck-button" data-role="button">Remove 1 Option but lose a point</a>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s4q5" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s4q5" class="question-blue">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Human error</h1>
+			<h2><span class="section-marker">Section</span> <span>4</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="correct">3</li>
+					<li class="correct">4</li>
+					<li class="selected">5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>10</li>
+				</ul>
+
+				<h3 class="question">You find an item without a ticket, what do you do?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select all that apply:</legend>
+						<input type="checkbox" name="checkbox-s4q4a" id="checkbox-s4q4a" class="custom" value="correct"/>
+						<label for="checkbox-s4q4a">Find an exact match</label>
+
+						<input type="checkbox" name="checkbox-s4q4b" id="checkbox-s4q4b" class="custom" value="wrongB"/>
+						<label for="checkbox-s4q4b">Have a guess at the price</label>
+
+						<input type="checkbox" name="checkbox-s4q4c" id="checkbox-s4q4c" class="custom" value="wrongC"/>
+						<label for="checkbox-s4q4c">Pick up the nearest item and use that</label>
+
+						<input type="checkbox" name="checkbox-s4q4d" id="checkbox-s4q4d" class="custom" value="wrongD"/>
+						<label for="checkbox-s4q4d">Ask a manager for help</label>
+				   	</fieldset>
+			   </div>
+		
+				<h3 class="stuck-text">Stuck?</h3>
+				<a href="#" class="stuck-button" data-role="button">Remove 1 Option but lose a point</a>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s4q6" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s4q6" class="question-blue">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Human error</h1>
+			<h2><span class="section-marker">Section</span> <span>4</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="correct">3</li>
+					<li class="correct">4</li>
+					<li class="correct">5</li>
+					<li class="selected">6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>10</li>
+				</ul>
+
+				<h3 class="question">How do you avoid issues with Mismates?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select all that apply:</legend>
+						<input type="checkbox" name="checkbox-s4q6a" id="checkbox-s4q6a" class="custom" />
+						<label for="checkbox-s4q6a">Check labels of how many pieces</label>
+
+						<input type="checkbox" name="checkbox-s34q6b" id="checkbox-s4q6b" class="custom" />
+						<label for="checkbox-s4q6b">Don’t sell them</label>
+
+						<input type="checkbox" name="checkbox-s4q6c" id="checkbox-s4q6c" class="custom" />
+						<label for="checkbox-s4q6c">Complain to your dating agency</label>
+				   	</fieldset>
+			   </div>
+		
+				<h3 class="stuck-text">Stuck?</h3>
+				<a href="#" class="stuck-button" data-role="button">Remove 1 Option but lose a point</a>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s4q7" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s4q7" class="question-blue">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Human error</h1>
+			<h2><span class="section-marker">Section</span> <span>4</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="correct">3</li>
+					<li class="correct">4</li>
+					<li class="correct">5</li>
+					<li class="correct">6</li>
+					<li class="selected">7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>10</li>
+				</ul>
+
+				<h3 class="question">What was last week's Markdown %?</h3>
+				
+				<div class="question">
+					<input type="range" name="slider" id="slider" value="0" min="0" max="100" data-highlight="true"/>
+					<br /><br />
+				</div>
+
+				<div class="question-multiple">
+					<h3 class="question">ls this figure good or bad?</h3>
+
+					<fieldset data-role="controlgroup">
+						<legend>Select the correct answer:</legend>
+						<input type="radio" name="radio-s4q7" id="radio-s4q7a" value="wrong"  />
+						<label for="radio-s4q7a">Good</label>
+
+						<input type="radio" name="radio-s4q7" id="radio-s4q7b" value="correct"  />
+						<label for="radio-s4q7b">Bad</label>
+				   	</fieldset>
+				</div>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s4q8" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s4q8" class="question-blue">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Human error</h1>
+			<h2><span class="section-marker">Section</span> <span>4</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="correct">3</li>
+					<li class="correct">4</li>
+					<li class="correct">5</li>
+					<li class="correct">6</li>
+					<li class="correct">7</li>
+					<li class="selected">8</li>
+					<li>9</li>
+					<li>10</li>
+				</ul>
+
+				<h3 class="question">What is a scamping?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select the correct answer:</legend>
+						<input type="radio" name="radio-s4q8" id="radio-s4q8a" value="wrongA"  />
+						<label for="radio-s4q8a">It goes with chips</label>
+
+						<input type="radio" name="radio-s4q8" id="radio-s4q8b" value="wrongB"  />
+						<label for="radio-s4q8b">Finding an exact match</label>
+
+						<input type="radio" name="radio-s4q8" id="radio-s4q8c" value="wrongC"  />
+						<label for="radio-s4q8c">Reticketing</label>
+
+						<input type="radio" name="radio-s4q8" id="radio-s4q8d" value="correct"  />
+						<label for="radio-s4q8d">Reducing items to be placed into clearance</label>
+				   	</fieldset>
+			   </div>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s4q9" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s4q9" class="question-blue">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Human error</h1>
+			<h2><span class="section-marker">Section</span> <span>4</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="correct">3</li>
+					<li class="correct">4</li>
+					<li class="correct">5</li>
+					<li class="correct">6</li>
+					<li class="correct">7</li>
+					<li class="correct">8</li>
+					<li class="selected">9</li>
+					<li>10</li>
+				</ul>
+
+				<h3 class="question">What is a missed markdown?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select the correct answer:</legend>
+						<input type="radio" name="radio-s4q9" id="radio-s4q9a" value="correct"  />
+						<label for="radio-s4q9a">An item that should have been reduced, but was missed</label>
+
+						<input type="radio" name="radio-s4q9" id="radio-s4q9b" value="wrong"  />
+						<label for="radio-s4q9b">Missing a good bargain</label>
+				   	</fieldset>
+			   </div>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s4q10" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s4q10" class="question-blue">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Human error</h1>
+			<h2><span class="section-marker">Section</span> <span>4</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="correct">3</li>
+					<li class="correct">4</li>
+					<li class="correct">5</li>
+					<li class="correct">6</li>
+					<li class="correct">7</li>
+					<li class="correct">8</li>
+					<li class="correct">9</li>
+					<li class="selected">10</li>
+				</ul>
+
+				<h3 class="question">What should you do if you make a mistake?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select the correct answer:</legend>
+						<input type="radio" name="radio-s4q10" id="radio-s4q10a" value="wrong"  />
+						<label for="radio-s4q10a">Keep quiet</label>
+
+						<input type="radio" name="radio-s4q10" id="radio-s4q10b" value="correct"  />
+						<label for="radio-s4q10b">Be honest and let someone know</label>
+				   	</fieldset>
+			   </div>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s4score" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Section score</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s4score" class="question-score">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Score card</h1>
+			<h2><span class="section-marker">Section</span> <span>1</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="congratulations">
+				<h4>Section 4 score</h4>
+
+				<p class="scorecard-score">54</p>
+
+				<p class="scorecard-wrong">You got these questions wrong:</p>
+
+				<div class="question-top"></div>
+				<div class="question-box">
+					<div class="scorecard-answers">
+						<h5>3. What tools do TK Maxx use to stop internal theft?</h5>
+
+						<ul class="wrong-answers">
+							<li>Your answer:</li>
+							<li>Guard Dogs</li>
+							<li>HO Reporting</li>
+						</ul>
+
+						<ul class="correct-answers">
+							<li>Correct answer:</li>
+							<li>CCTV</li>
+							<li>Hidden Cameras</li>
+						</ul>
+					</div>
+					<div class="scorecard-answers">
+						<h5>3. What tools do TK Maxx use to stop internal theft?</h5>
+
+						<ul class="wrong-answers">
+							<li>Your answer:</li>
+							<li>Guard Dogs</li>
+							<li>HO Reporting</li>
+						</ul>
+
+						<ul class="correct-answers">
+							<li>Correct answer:</li>
+							<li>CCTV</li>
+							<li>Hidden Cameras</li>
+						</ul>
+					</div>
+				</div>
+				<div class="question-bottom"></div>
+
+			</div>
+			
+			<a href="#s5q1" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Section</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed"></div>				
+	</div>
+
+	<div data-role="page" id="s5q1" class="question-wood">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Shrink wall</h1>
+			<h2><span class="section-marker">Section</span> <span>5</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="selected">1</li>
+					<li>2</li>
+				</ul>
+
+				<h3 class="question">What was last month's Shrink topic?</h3>
+				
+				<div class="question-textarea">
+					<textarea cols="80" rows="20" name="textareaST" id="textarea-small"></textarea>
+				</div>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s5q2" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s5q2" class="question-wood">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Shrink wall</h1>
+			<h2><span class="section-marker">Section</span> <span>5</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="selected">2</li>
+				</ul>
+
+				<h3 class="question">Who is the Shrink Hero?</h3>
+
+				<img src="images/tkmaxx/shrink-hero-penguin.jpg" width="45%" alt="Penguin the Profit Protector" />
+				<img src="images/tkmaxx/shrink-hero-ant.jpg" width="45%" alt="Ant-I Shrink" />
+				
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select the correct answer:</legend>
+						<input type="radio" name="radio-s5q2a" id="radio-s5q2a" value="wrong"  />
+						<label for="radio-s5q2a">Penguin the Profit Protector</label>
+
+						<input type="radio" name="radio-s5q2b" id="radio-s5q2b" value="correct"  />
+						<label for="radio-s5q2b">Ant-I Shrink</label>
+				   	</fieldset>
+			   </div>
+			</div>
+			<div class="question-bottom"></div>
+		
+			<a href="#s5score" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Section score</a>
+	
+		</div>
+		
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">			<p>0:49</p>
+		</div>						
+	</div>
+
+	<div data-role="page" id="s5score" class="question-score">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Score card</h1>
+			<h2><span class="section-marker">Section</span> <span>1</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="congratulations">
+				<h4>Section 1 score</h4>
+
+				<p class="scorecard-score">54</p>
+
+				<p class="scorecard-wrong">You got these questions wrong:</p>
+
+				<div class="question-top"></div>
+				<div class="question-box">
+					<div class="scorecard-answers">
+						<h5>3. What tools do TK Maxx use to stop internal theft?</h5>
+
+						<ul class="wrong-answers">
+							<li>Your answer:</li>
+							<li>Guard Dogs</li>
+							<li>HO Reporting</li>
+						</ul>
+
+						<ul class="correct-answers">
+							<li>Correct answer:</li>
+							<li>CCTV</li>
+							<li>Hidden Cameras</li>
+						</ul>
+					</div>
+					<div class="scorecard-answers">
+						<h5>3. What tools do TK Maxx use to stop internal theft?</h5>
+
+						<ul class="wrong-answers">
+							<li>Your answer:</li>
+							<li>Guard Dogs</li>
+							<li>HO Reporting</li>
+						</ul>
+
+						<ul class="correct-answers">
+							<li>Correct answer:</li>
+							<li>CCTV</li>
+							<li>Hidden Cameras</li>
+						</ul>
+					</div>
+				</div>
+				<div class="question-bottom"></div>
+
+			</div>
+			
+			<button type="submit" name="submit" value="submit-value">Submit Your Answers</button>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed"></div>				
+	</div>
+
+	<div data-role="page" id="totalscore" class="question-score">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Total score</h1>
+		</div>
+	
+		<div data-role="content">
+			<div class="congratulations">
+				<h4>Congratulations!</h4>
+
+				<p class="scorecard-title">Your final score</p>
+
+				<p class="scorecard-score">54</p>
+
+				<p class="scorecard-percent">98%</p>
+
+				<p class="scorecard-text">
+					Go to the Store Leaderboard poster and record your score.
+				</p>
+
+			</div>
+			
+			<a href="#welcome" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Back home</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed"></div>				
+	</div>
+
+
+
+
+
+
+			
+	<div data-role="page" id="how" class="question-blue">
+		<div data-role="header" id="header" data-theme="c">
+			<h1>How it works</h1>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+
+				<h3 class="title">How it works</h3>
+
+				<div class="page-content">
+					Thanks for downloading the TKMaxx Shrink App. You'll be able to use your device to answer questions, perform tasks and learn how to help TKMaxx tackle loss. As you do, you'll earn points which can be redeemed against badges and prizes. There is no charge for the App itself but you may incur data charges to download the App if you aren't connected to WiFi.
+				</div>
+				
+			</div>
+			<div class="question-bottom"></div>
+			
+		</div>
+			
+	</div>
+				
+	<div data-role="page" id="info" class="question-blue">			
+		<div data-role="header" id="header" data-theme="c">
+			<h1>More info</h1>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+
+				<h3 class="title">More info</h3>
+
+				<div class="page-content">
+					If you need help, just speak with your manager.
+					<br /><br />
+				</div>
+
+
+				<div class="info-buttons" data-role="controlgroup">
+					<a href="#tjx" data-rel="dialog" data-role="button">TJX Europe</a>
+					<a href="#copyright" data-rel="dialog" data-role="button">Copyright</a>
+					<a href="#credits" data-rel="dialog" data-role="button">Credits</a>
+				</div>
+				
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#welcome" class="nextquestion" data-role="button" data-icon="arrow-l" data-iconpos="left">Back to menu</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed"></div>						
+	</div>
+
+	<div data-role="page" id="tjx" class="question-blue">			
+		<div data-role="header" id="header" data-theme="c">
+			<h1>More info</h1>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+
+				<h3 class="title">TJX Europe</h3>
+
+				<div class="page-content">
+					TJX Europe<br />
+					Loss Prevention<br />
+                    Tel 01923 473000
+				</div>
+				
+			</div>
+		</div>
+	
+	</div>
+
+	<div data-role="page" id="copyright" class="question-blue">			
+		<div data-role="header" id="header" data-theme="c">
+			<h1>More info</h1>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+
+				<h3 class="title">Copyright</h3>
+
+				<div class="page-content">
+					Intermedia Comm Sol Ltd 2012
+				</div>
+				
+			</div>
+			
+		</div>
+			
+	</div>
+
+	<div data-role="page" id="credits" class="question-blue">			
+		<div data-role="header" id="header" data-theme="c">
+			<h1>More info</h1>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+
+				<h3 class="title">Credits</h3>
+
+				<div class="page-content">
+					<img src="images/im-logo.png" width="100%" alt="Intermedia Solutions" />
+					<br /><br />
+					Designed and built by Intermedia Solutions &copy; 2012
+					<br />
+					<a href="http://intermediasolutions.com/" style="text-decoration: none;">www.intermediasolutions.com</a><br />
+					01794 368925
+					<br /><br />
+					<img src="images/jq-logo.png" width="49%" alt="jQuery Logo" />
+					<img src="images/pg-logo.png" width="49%" alt="PhoneGap Logo" />
+				</div>
+				
+			</div>
+					</div>
+	
+	</div>
+	</form>
+	
+	
+	<script src="phonegap.js"></script>
+<!--	<script src="childbrowser.js"></script>	-->
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/ios-orientationchange-fix.min.js"></script>
+	<script src="js/jquery.mobile-1.1.1.min.js"></script>
+	<script src="js/preloadCssImages.jQuery_v5.js"></script>
+	<script src="js/application.js"></script>
+		
+</body>
+</html>
