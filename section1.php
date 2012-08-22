@@ -14,14 +14,15 @@
 	
 
 	<!-- jQuery Mobile CSS bits -->
-	<link rel="stylesheet" href="css/jquery.mobile-1.1.1.min.css" />
+	<!--	<link rel="stylesheet" href="css/jquery.mobile-1.1.1.min.css" />-->
+		<link rel="stylesheet" href="css/12/jquery.mobile-1.2.0-alpha.1.min.css" />
 
 	<!-- Custom css -->
 	<link rel="stylesheet" href="css/custom.css" />
 
 </head> 
 <body> 
-<div data-role="dialog" id="s1score">	
+<div data-role="dialog" class="question-blue">
 			<div data-role="header" id="header" data-theme="c">
 				<h1>Score card</h1>
 				<h2><span class="section-marker">Section</span> <span>1</span></h2>
@@ -113,8 +114,9 @@
 	<script src="js/ios-orientationchange-fix.min.js"></script>
 	<script src="js/preloadCssImages.jQuery_v5.js"></script>
 	<script src="js/application.js"></script>
-	<script src="js/jquery.mobile-1.1.1.min.js"></script>
-
+<!--	<script src="js/jquery.mobile-1.1.1.min.js"></script>-->
+	<script src="js/jquery.mobile-1.2.0-alpha.1.min.js"></script>
+	
 		
 </body>
 </html>
