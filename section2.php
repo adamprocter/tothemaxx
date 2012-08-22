@@ -227,14 +227,12 @@ $answer2_5 = $_POST['checkbox-s2q2d'];
 	
 	
 	</div>
-	
 <script src="phonegap.js"></script>
-<!--	<script src="childbrowser.js"></script>	-->
 	<script src="js/jquery-1.7.2.min.js"></script>
 	<script src="js/ios-orientationchange-fix.min.js"></script>
-	<script src="js/jquery.mobile-1.1.1.min.js"></script>
 	<script src="js/preloadCssImages.jQuery_v5.js"></script>
 	<script src="js/application.js"></script>
+	<script src="js/jquery.mobile-1.1.1.min.js"></script>
 		
 </body>
 </html>
