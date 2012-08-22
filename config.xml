@@ -61,5 +61,5 @@ TKMaxx OnBoard - Mark Applin and Adam Procter.
 	    <access origin="http://adamprocter.co.uk" subdomains="true" />
 	    <access origin="http://www.adamprocter.co.uk" subdomains="true" />
 	    <preference name="orientation" value="portrait"/>
-
+		<preference name="phonegap-version" value="2.0" />
 </widget>
