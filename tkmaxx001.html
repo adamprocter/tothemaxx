@@ -1,0 +1,401 @@
+<!--
+	jQuery Mobile Boilerplate
+	index.html
+-->
+<!doctype html>
+<html>
+<head>
+	<title>Do The Right Thing TK</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<!--<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+	
+
+	<!-- jQuery Mobile CSS bits -->
+	<link rel="stylesheet" href="css/jquery.mobile-1.1.1.min.css" />
+
+	<!-- Custom css -->
+	<link rel="stylesheet" href="css/custom.css" />
+
+</head> 
+<body> 
+<form action="http://www.adamprocter.co.uk/wip/tkmaxxquiz/section1.php" method="post">
+
+	<div data-role="page" id="welcome">
+		<!--<div data-role="header">
+			<h1>TK MAXX</h1>
+		</div>-->
+
+		<div data-role="content" id="content">
+			<a href="#s1q1" id="playgame" data-role="button" data-icon="arrow-r" data-iconpos="right">Play the game</a>
+			<a href="#how" id="how-button" data-rel="dialog" data-role="button">How it works</a>
+			<a href="#info" id="info-button" data-role="button">More info</a>
+		</div>
+		
+		<!--<div data-role="footer" data-theme="c">
+			<p>&copy; 2012 - jQuery Mobile Boilerplate</p>
+		</div>	-->		
+	</div>
+
+	<div data-role="page" id="s0q0" class="question-wood">	
+	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Before we begin</h1>
+		</div>
+	
+		<div data-role="content">
+		
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+				
+				</ul>
+
+				<h3 class="question">Can we have your name, store name and passphrase?</h3>
+
+				<div class="question-textarea">
+					<legend>Name:</legend>
+					<textarea cols="80" rows="20" name="textarea-name" id="textarea-small"></textarea>
+				</div>
+
+				<div class="question-textarea">
+					<legend><br />Store name:</legend>
+					<textarea cols="80" rows="20" name="textarea-store" id="textarea-small"></textarea>
+				</div>
+			
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s1q1" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Begin</a>
+			
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed" data-tap-toggle="false" data-tap-toggle="false">
+			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s1q1" class="question-blue">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Intro to shrink</h1>
+			<h2><span class="section-marker">Section</span> <span>1</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+		
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="selected">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+				</ul>
+
+				<h3 class="question">What do we mean by Shrink at TJX Europe?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select the correct answer:</legend>
+						<input type="radio" name="radio-s1q1" id="radio-s1q1a" value="correct" />
+						<label for="radio-s1q1a">'Unknown loss'. The cash difference between what should be in the store and what actually is in the store. This is calculated once a year at inventory</label>
+
+						<input type="radio" name="radio-s1q1" id="radio-s1q1b" value="wrong2"  />
+						<label for="radio-s1q1b">What happens when clothes are washed too hot</label>
+
+						<input type="radio" name="radio-s1q1" id="radio-s1q1c" value="wrong3"  />
+						<label for="radio-s1q1c">A psychiatrist</label>
+				   	</fieldset>
+			   </div>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s1q2" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right" >Next Question</a>
+			
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed" data-tap-toggle="false" data-tap-toggle="false">
+			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s1q2" class="question-blue">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Intro to shrink</h1>
+			<h2><span class="section-marker">Section</span> <span>1</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="selected">2</li>
+					<li>3</li>
+					<li>4</li>
+				</ul>
+
+				<h3 class="question">What are the causes of Shrink at TJX Europe?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select all that apply:</legend>
+						<input type="checkbox" name="checkbox-s1q2a" id="checkbox-s1q2a" class="custom" value="correct" />
+						<label for="checkbox-s1q2a">External theft</label>
+
+						<input type="checkbox" name="checkbox-s1q2b" id="checkbox-s1q2b" class="custom" value="correct" />
+						<label for="checkbox-s1q2b">Internal theft</label>
+				<span id="hide1">		
+						<input type="checkbox" name="checkbox-s1q2d" id="checkbox-s1q2d" class="custom" value="wrongD"/>
+						<label for="checkbox-s1q2d">Broken washing machines</label>
+</span>
+						<input type="checkbox" name="checkbox-s1q2c" id="checkbox-s1q2c" class="custom" value="correct" />
+						<label for="checkbox-s1q2c">Human error</label>
+
+						
+				   	</fieldset>
+			   </div>
+		
+				<h3 class="stuck-text">Stuck?</h3>
+				<a href="#" class="stuck-button" id="stuck1" data-role="button">Remove 1 Option but lose a point</a>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s1q3" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed" data-tap-toggle="false">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s1q3" class="question-blue">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Intro to shrink</h1>
+			<h2><span class="section-marker">Section</span> <span>1</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="selected">3</li>
+					<li>4</li>
+				</ul>
+
+				<h3 class="question">If we reduce shrink, what could we do with the savings?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select all that apply:</legend>
+						<input type="checkbox" name="checkbox-s1q3" id="checkbox-s1q3a" class="custom" value="benefits"/>
+						<label for="checkbox-s1q3a">Better benefits</label>
+<span id="hide2">
+						<input type="checkbox" name="checkbox-s1q3" id="checkbox-s1q3b" class="custom" value="associates"/>
+						<label for="checkbox-s1q3b">More associates</label>
+</span>
+						<input type="checkbox" name="checkbox-s1q3" id="checkbox-s1q3c" class="custom" value="Facilities"/>
+						<label for="checkbox-s1q3c">Better Store Facilities</label>
+						
+						<input type="checkbox" name="checkbox-s1q3" id="checkbox-s1q3d" class="custom" value="Ferrari"/>
+						<label for="checkbox-s1q3d">Buy a Ferrari for everyone in LP</label>
+						
+				   	</fieldset>
+			   </div>
+		
+				<h3 class="stuck-text">Stuck?</h3>
+				<a href="#" class="stuck-button" id="stuck2" data-role="button">Remove 1 Option but lose a point</a>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s1q4" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed" data-tap-toggle="false">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s1q4" class="question-blue">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Intro to shrink</h1>
+			<h2><span class="section-marker">Section</span> <span>1</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="correct">2</li>
+					<li class="correct">3</li>
+					<li class="selected">4</li>
+				</ul>
+
+				<h3 class="question">Whose responsibility is shrink?</h3>
+			
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select all that apply:</legend>
+						<input type="checkbox" name="checkbox-s1q4" id="checkbox-s1q4a" value="LP"  />
+						<label for="checkbox-s1q4a">Loss Prevention</label>
+
+						<input type="checkbox" name="checkbox-s1q4" id="checkbox-s1q4b" value="manager"  />
+						<label for="checkbox-s1q4b">Store manager</label>
+
+						<input type="checkbox" name="checkbox-s1q4" id="checkbox-s1q4c" value="supervisor"  />
+						<label for="checkbox-s1q4c">My supervisor</label>
+
+						<input type="checkbox" name="checkbox-s1q4" id="checkbox-s1q4d" value="everyone"  />
+						<label for="checkbox-s1q4d">Everyone</label>
+				   	</fieldset>
+			   </div>
+			</div>
+			
+	
+			<div class="question-bottom"></div>
+			<button type="submit" name="submit" data-rel="dialog" value="submit-value">Section Results</button>
+			<a href="tkmaxx002.html" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right" data-ajax="false">Next Section</a>
+					</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed" data-tap-toggle="false">			<p class="countdown"></p>
+		</div>
+	</div>
+
+<!--The how and more info sections follow-->
+			
+	<div data-role="page" id="how" class="question-blue">
+		<div data-role="header" id="header" data-theme="c">
+			<h1>How it works</h1>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+
+				<h3 class="title">How it works</h3>
+
+				<div class="page-content">
+					Thanks for downloading the TKMaxx Shrink App. You'll be able to use your device to answer questions, perform tasks and learn how to help TKMaxx tackle loss. As you do, you'll earn points which can be redeemed against badges and prizes. There is no charge for the App itself but you may incur data charges to download the App if you aren't connected to WiFi.
+				</div>
+				
+			</div>
+			<div class="question-bottom"></div>
+			
+		</div>
+			
+	</div>
+				
+	<div data-role="page" id="info" class="question-blue">			
+		<div data-role="header" id="header" data-theme="c">
+			<h1>More info</h1>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+
+				<h3 class="title">More info</h3>
+
+				<div class="page-content">
+					If you need help, just speak with your manager.
+					<br /><br />
+				</div>
+
+
+				<div class="info-buttons" data-role="controlgroup">
+					<a href="#tjx" data-rel="dialog" data-role="button">TJX Europe</a>
+					<a href="#copyright" data-rel="dialog" data-role="button">Copyright</a>
+					<a href="#credits" data-rel="dialog" data-role="button">Credits</a>
+				</div>
+				
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#welcome" class="nextquestion" data-role="button" data-icon="arrow-l" data-iconpos="left">Back to menu</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed" data-tap-toggle="false"></div>						
+	</div>
+
+	<div data-role="page" id="tjx" class="question-blue">			
+		<div data-role="header" id="header" data-theme="c">
+			<h1>More info</h1>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+
+				<h3 class="title">TJX Europe</h3>
+
+				<div class="page-content">
+					TJX Europe<br />
+					Loss Prevention<br />
+                    Tel 01923 473000
+				</div>
+				
+			</div>
+		</div>
+	
+	</div>
+
+	<div data-role="page" id="copyright" class="question-blue">			
+		<div data-role="header" id="header" data-theme="c">
+			<h1>More info</h1>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+
+				<h3 class="title">Copyright</h3>
+
+				<div class="page-content">
+					Intermedia Comm Sol Ltd 2012
+				</div>
+				
+			</div>
+			
+		</div>
+			
+	</div>
+
+	<div data-role="page" id="credits" class="question-blue">			
+		<div data-role="header" id="header" data-theme="c">
+			<h1>More info</h1>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+
+				<h3 class="title">Credits</h3>
+
+				<div class="page-content">
+					<img src="images/im-logo.png" width="100%" alt="Intermedia Solutions" />
+					<br /><br />
+					Designed and built by Intermedia Solutions &copy; 2012
+					<br />
+					<a href="http://intermediasolutions.com/" style="text-decoration: none;">www.intermediasolutions.com</a><br />
+					01794 368925
+					<br /><br />
+					<img src="images/jq-logo.png" width="49%" alt="jQuery Logo" />
+					<img src="images/pg-logo.png" width="49%" alt="PhoneGap Logo" />
+				</div>
+				
+			</div>
+		</div>
+</div>
+
+</form>	
+
+
+
+
+	<script src="phonegap.js"></script>
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/ios-orientationchange-fix.min.js"></script>
+	<script src="js/jquery.mobile-1.1.1.min.js"></script>
+	<script src="js/preloadCssImages.jQuery_v5.js"></script>
+	<script src="js/application.js"></script>
+
+</body>
+</html>
