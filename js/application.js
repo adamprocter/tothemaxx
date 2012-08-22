@@ -57,8 +57,7 @@
  
  $(document).on("pageinit", function(event){
  
-   $.preloadCssImages();
- 
+ $.preloadCssImages();
         
  
  });

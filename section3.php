@@ -183,9 +183,10 @@ $answer3_26 = $_POST['radio-s3q10'];
 	</div>
 <script src="phonegap.js"></script>
 	<script src="js/jquery-1.7.2.min.js"></script>
-	<script src="js/ios-orientationchange-fix.min.js"></script>
-	<script src="js/preloadCssImages.jQuery_v5.js"></script>
-	<script src="js/application.js"></script>
+<!--	<script src="js/ios-orientationchange-fix.min.js"></script>-->
+<!--	<script src="js/preloadCssImages.jQuery_v5.js"></script>-->
+	<script src="js/preload.js"></script>
+		<script src="js/application.js"></script>
 <!--	<script src="js/jquery.mobile-1.1.1.min.js"></script>-->
 	<script src="js/jquery.mobile-1.2.0-alpha.1.min.js"></script>
 	
