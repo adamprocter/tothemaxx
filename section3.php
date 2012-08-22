@@ -130,53 +130,50 @@ $answer3_26 = $_POST['radio-s3q10'];
         
            
                                
-             
             echo "
-            
-            	            	
-            		<div data-role='content' class='question-score'>
-            			<div class='congratulations'>
-            				<h4>Section 3 score</h4>
-            
-            				<p class='scorecard-title'>You scored</p>
-            
-            				<p class='scorecard-score'>$totalCorrect</p>
-            
-            			
-            
-            			
-            		<p class='scorecard-wrong'>You got these questions wrong:</p>
-            		
-            						<div class='question-top'>DUMMY DATA BELOW</div>
-            						<div class='question-box'>
-            							<div class='scorecard-answers'>
-            								<h5>3. What tools do TK Maxx use to stop internal theft?</h5>
-            		
-            								<ul class='wrong-answers'>
-            									<li>Your answer:</li>
-            									<li>Guard Dogs</li>
-            									<li>HO Reporting</li>
-            								</ul>
-            		
-            								<ul class='correct-answers'>
-            									<li>Correct answer:</li>
-            									<li>CCTV</li>
-            									<li>Hidden Cameras</li>
-            								</ul>
-            							</div>
-            						</div>
-            						<div class='question-bottom'></div>
-            		           					
-            					
-            				</div>
-            		   </div>
-            		
-            		</div>
-            			
-            		<div data-role='footer' id='footer' data-theme='c' data-position='fixed' data-tap-toggle='false'></div>				
-            	</div>";
-            
-        ?>
+                
+                	            	
+                		<div data-role='content' class='question-score'>
+                			<div class='congratulations'>
+                				<h4>Section 3 score</h4>
+                
+                				<p class='scorecard-title'>You scored</p>
+                
+                				<p class='scorecard-score'>$totalCorrect</p>
+                
+                			
+                
+                			
+                		<p class='scorecard-wrong'>You got these questions wrong:</p>
+                		
+                						<div class='question-top'></div>
+                						<div class='question-box'>
+                							<div class='scorecard-answers'>
+                								<h5>3. What tools do TK Maxx use to stop internal theft?</h5>
+                		
+                								<ul class='wrong-answers'>
+                									<li>Your answer:</li>
+                									<li>Guard Dogs</li>
+                									<li>HO Reporting</li>
+                								</ul>
+                		
+                								<ul class='correct-answers'>
+                									<li>Correct answer:</li>
+                									<li>CCTV</li>
+                									<li>Hidden Cameras</li>
+                								</ul>
+                							</div>
+                						</div>
+                						<div class='question-bottom'></div>
+                		           					
+                					
+                				</div>
+                		</div>
+                			
+                		<div data-role='footer' data-theme='c' data-position='fixed' data-tap-toggle='false'></div>				
+                	";
+                
+            ?>
 	
 	
 	

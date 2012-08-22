@@ -22,7 +22,7 @@
 
 </head> 
 <body> 
-<div data-role="dialog" class="question-blue">
+<div data-role="dialog">
 			<div data-role="header" id="header" data-theme="c">
 				<h1>Score card</h1>
 				<h2><span class="section-marker">Section</span> <span>1</span></h2>
@@ -74,7 +74,7 @@
             			
             		<p class='scorecard-wrong'>You got these questions wrong:</p>
             		
-            						<div class='question-top'>DUMMY DATA BELOW</div>
+            						<div class='question-top'></div>
             						<div class='question-box'>
             							<div class='scorecard-answers'>
             								<h5>3. What tools do TK Maxx use to stop internal theft?</h5>
@@ -96,12 +96,10 @@
             		           					
             					
             				</div>
-            		   </div>
-            		
             		</div>
             			
-            		<div data-role='footer' id='footer' data-theme='c' data-position='fixed' data-tap-toggle='false'></div>				
-            	</div>";
+            		<div data-role='footer' data-theme='c' data-position='fixed' data-tap-toggle='false'></div>				
+            	";
             
         ?>
 	
