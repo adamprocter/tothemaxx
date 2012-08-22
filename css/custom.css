@@ -52,7 +52,7 @@ h3 {
 ----------------------------------------------------------------*/
 
 #welcome {	
-	background: url("../images/tkmaxx/welcome_ipad.png") no-repeat;
+	/*background: url("../images/tkmaxx/welcome_ipad.png") no-repeat;*/
 	background-size: 768px 1024px;
 	width: 768px; }
 
@@ -85,22 +85,22 @@ h3 {
 /*--------------- BACKGROUNDS ---------------*/
 
 .question-blue {	
-	background: url("../images/tkmaxx/texture_blue_ipad.png") no-repeat;
+	/*background: url("../images/tkmaxx/texture_blue_ipad.png") no-repeat;*/
 	background-size: 768px 1024px;
 	width: 768px; }
 
 .question-red {	
-	background: url("../images/tkmaxx/texture_red.jpg") repeat;
+	/*background: url("../images/tkmaxx/texture_red.jpg") repeat;*/
 	background-size: 1191px;
 	width: 768px; }
 
 .question-wood {	
-	background: url("../images/tkmaxx/texture_wood_ipad.jpg") no-repeat;
+/*	background: url("../images/tkmaxx/texture_wood_ipad.jpg") no-repeat;*/
 	background-size: 768px 1024px;
 	width: 768px; }
 
 .question-score {	
-	background: url("../images/tkmaxx/texture_score_ipad.jpg") repeat;
+	/*background: url("../images/tkmaxx/texture_score_ipad.jpg") repeat;*/
 	background-size: 768px 1024px;
 	width: 768px; }
 
@@ -474,14 +474,14 @@ h3 {
 	/*--------------- BACKGROUNDS ---------------*/
 
 	.question-red {	
-		background: url("../images/tkmaxx/texture_red.jpg") repeat;
+		/*background: url("../images/tkmaxx/texture_red.jpg") repeat;*/
 		background-size: 620px;
 		width: 720px; }
 
 	/*--------------- WELCOME ---------------*/
 
 	#welcome {	
-		background: url("../images/tkmaxx/welcome_iphone.png") no-repeat;
+/*		background: url("../images/tkmaxx/welcome_iphone.png") no-repeat;*/
 		background-size: 100%;
 		height: 100%;
 		width: 100%; }
