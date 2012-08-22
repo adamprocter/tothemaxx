@@ -1,46 +1,34 @@
 jQuery.preloadCssImages = function(){
  
-    var allImgs = [];//new array for all the image urls  
-    var k = 0; //iterator for adding images
-    var sheets = document.styleSheets;//array of stylesheets
- 
-    for(var i = 0; i<sheets .length; i++){//loop through each stylesheet
- 
-        var cssPile = '';//create large string of all css rules in sheet
-        var csshref = (sheets[i].href) ? sheets[i].href : 'window.location.href';
-        var baseURLarr = csshref.split('/');//split href at / to make array
- 
-        baseURLarr.pop();//remove file path from baseURL array
- 
-        var baseURL = baseURLarr.join('/');//create base url for the images in this sheet (css file's dir)
- 
-        if(baseURL!="") baseURL+='/'; //tack on a / if needed
- 
-        if(document.styleSheets[i].cssRules){//w3
- 
-            var thisSheetRules = document.styleSheets[i].cssRules; //w3
- 
-            for(var j = 0; j<thisSheetRules.length; j++){
-                cssPile+= thisSheetRules[j].cssText;
-            }
-        }
-        else {
-            cssPile+= document.styleSheets[i].cssText;
-        }
- 
-        //parse cssPile for image urls and load them into the DOM
-        var imgUrls = cssPile.match(/[^\(]+\.(gif|jpg|jpeg|png)/g);//reg ex to get a string of between a "(" and a ".filename"
- 
-        if(imgUrls != null && imgUrls.length>0 && imgUrls != ''){//loop array
- 
-            var arr = jQuery.makeArray(imgUrls);//create array from regex obj        
- 
-            jQuery(arr).each(function(){
-                allImgs[k] = new Image(); //new img obj
-                allImgs[k].src = (this[0] == '/' || this.match('http://')) ? this : baseURL + this;     //set src either absolute or rel to css dir
-                k++;
-            });
-        }
-    }//loop
-    return allImgs;
+<!--//--><![CDATA[//><!--
+			var images = new Array()
+			function preload() {
+				for (i = 0; i < preload.arguments.length; i++) {
+					images[i] = new Image()
+					images[i].src = preload.arguments[i]
+				}
+			}
+			preload(
+				"images/tkmaxx/correct.png",
+				"images/tkmaxx/cross.png",
+				"images/tkmaxx/footer_ipad.png",
+				"images/tkmaxx/header_ipad.png",
+				"images/tkmaxx/image-background-selected.png",
+				"images/tkmaxx/image-background.png",
+				"images/tkmaxx/notepadfooter_ipad.png",
+				"images/tkmaxx/notepadheader_ipad.png",
+				"images/tkmaxx/notepadheader_iphone.png",
+				"images/tkmaxx/scorecard-percent.png",
+				"images/tkmaxx/scorecard.png",
+				"images/tkmaxx/selected.png",
+				"images/tkmaxx/texture_blue_ipad.png",
+				"images/tkmaxx/texture_red.jpg",
+				"images/tkmaxx/texture_score_ipad.jpg",
+				"images/tkmaxx/texture_wood_ipad.jpg",
+				"images/tkmaxx/timer.png",
+				"images/tkmaxx/welcome_ipad.png",
+				"images/tkmaxx/welcome_iphone.png"
+			)
+		//--><!]]>
 }
+
