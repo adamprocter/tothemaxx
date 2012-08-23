@@ -16,11 +16,11 @@ $.preloadCssImages();
    
 });
 
-$(document).bind("mobileinit", function(){
-			$.mobile.defaultPageTransition = 'slide';
-			
-			
-		});
+//$(document).bind("mobileinit", function(){
+//			$.mobile.defaultPageTransition = 'slide';
+//			
+//			
+//		});
 
 
  $('#stuck1').click(function() {
