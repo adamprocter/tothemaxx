@@ -9,16 +9,16 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<!--<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+		<!-- jQuery bits -->
 	
-
-	<!-- jQuery Mobile CSS bits -->
-	<!--	<link rel="stylesheet" href="css/jquery.mobile-1.1.1.min.css" />-->
-		<link rel="stylesheet" href="css/12/jquery.mobile-1.2.0-alpha.1.min.css" />
-
-	<!-- Custom css -->
+	<link rel="stylesheet" href="css/jquery.mobile-1.2.0-alpha.1.min.css" />
 	<link rel="stylesheet" href="css/custom.css" />
+	
+	<script src="phonegap.js"></script>
+	<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/energize.js"></script>
+<script src="js/application.js"></script>
+<script src="js/jquery.mobile-1.2.0-alpha.1.min.js"></script>
 
 </head> 
 <body> 
@@ -96,15 +96,7 @@
 	
 	</div>
 	
-<script src="phonegap.js"></script>
-	<script src="js/jquery-1.7.2.min.js"></script>
-<!--	<script src="js/ios-orientationchange-fix.min.js"></script>-->
-<!--	<script src="js/preloadCssImages.jQuery_v5.js"></script>-->
-	<script src="js/preload.js"></script>
-	
-		<script src="js/application.js"></script>
-<!--	<script src="js/jquery.mobile-1.1.1.min.js"></script>-->
-	<script src="js/jquery.mobile-1.2.0-alpha.1.min.js"></script>
+
 	
 </body>
 </html>
