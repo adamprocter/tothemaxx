@@ -2,6 +2,27 @@
 (function($){})(window.jQuery);
 
 
+$(document).on("pageinit", function(event){
+
+$.mobile.loadPage('http://www.adamprocter.co.uk/wip/tkmaxxquiz/section1.php');
+$.mobile.loadPage('http://www.adamprocter.co.uk/wip/tkmaxxquiz/section2.php');
+$.mobile.loadPage('http://www.adamprocter.co.uk/wip/tkmaxxquiz/section3.php');
+$.mobile.loadPage('http://www.adamprocter.co.uk/wip/tkmaxxquiz/section4.php');
+$.mobile.loadPage('http://www.adamprocter.co.uk/wip/tkmaxxquiz/section5.php');
+
+$.mobile.buttonMarkup.hoverDelay = 0;
+$.preloadCssImages();
+  
+   
+});
+
+$(document).bind("mobileinit", function(){
+			$.mobile.defaultPageTransition = 'slide';
+			
+			
+		});
+
+
  $('#stuck1').click(function() {
  
    $('#hide1').css("display", "none");
@@ -50,14 +71,7 @@
    $('#hide15').css("display", "none");});
  
  
- $(document).on("pageinit", function(event){
- 
- $.mobile.buttonMarkup.hoverDelay = 0;
- $.preloadCssImages();
-   
-    
- });
- 
+
 $.preloadCssImages = function(){
   
  <!--//--><![CDATA[//><!--
@@ -87,7 +101,8 @@ $.preloadCssImages = function(){
  				"images/tkmaxx/texture_wood_ipad.jpg",
  				"images/tkmaxx/timer.png",
  				"images/tkmaxx/welcome_ipad.png",
- 				"images/tkmaxx/welcome_iphone.png"
+ 				"images/tkmaxx/welcome_iphone.png",
+ 				"http://www.adamprocter.co.uk/wip/tkmaxxquiz/images/texture_score_ipad.jpg"
  			)
  		//--><!]]>
  }
