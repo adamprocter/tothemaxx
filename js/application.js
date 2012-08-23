@@ -4,12 +4,6 @@
 
 $(document).on("pageinit", function(event){
 
-$.mobile.loadPage('http://www.adamprocter.co.uk/wip/tkmaxxquiz/section1.php');
-$.mobile.loadPage('http://www.adamprocter.co.uk/wip/tkmaxxquiz/section2.php');
-$.mobile.loadPage('http://www.adamprocter.co.uk/wip/tkmaxxquiz/section3.php');
-$.mobile.loadPage('http://www.adamprocter.co.uk/wip/tkmaxxquiz/section4.php');
-$.mobile.loadPage('http://www.adamprocter.co.uk/wip/tkmaxxquiz/section5.php');
-
 $.mobile.buttonMarkup.hoverDelay = 0;
 $.preloadCssImages();
   

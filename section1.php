@@ -43,7 +43,10 @@
             $answer1_6 = $_POST['checkbox-s1q3'];
                        
             //question 4
-            $answer1_7 = $_POST['radio-s1q4'];
+            $answer1_7 = $_POST['checkbox-s1q4a'];
+            $answer1_7a = $_POST['checkbox-s1q4b'];
+            $answer1_7b = $_POST['checkbox-s1q4c'];
+            $answer1_7c = $_POST['checkbox-s1q4d'];
                         
           
                 
@@ -54,9 +57,11 @@
             if ($answer1_2 == "correct") { $totalCorrect++; }
             if ($answer1_3 == "correct") { $totalCorrect++; }
             if ($answer1_5 == "correct") { $totalCorrect++; }
-            if ($answer1_7 == "correct") { $totalCorrect++; }
            
-                               
+           if ($answer1_7 == "correct") { $totalCorrect++; }
+           if ($answer1_7a == "correct") { $totalCorrect++; }
+           if ($answer1_7b == "correct") { $totalCorrect++; }                    
+           if ($answer1_7c == "correct") { $totalCorrect++; }
              
             echo "
             
