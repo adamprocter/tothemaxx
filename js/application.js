@@ -6,7 +6,6 @@ $(document).on("pageinit", function(event){
 
 $.mobile.buttonMarkup.hoverDelay = 0;
 $.preloadCssImages();
-$.mobile.pushStateEnabled = false;
 
 $('#stuck1').click(function() {
    $('#hide1').css("display", "none");
