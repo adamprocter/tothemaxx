@@ -54,17 +54,17 @@ h3 {
 ----------------------------------------------------------------*/
 
 #welcome {	
-	background: url("../images/tkmaxx/welcome_ipad.png") no-repeat;
+	background: url("../images/tkmaxx/welcome_ipad.jpg") no-repeat;
 	background-size: 768px 1024px;
 	width: 768px; }
 
-	#content { height: 1024px;
-	}
+	#content { height: 1024px; }
 
 	#playgame, #how-button, #info-button, .choice {
 		margin: 0 auto;
 		text-transform: uppercase; 
-		top: 550px; }
+		top: 550px;
+		z-index: 2; }
 
 		#playgame {
 			margin: 0 auto 50px auto;
@@ -80,6 +80,13 @@ h3 {
 			padding: 10px 0;
 			width: 80%; }
 
+	.welcome_devil {
+		bottom: 0;
+		left: 0;
+		margin: 0 0 0.5% 1%;
+		position: absolute;
+		z-index: 1;	}
+
 /*----------------------------------------------------------------
 	QUESTION PAGES
 ----------------------------------------------------------------*/
@@ -87,18 +94,18 @@ h3 {
 /*--------------- BACKGROUNDS ---------------*/
 
 .question-blue {	
-	background: url("../images/tkmaxx/texture_blue_ipad.png") no-repeat;
-	background-size: 768px 1024px;
+	background: url("../images/tkmaxx/texture_blue_ipad.jpg") no-repeat;
+	background-size: 768px 100%;
 	width: 768px; }
 
 .question-red {	
-	background: url("../images/tkmaxx/texture_red.jpg") repeat;
-	background-size: 1191px;
+	background: url("../images/tkmaxx/texture_red_ipad.jpg") repeat;
+	background-size: 1199px;
 	width: 768px; }
 
 .question-wood {	
 	background: url("../images/tkmaxx/texture_wood_ipad.jpg") no-repeat;
-	background-size: 768px 1024px;
+	background-size: 100% 100%;
 	width: 768px; }
 
 .question-score {	
@@ -110,7 +117,7 @@ h3 {
 
 #header {	
 	background: url("../images/tkmaxx/header_ipad.png") no-repeat top left;
-	background-size: 768px;	
+	background-size: 100% 58px;	
 	border: none;
 	color: #ff4444;
 	height: 58px;
@@ -172,7 +179,8 @@ h3 {
 			color: #bfbfbf;
 			display: inline;
 			font: 25px/100% 'dearJoe', serif;
-			padding: 10px 8px; }
+			padding: 10px 8px;
+			text-decoration: none; }
 
 			ul.question-numbers li.correct {
 				background: url("../images/tkmaxx/correct.png") no-repeat center center;
@@ -213,7 +221,7 @@ h3 {
 
 	a.stuck-button { 
 		margin: -50px auto 40px auto;
-		text-transform: uppercase;
+		text-transform: none;
 		width: 57%; }
 
 	/*--------------- MULTIPLE CHOICE WITH IMAGES ---------------*/
@@ -222,9 +230,7 @@ h3 {
 		margin: 0 auto; 
 		width: 90%; }
 
-		ul.question-multipleimage li { 
-			background: url("../images/tkmaxx/image-background.png") no-repeat 0 0;
-			background-size: 100%;
+		ul.question-multipleimage li { 			
 			float: left; 
 			list-style: none;
 			margin: 0 9% 7% -20px;
@@ -232,19 +238,13 @@ h3 {
 
 			ul.question-multipleimage li:nth-child(3n) { margin: 0 0 7% -20px; }
 
-			ul.question-multipleimage li a { 
+			ul.question-multipleimage li img { 
+				background: url("../images/tkmaxx/image-background.png") no-repeat 0 0;
+				background-size: 100%;
 				color: #000;
 				display: block;
 				line-height: 22px;
-				padding: 10px 10px 0px 10px;
-				text-align: center;
-				text-decoration: none;
-				text-shadow: none; }
-
-				ul.question-multipleimage li a:active { 
-					background: url("../images/tkmaxx/image-background-selected.png") no-repeat 0 0;
-					background-size: 100%;
-					color: #f00; }
+				padding: 10px 10px 25px 10px; }
 
 	/*--------------- IMAGES WITH LISTS ---------------*/
 
@@ -292,7 +292,7 @@ h3 {
 
 .nextquestion { 
 	margin: 5% auto 10% auto;
-	text-transform: uppercase;
+	text-transform: none;
 	width: 55%; }
 
 /*--------------- SUBMIT SCORE BUTTON ---------------*/
@@ -300,14 +300,14 @@ h3 {
 
 .submitscore {
 	margin: 5% auto 10% auto;
-	text-transform: uppercase;
+	text-transform: none;
 	width: 55%; }
 
 /*--------------- FOOTER ---------------*/
 
 #footer {	
 	background: url("../images/tkmaxx/footer_ipad.png") no-repeat;
-	background-size: 768px;
+	background-size: 100% 54px;
 	border: none;
 	bottom: 0;
 	font-family: Helvetica, Arial, sans-serif;
@@ -454,7 +454,7 @@ h3 {
 	
 			.ui-submit {
 				margin: 5% auto 5% auto;
-				text-transform: uppercase;
+				text-transform: none;
 				width: 55%; }
 
 /*----------------------------------------------------------------
@@ -567,7 +567,7 @@ h3 {
 
 	a.stuck-button { 
 		margin: 0 auto 3% auto;
-		text-transform: uppercase;
+		text-transform: none;
 		width: 90%; }
 
 	/*--------------- TEXT AREA ---------------*/
@@ -608,11 +608,48 @@ h3 {
 
 	span.section-marker { display: none; }
 
+	#welcome {	
+		background-image: url("../images/tkmaxx/welcome_iphone.jpg"), url("../images/tkmaxx/texture_blue_iphone_reverse.jpg");
+		background-repeat: no-repeat, repeat-y;
+		background-size: 100%;
+		width: 100%; }
+
+	#content { height: 100%; }
+
+	#playgame, #how-button , #info-button {
+		margin: 0 0 10px 36%;
+		top: 58%;
+		width: 50%; }
+
+		#playgame {
+			left: 0;
+			padding: 0; }
+
+		#how-button, #info-button {
+			left: 0; }
+
+	/*--------------- BACKGROUNDS ---------------*/
+
+	.question-blue {	
+		background: url("../images/tkmaxx/texture_blue_iphone.jpg") no-repeat;
+		background-size: 480px 100%;
+		width: 480px; }
+
+	.question-red {	
+		background: url("../images/tkmaxx/texture_red_iphone.jpg") repeat-y;
+		background-size: 480px;
+		width: 480px; }
+
+	.question-wood {	
+		background: url("../images/tkmaxx/texture_wood_iphone.jpg") no-repeat;
+		background-size: 480px 100%;
+		width: 480px; }
+
 	/*--------------- HEADER ---------------*/
 
 	#header {	
-		background: url("../images/tkmaxx/header_ipad.png") no-repeat bottom right;
-		background-size: 768px;	
+		background: url("../images/tkmaxx/header_iphone.png") no-repeat bottom right;
+		background-size: 480px;	
 		height: 40px }
 
 	#header h1 {
@@ -629,8 +666,8 @@ h3 {
 	/*--------------- FOOTER ---------------*/
 
 	#footer {	
-		background: url("../images/tkmaxx/footer_ipad.png");
-		background-size: 768px;
+		background: url("../images/tkmaxx/footer_iphone.png") no-repeat bottom right;
+		background-size: 480px;
 		font-size: 14px;
 		height: 40px; }
 
@@ -652,16 +689,86 @@ h3 {
 
 	ul.question-imagelist {
 		margin: 0 auto;
-		width: 100%; }
+		width: 80%; }
 
 		ul.question-imagelist li {
 			float: left;
 			list-style: none;
-			margin: 0 10% 0 -5%;
+			margin: 0 0 0 0;
 			padding: 0;
-			width: 36%; }
+			width: 85%; }
+
+	/*--------------- MULTIPLE CHOICE IMAGES ---------------*/
+
+	ul.question-multipleimage { 
+		width: 80%; }
+
+		ul.question-multipleimage li { 
+			margin: 0 0 5% -5%;
+			width: 80%; }
+
+			ul.question-multipleimage li:nth-child(3n) { margin: 0 0 5% -5%; }
+
+	/*--------------- SCORE CARD ---------------*/
+
+	.congratulations h4 { 
+		font: 30px/100% Helvetica, Arial, sans-serif; }
+
+	p.scorecard-title {
+		font: 20px/100% Helvetica, Arial, sans-serif; 
+		margin: 20px 0 0 0;}
+
+	p.scorecard-wrong {
+		font: 15px/100% Helvetica, Arial, sans-serif; 
+		margin: 20px 0 0 0; }
+
+		.scorecard-answers h5 { 
+			font-size: 10px;
+			line-height: 12px; }
+
+		ul.wrong-answers, ul.correct-answers { margin-left: -40px; }
+
+			ul.wrong-answers li { 
+				background: url("../images/tkmaxx/cross.png") no-repeat 5px -1px;
+				background-size: 7px;
+				padding: 0 0 0 15px; }
+
+			ul.correct-answers li { 
+				background: url("../images/tkmaxx/correct.png") no-repeat 7px -1px;
+				background-size: 7px;
+				padding: 0 0 0 15px; }
 
 }
+
+@media screen and (max-width: 320px) {
+
+
+	span.section-marker { display: none; }
+
+	#welcome {	
+		background: url("../images/tkmaxx/welcome_iphone.jpg") no-repeat;
+		background-size: 320px;
+		width: 320px; }
+
+	/*--------------- BACKGROUNDS ---------------*/
+
+	.question-blue {	
+		background: url("../images/tkmaxx/texture_blue_iphone.jpg") no-repeat;
+		background-size: 320px 100%;
+		width: 320px; }
+
+	.question-red {	
+		background: url("../images/tkmaxx/texture_red_iphone.jpg") repeat-y;
+		background-size: 320px;
+		width: 320px; }
+
+	.question-wood {	
+		background: url("../images/tkmaxx/texture_wood_iphone.jpg") no-repeat;
+		background-size: 320px 100%;
+		width: 320px; }
+
+}
+
 
 /*--------------- Tinting CSS ---------------*/
 

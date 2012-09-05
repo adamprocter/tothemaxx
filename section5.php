@@ -11,14 +11,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 		<!-- jQuery bits -->
 	
-	<link rel="stylesheet" href="css/jquery.mobile-1.2.0-alpha.1.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile-1.2.0-beta.1.min.css" />
 	<link rel="stylesheet" href="css/custom.css" />
 	
 	<script src="phonegap.js"></script>
-	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/jquery-1.8.1.min.js"></script>
 <script src="js/energize.js"></script>
 <script src="js/application.js"></script>
-<script src="js/jquery.mobile-1.2.0-alpha.1.min.js"></script>
+<script src="js/jquery.mobile-1.2.0-beta.1.min.js"></script>
 
 </head> 
 <body> 
@@ -42,58 +42,64 @@
                 
             $totalCorrect = 0;
             
+            mysql_connect("213.171.200.46", "tkmaxx", "onboard2012!") or die(mysql_error());
+            mysql_select_db("tkmaxx") or die(mysql_error());
+            
+            mysql_query ("INSERT INTO onboard(answer) VALUES ('s5q1 $answer5_1')") or die(mysql_error());
+            
+            mysql_query ("INSERT INTO onboard(answer) VALUES ('s5q2 $answer5_2')") or die(mysql_error());
+            mysql_query ("INSERT INTO onboard(answer) VALUES ('END OF QUIZ')") or die(mysql_error());
+            
+            
             //section5
             if (strpos($answer5_1,"topic") !==false) { $totalCorrect++; }
             if ($answer5_2 == "correct") { $totalCorrect++; }
            
                                
              
-           echo "
-               
-               	            	
+           echo "                       	            	
                		<div data-role='content' class='question-score'>
                			<div class='congratulations'>
                				<h4>Section 5 score</h4>
                
                				<p class='scorecard-title'>You scored</p>
                
-               				<p class='scorecard-score'>$totalCorrect</p>
+               				<p class='scorecard-score'>$totalCorrect</p>";
                
+  if ($totalCorrect == "2") echo "<p class='scorecard-wrong'>Well done maximum points !</p>";
                			
-               
-               			
-               		<p class='scorecard-wrong'>You got these questions wrong:</p>
-               		
-               						<div class='question-top'></div>
-               						<div class='question-box'>
-               							<div class='scorecard-answers'>
-               								<h5>3. What tools do TK Maxx use to stop internal theft?</h5>
-               		
-               								<ul class='wrong-answers'>
-               									<li>Your answer:</li>
-               									<li>Guard Dogs</li>
-               									<li>HO Reporting</li>
-               								</ul>
-               		
-               								<ul class='correct-answers'>
-               									<li>Correct answer:</li>
-               									<li>CCTV</li>
-               									<li>Hidden Cameras</li>
-               								</ul>
-               							</div>
-               						</div>
-               						<div class='question-bottom'></div>
-               		           					
-               					
-               				</div>
-               		</div>
-               			
-               		<div data-role='footer' data-theme='c' data-position='fixed' data-tap-toggle='false'></div>				
-               	";
+if ( ($answer5_2 == "wrong")  
+
+) echo "<p class='scorecard-wrong'>You answered the following incorrectly:</p>";
+         
+         		
+                        
+         if ($answer5_2 == "wrong" ) echo "<div class='question-top'></div>
+         									<div class='question-box'>
+         						 							<div class='scorecard-answers'>
+         			<h5>2. Who is the Shrink Hero?</h5>			           				 														 		
+         								<ul class='wrong-answers'>
+         							<li>Your answer:</li>
+         							<li>Pengiun the Profit Protector</li>
+         													</ul>
+         													
+         														<ul class='correct-answers'>
+         														<li>Correct answer:</li>
+         																<li>Ant-i Shrink</li>
+         															</ul>
+         								
+         						 							</div>
+         						 						</div>
+         						 						<div class='question-bottom'></div>"; 
+                 						
+               	
                
            ?>
 	
 	
+			</div> 	</div>
+		
+	<div data-role='footer' data-theme='c' data-position='fixed' data-tap-toggle='false'></div>	
 	</div>
 	
 

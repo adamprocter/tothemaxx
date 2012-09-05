@@ -11,18 +11,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 		<!-- jQuery bits -->
 	
-	<link rel="stylesheet" href="css/jquery.mobile-1.2.0-alpha.1.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile-1.2.0-beta.1.min.css" />
 	<link rel="stylesheet" href="css/custom.css" />
 	
 	<script src="phonegap.js"></script>
-	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/jquery-1.8.1.min.js"></script>
 	<script src="js/energize.js"></script>
 	<script src="js/application.js"></script>
-	<script src="js/jquery.mobile-1.2.0-alpha.1.min.js"></script>
+	<script src="js/jquery.mobile-1.2.0-beta.1.min.js"></script>
 	
 </head> 
 <body> 
-<form action="http://www.adamprocter.co.uk/wip/tkmaxxquiz/section3.php" method="post">
+<form action="http://intermediasolutions.com/apps/tkmaxx/section3.php" method="post">
 	
 	
 	<div data-role="page" id="s3q1" class="question-wood">	
@@ -117,7 +117,7 @@
 			   </div>
 		
 				<h3 class="stuck-text">Stuck?</h3>
-				<a href="#" class="stuck-button" id="stuck8" data-role="button">Remove 1 Option but lose a point</a>
+				<a href="#" class="stuck-button" id="stuck8" data-role="button">Remove one option but lose a point</a>
 			</div>
 			<div class="question-bottom"></div>
 			<a href="#s3q3" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
@@ -166,7 +166,7 @@
 						<label for="radio-s3q3c">Talk to Loss Prevention</label>
 
 						<input type="radio" name="radio-s3q3" id="radio-s3q3d" value="correct"  />
-						<label for="radio-s3q3d">Phone a friend and ask them about it</label>
+						<label for="radio-s3q3d">Ask them questions about your suspicions</label>
 				   	</fieldset>
 			   </div>
 			</div>
@@ -213,7 +213,7 @@
 						<input type="checkbox" name="checkbox-s3q4b" id="checkbox-s3q4b" class="custom" value="correct"/>
 						<label for="checkbox-s3q4b">It's OK if someone calls for you</label>
 <span id="hide9">
-						<input type="checkbox" name="checkbox-s3q4c" id="checkbox-s3q4c" class="custom" value="wrongC"/>
+						<input type="checkbox" name="checkbox-s3q4c" id="checkbox-s3q4c" class="custom" value="wrong"/>
 						<label for="checkbox-s3q4c">Everyone finds out you have called</label>
 </span>	
 					<input type="checkbox" name="checkbox-s3q4d" id="checkbox-s3q4d" class="custom" value="correct" />
@@ -222,7 +222,7 @@
 			   </div>
 		
 				<h3 class="stuck-text">Stuck?</h3>
-				<a href="#" class="stuck-button" id="stuck9" data-role="button">Remove 1 Option but lose a point</a>
+				<a href="#" class="stuck-button" id="stuck9" data-role="button">Remove one option but lose a point</a>
 			</div>
 			<div class="question-bottom"></div>
 			<a href="#s3q5" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
@@ -260,19 +260,29 @@
 				
 				<ul class="question-multipleimage clear">
 					<li>
-						<a href=""><img src="images/tkmaxx/tools-cctv.jpg" width="100%" alt="CCTV" /><br /><br />CCTV</a>
+						<img src="images/tkmaxx/tools-cctv.jpg" width="100%" alt="CCTV" />
+						<input type="checkbox" name="checkbox-s3q5a" id="checkbox-s3q5a" class="custom" value="correct" />
+						<label for="checkbox-s3q5a">CCTV</label>
 					</li>
 					<li>
-						<a href=""><img src="images/tkmaxx/tools-dogs.jpg" width="100%" alt="Guard Dogs" /><br /><br />Guard Dogs</a>
+						<img src="images/tkmaxx/tools-dogs.jpg" width="100%" alt="Guard Dogs" />
+						<input type="checkbox" name="checkbox-s3q5b" id="checkbox-s3q5b" class="custom" value="wrong" />
+						<label for="checkbox-s3q5b">Guard Dogs</label>
 					</li>
 					<li>
-						<a href=""><img src="images/tkmaxx/tools-cameras.jpg" width="100%" alt="Hidden Cameras" /><br /><br />Hidden Cameras</a>
+						<img src="images/tkmaxx/tools-cameras.jpg" width="100%" alt="Hidden Cameras" />
+						<input type="checkbox" name="checkbox-s3q5c" id="checkbox-s3q5c" class="custom" value="correct" />
+						<label for="checkbox-s3q5c">Hidden Cameras</label>
 					</li>
 					<li>
-						<a href=""><img src="images/tkmaxx/tools-reports.jpg" width="100%" alt="Reports" /><br /><br />Register Reports</a>
+						<img src="images/tkmaxx/tools-reports.jpg" width="100%" alt="Reports" />
+						<input type="checkbox" name="checkbox-s3q5d" id="checkbox-s3q5d" class="custom" value="correct" />
+						<label for="checkbox-s3q5d">Register Reports</label>
 					</li>
 					<li>
-						<a href=""><img src="images/tkmaxx/tools-ho.jpg" width="100%" alt="HO Reporting" /><br /><br />Head Office Data mining</a>
+						<img src="images/tkmaxx/tools-ho.jpg" width="100%" alt="HO Reporting" />
+						<input type="checkbox" name="checkbox-s3q5e" id="checkbox-s3q5e" class="custom" value="correct" />
+						<label for="checkbox-s3q5e">Head Office Data Mining</label>
 					</li>
 				</ul>
 			</div>
@@ -317,7 +327,7 @@
 						<label for="checkbox-s3q6a">Phone</label>
 						
 						<span id="hide10">
-						<input type="checkbox" name="checkbox-s3q6c" id="checkbox-s3q6c" class="custom" value="wrongC" />
+						<input type="checkbox" name="checkbox-s3q6c" id="checkbox-s3q6c" class="custom" value="wrong" />
 						<label for="checkbox-s3q6c">Text</label>
 						</span>
 						
@@ -328,7 +338,7 @@
 			   </div>
 		
 				<h3 class="stuck-text">Stuck?</h3>
-				<a href="#" class="stuck-button" id="stuck10" data-role="button">Remove 1 Option but lose a point</a>
+				<a href="#" class="stuck-button" id="stuck10" data-role="button">Remove one option but lose a point</a>
 			</div>
 			<div class="question-bottom"></div>
 			<a href="#s3q7" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
@@ -365,7 +375,7 @@
 				<h3 class="question">What is the CrimeLine phone number?</h3>
 				
 				<div class="question-textarea">
-					<textarea cols="80" rows="20" name="textareaCL" id="textarea-small"></textarea>
+					<textarea type="tel" cols="80" rows="20" name="textareaCL" id="textarea-small"></textarea>
 				</div>
 			</div>
 			<div class="question-bottom"></div>
@@ -423,7 +433,7 @@
 			   </div>
 		
 				<h3 class="stuck-text">Stuck?</h3>
-				<a href="#" class="stuck-button" id="stuck11" data-role="button">Remove 1 Option but lose a point</a>
+				<a href="#" class="stuck-button" id="stuck11" data-role="button">Remove one option but lose a point</a>
 			</div>
 			<div class="question-bottom"></div>
 			<a href="#s3q9" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
@@ -472,7 +482,7 @@
 						<label for="checkbox-s3q9c">Fixtures and Fittings</label>
 
 						<input type="checkbox" name="checkbox-s3q9d" id="checkbox-s3q9d" class="custom" value="correct" />
-						<label for="checkbox-s3q9d">Stationary</label>
+						<label for="checkbox-s3q9d">Stationery</label>
 
 						<input type="checkbox" name="checkbox-s3q9e" id="checkbox-s3q9e" class="custom" value="correct"/>
 						<label for="checkbox-s3q9e">Other Associates' property</label>
@@ -517,16 +527,16 @@
 				<div class="question-multiple">
 					<fieldset data-role="controlgroup">
 						<legend>Select all that apply:</legend>
-						<input type="checkbox" name="checkbox-s3q10" id="checkbox-s3q10a" value="correct"  />
-						<label for="checkbox-s3q10a">Criminal record</label>
+						<input type="checkbox" name="checkbox-s3q10a" id="checkbox-s3q10a" value="correct"  />
+						<label for="checkbox-s3q10a">They get a criminal record</label>
 
-						<input type="checkbox" name="checkbox-s3q10" id="checkbox-s3q10b" value="correct"  />
-						<label for="checkbox-s3q10b">Lose job</label>
+						<input type="checkbox" name="checkbox-s3q10b" id="checkbox-s3q10b" value="correct"  />
+						<label for="checkbox-s3q10b">They can lose their job</label>
 
-						<input type="checkbox" name="checkbox-s3q10" id="checkbox-s3q10c" value="correct"  />
-						<label for="checkbox-s3q10c">Embarrassment</label>
+						<input type="checkbox" name="checkbox-s3q10c" id="checkbox-s3q10c" value="correct"  />
+						<label for="checkbox-s3q10c">They will face embarrassment</label>
 
-						<input type="checkbox" name="checkbox-s3q10" id="checkbox-s3q10d" value="wrongD"  />
+						<input type="checkbox" name="checkbox-s3q10d" id="checkbox-s3q10d" value="wrong"  />
 						<label for="checkbox-s3q10d">Not a lot</label>
 				   	</fieldset>
 			   </div>
@@ -577,13 +587,13 @@
 						<input type="checkbox" name="checkbox-s3q11c" id="checkbox-s3q11c" class="custom" value="correct"/>
 						<label for="checkbox-s3q11c">Don't be pressured to do something you're uncomfortable with</label>
 
-						<input type="checkbox" name="checkbox-s3q11d" id="checkbox-s3q11d" class="custom" value="wrongD"/>
+						<input type="checkbox" name="checkbox-s3q11d" id="checkbox-s3q11d" class="custom" value="wrong"/>
 						<label for="checkbox-s3q11d">It's not my problem</label>
 				   	</fieldset>
 			   </div>
 		
 				<h3 class="stuck-text">Stuck?</h3>
-				<a href="#" class="stuck-button" id="stuck12" data-role="button">Remove 1 Option but lose a point</a>
+				<a href="#" class="stuck-button" id="stuck12" data-role="button">Remove one option but lose a point</a>
 			</div>
 			<div class="question-bottom"></div>
 			<a href="#s3q12" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
@@ -650,6 +660,14 @@
 				</ul>
 			</div>
 			<div class="question-bottom"></div>
+			<input type="hidden" id="deduct8" name="deduct8" value="0">
+			<input type="hidden" id="deduct9" name="deduct9" value="0">
+			<input type="hidden" id="deduct10" name="deduct10" value="0">
+			<input type="hidden" id="deduct11" name="deduct11" value="0">
+			<input type="hidden" id="deduct12" name="deduct12" value="0">
+			
+			
+			
 			<button data-prefetch type="submit" name="submit" data-rel="dialog"  value="submit-value">Section Results</button>
 			<a href="tkmaxx004.html" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right" data-ajax="false" data-prefetch>Next Section</a>
 		</div>

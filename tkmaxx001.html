@@ -11,19 +11,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 		<!-- jQuery bits -->
 	
-	<link rel="stylesheet" href="css/jquery.mobile-1.2.0-alpha.1.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile-1.2.0-beta.1.min.css" />
 	<link rel="stylesheet" href="css/custom.css" />
 	
 	<script src="phonegap.js"></script>
-	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/jquery-1.8.1.min.js"></script>
 	<script src="js/energize.js"></script>
 	<script src="js/application.js"></script>
-	<script src="js/jquery.mobile-1.2.0-alpha.1.min.js"></script>
+	<script src="js/jquery.mobile-1.2.0-beta.1.min.js"></script>
 	
 
 </head> 
 <body> 
-<form action="http://www.adamprocter.co.uk/wip/tkmaxxquiz/section1.php" method="post">
+<form action="http://intermediasolutions.com/apps/tkmaxx/section1.php" method="post">
 
 	<div data-role="page" id="welcome">
 		<!--<div data-role="header">
@@ -34,6 +34,8 @@
 			<a href="#s1q1" id="playgame" data-role="button" data-icon="arrow-r" data-iconpos="right" data-prefetch>Play the game</a>
 			<a href="#how" id="how-button" data-rel="dialog" data-role="button">How it works</a>
 			<a href="#info" id="info-button" data-role="button">More info</a>
+
+			<img src="images/tkmaxx/damagedevil_home.png" width="40%" alt="Damage Devil" class="welcome_devil" />
 		</div>
 		
 		<!--<div data-role="footer" data-theme="c">
@@ -101,10 +103,10 @@
 					<fieldset data-role="controlgroup">
 						<legend>Select the correct answer:</legend>
 						<input type="radio" name="radio-s1q1" id="radio-s1q1a" value="correct" />
-						<label for="radio-s1q1a">'Unknown loss'. The cash difference between what should be in the store and what actually is in the store. This is calculated once a year at inventory</label>
+						<label for="radio-s1q1a">'Unknown loss'. The cash difference between what should be in the store and what actually is in the store</label>
 
 						<input type="radio" name="radio-s1q1" id="radio-s1q1b" value="wrong2"  />
-						<label for="radio-s1q1b">What happens when clothes are washed too hot</label>
+						<label for="radio-s1q1b">It's what happens when clothes are washed too hot</label>
 
 						<input type="radio" name="radio-s1q1" id="radio-s1q1c" value="wrong3"  />
 						<label for="radio-s1q1c">A psychiatrist</label>
@@ -159,7 +161,7 @@
 			   </div>
 		
 				<h3 class="stuck-text">Stuck?</h3>
-				<a href="#" class="stuck-button" id="stuck1" data-role="button">Remove 1 Option but lose a point</a>
+				<a href="#" class="stuck-button" id="stuck1" data-role="button">Remove one option but lose a point</a>
 			</div>
 			<div class="question-bottom"></div>
 			<a href="#s1q3" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
@@ -185,7 +187,7 @@
 					<li>4</li>
 				</ul>
 
-				<h3 class="question">If we reduce shrink, what could we do with the savings?</h3>
+				<h3 class="question">lf we reduce shrink, what could we do with the savings?</h3>
 			
 				<div class="question-multiple">
 					<fieldset data-role="controlgroup">
@@ -197,16 +199,16 @@
 						<label for="checkbox-s1q3b">More associates</label>
 </span>
 						<input type="checkbox" name="checkbox-s1q3" id="checkbox-s1q3c" class="custom" value="Facilities"/>
-						<label for="checkbox-s1q3c">Better Store Facilities</label>
+						<label for="checkbox-s1q3c">Better store facilities</label>
 						
 						<input type="checkbox" name="checkbox-s1q3" id="checkbox-s1q3d" class="custom" value="Ferrari"/>
-						<label for="checkbox-s1q3d">Buy a Ferrari for everyone in LP</label>
+						<label for="checkbox-s1q3d">Buy everyone in LP a Ferrari</label>
 						
 				   	</fieldset>
 			   </div>
 		
 				<h3 class="stuck-text">Stuck?</h3>
-				<a href="#" class="stuck-button" id="stuck2" data-role="button">Remove 1 Option but lose a point</a>
+				<a href="#" class="stuck-button" id="stuck2" data-role="button">Remove one option but lose a point</a>
 			</div>
 			<div class="question-bottom"></div>
 			<a href="#s1q4" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
@@ -237,21 +239,21 @@
 				<div class="question-multiple">
 					<fieldset data-role="controlgroup">
 						<legend>Select all that apply:</legend>
-						<input type="checkbox" name="checkbox-s1q4" id="checkbox-s1q4a" value="correct"  />
+			
+						
+						<input type="checkbox" name="checkbox-s1q4a" id="checkbox-s1q4a" class="custom" value="correct"/>
 						<label for="checkbox-s1q4a">Loss Prevention</label>
-
-						<input type="checkbox" name="checkbox-s1q4" id="checkbox-s1q4b" value="correct"  />
+						<input type="checkbox" name="checkbox-s1q4b" id="checkbox-s1q4b" class="custom" value="correct"/>
 						<label for="checkbox-s1q4b">Store manager</label>
-
-						<input type="checkbox" name="checkbox-s1q4" id="checkbox-s1q4c" value="correct"  />
+						<input type="checkbox" name="checkbox-s1q4c" id="checkbox-s1q4c" class="custom" value="correct"/>
 						<label for="checkbox-s1q4c">My supervisor</label>
-
-						<input type="checkbox" name="checkbox-s1q4" id="checkbox-s1q4d" value="correct"  />
+						<input type="checkbox" name="checkbox-s1q4d" id="checkbox-s1q4d" class="custom" value="correct"/>
 						<label for="checkbox-s1q4d">Everyone</label>
 				   	</fieldset>
 			   </div>
 			</div>
-			
+			<input type="hidden" id="deduct" name="deduct" value="0">
+				<input type="hidden" id="deduct2" name="deduct2" value="0">
 	
 			<div class="question-bottom"></div>
 			<button data-prefetch type="submit" name="submit" data-rel="dialog" value="submit-value">Section Results</button>
