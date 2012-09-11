@@ -2,11 +2,7 @@
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
 	id		= "uk.co.groovyapps.tkmaxxonboard"
-<<<<<<< HEAD
-	version 	= "0.76">
-=======
 	version 	= "0.77">
->>>>>>> trying ChildBrowser
 
 	<name>TKMaxx</name>
 
@@ -37,7 +33,7 @@ TKMaxx OnBoard - Mark Applin and Adam Procter.
     <gap:splash src="splash/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
     <gap:splash src="splash/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
 
-	<gap:plugin name="ChildBrowser" />
+
 	
 	<!-- the following is useful for Build when you have many icons; this way
 	    Blackberry will use the correct icon --> 
@@ -61,10 +57,11 @@ TKMaxx OnBoard - Mark Applin and Adam Procter.
 	    <feature name="http://api.phonegap.com/1.0/file"/>
 	    <feature name="http://api.phonegap.com/1.0/media"/>
 	    <feature name="http://api.phonegap.com/1.0/network"/>
-	        
+	    <feature name="http://plugins.phonegap.com/ChildBrowser/3.0.4" />    
 	    <access origin="http://intermediasolutions.com" subdomains="true" />
 	    <access origin="http://www.intermediasolutions.com" subdomains="true" />
 	    <access origin="http://apps.intermediasolutions.com" subdomains="true" />
 	    <preference name="orientation" value="portrait"/>
+	    <preference name="prerendered-icon" value="true" />
 
 </widget>
