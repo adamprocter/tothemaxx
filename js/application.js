@@ -1,8 +1,11 @@
 // remap jQuery to $
 (function($){})(window.jQuery);
 
+//document.addEventListener("deviceready", onDeviceReady, false);
+
 
 $(document).on("pageinit", function(event){
+
 
 $.mobile.buttonMarkup.hoverDelay = 0;
 $.preloadCssImages();

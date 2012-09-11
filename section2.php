@@ -11,14 +11,14 @@ index.html
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<!-- jQuery bits -->
 
-<link rel="stylesheet" href="css/jquery.mobile-1.2.0-beta.1.min.css" />
+<link rel="stylesheet" href="css/jquery.mobile-1.2.0-alpha.1.min.css" />
 <link rel="stylesheet" href="css/custom.css" />
 
 <script src="phonegap.js"></script>
-<script src="js/jquery-1.8.1.min.js"></script>
+<script src="js/jquery-1.7.2.min.js"></script>
 <script src="js/energize.js"></script>
 <script src="js/application.js"></script>
-<script src="js/jquery.mobile-1.2.0-beta.1.min.js"></script>
+<script src="js/jquery.mobile-1.2.0-alpha.1.min.js"></script>
 
 
 </head> 
@@ -31,6 +31,8 @@ index.html
 	
 
         <?php
+        
+        session_start(); 
 //section 2 question1 
 $answer2_1 = $_POST['radio-s2q1'];
 
@@ -115,6 +117,11 @@ $answer2_37c = $_POST['select-s2q16c'];
 
 //question17
 $answer2_37 = $_POST['radio-s2q17'];                        
+ $deduct3 = $_POST['deduct3'];
+ $deduct4 = $_POST['deduct4'];
+ $deduct5 = $_POST['deduc5'];
+ $deduct6 = $_POST['deduct6'];
+$deduct7 = $_POST['deduct7'];
             
         $totalCorrect = 0;
         
@@ -256,6 +263,10 @@ mysql_query ("INSERT INTO onboard(answer) VALUES ('s2q16 $answer2_36a')") or die
 mysql_query ("INSERT INTO onboard(answer) VALUES ('s2q16 $answer2_36b')") or die(mysql_error());
 mysql_query ("INSERT INTO onboard(answer) VALUES ('s2q16 $answer2_37c')") or die(mysql_error());
 mysql_query ("INSERT INTO onboard(answer) VALUES ('s2q17 $answer2_37')") or die(mysql_error());
+ 
+ $_SESSION['section2total'] = $sumTotal;
+ $_SESSION['section2total']+$_SESSION['section1total'];
+
                            
        echo "
            
@@ -271,7 +282,7 @@ mysql_query ("INSERT INTO onboard(answer) VALUES ('s2q17 $answer2_37')") or die(
            		";
            		
            		
-           		 if ($sumTotal == "34") echo "<p class='scorecard-wrong'>Well done maximum points !</p>";
+           		 if ($sumTotal >= "35") echo "<p class='scorecard-wrong'>Well done maximum points !</p>";
            		
            		if (
            		($answer2_1 == "wrongB") || ($answer2_1 == "wrongC") || ($answer2_1 == "wrongD") || ($answer2_2 == "wrongA") || ($answer2_6 == "wrongA" || $answer2_6 == "wrongB" || $answer2_6 ==  "wrongD")
@@ -650,6 +661,8 @@ if ($answer2_37 ==  "wrongB") echo "<div class='question-top'></div>
            
        ?>
 </div>
+          <a href="#" data-role="button" data-rel="back" data-theme="b">Close</a> 		 
+
 </div>
 	
 <div data-role='footer' data-theme='c' data-position='fixed' data-tap-toggle='false'></div>

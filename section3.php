@@ -11,14 +11,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 		<!-- jQuery bits -->
 	
-	<link rel="stylesheet" href="css/jquery.mobile-1.2.0-beta.1.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile-1.2.0-alpha.1.min.css" />
 	<link rel="stylesheet" href="css/custom.css" />
 	
 	<script src="phonegap.js"></script>
-	<script src="js/jquery-1.8.1.min.js"></script>
+	<script src="js/jquery-1.7.2.min.js"></script>
 <script src="js/energize.js"></script>
 <script src="js/application.js"></script>
-<script src="js/jquery.mobile-1.2.0-beta.1.min.js"></script>
+<script src="js/jquery.mobile-1.2.0-alpha.1.min.js"></script>
 	
 
 </head> 
@@ -31,6 +31,8 @@
 		
 	
 	        <?php
+	        
+	        session_start(); 
      
  //section 3 question1 
  $answer3_1 = $_POST['radio-s3q1'];
@@ -98,7 +100,11 @@ $answer3_26c = $_POST['checkbox-s3q10d'];
  $answer3_32 = $_POST['select-s3q12b'];
  $answer3_33 = $_POST['select-s3q12c'];
  
-     
+ $deduct8 = $_POST['deduct8'];
+  $deduct9 = $_POST['deduct9'];
+  $deduct10 = $_POST['deduc10'];
+  $deduct11 = $_POST['deduct11'];
+ $deduct12 = $_POST['deduct12'];    
                 
             $totalCorrect = 0;
             
@@ -203,6 +209,10 @@ mysql_query ("INSERT INTO onboard(answer) VALUES ('s3q11 $answer3_30')") or die(
 mysql_query ("INSERT INTO onboard(answer) VALUES ('s3q12 $answer3_31')") or die(mysql_error());
 mysql_query ("INSERT INTO onboard(answer) VALUES ('s3q12 $answer3_32')") or die(mysql_error());
 mysql_query ("INSERT INTO onboard(answer) VALUES ('s3q12 $answer3_33')") or die(mysql_error());
+
+$_SESSION['section3total'] = $sumTotal;
+$_SESSION['section2total']+$_SESSION['section1total']+$_SESSION['section3total'];
+
                                           
             echo "
                 
@@ -462,6 +472,8 @@ if ( ($answer3_31 == "wrong_1b" || $answer3_31 == "wrong_1c") ||($answer3_32 == 
 	
 	
 			</div>
+			          <a href="#" data-role="button" data-rel="back" data-theme="b">Close</a> 		 
+			
 	</div>
 		
 	<div data-role='footer' data-theme='c' data-position='fixed' data-tap-toggle='false'></div>	

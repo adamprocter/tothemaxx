@@ -11,14 +11,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<!-- jQuery bits -->
 
-<link rel="stylesheet" href="css/jquery.mobile-1.2.0-beta.1.min.css" />
+<link rel="stylesheet" href="css/jquery.mobile-1.2.0-alpha.1.min.css" />
 <link rel="stylesheet" href="css/custom.css" />
 
 <script src="phonegap.js"></script>
-<script src="js/jquery-1.8.1.min.js"></script>
+<script src="js/jquery-1.7.2.min.js"></script>
 <script src="js/energize.js"></script>
 <script src="js/application.js"></script>
-<script src="js/jquery.mobile-1.2.0-beta.1.min.js"></script>
+<script src="js/jquery.mobile-1.2.0-alpha.1.min.js">
+</script>
 
 </head> 
 <body> 
@@ -30,6 +31,9 @@
 		
 	
 	        <?php
+	        
+	        session_start(); 
+	        
 //            the name of the html thing
             $answer1_1 = $_POST['radio-s1q1'];
             
@@ -59,7 +63,7 @@
             //question2
             if ($answer1_2 == "correct") { $totalCorrect++; }
             if ($answer1_3 == "correct") { $totalCorrect++; }
-            if ($answer1_5 == "correct") { $totalCorrect++; }
+            if ($answer1_4 == "correct") { $totalCorrect++; }
            
            //question4
            if ($answer1_7 == "correct") { $totalCorrect++; }
@@ -70,6 +74,7 @@
          
            
       	   $sumTotal = $totalCorrect-$deduct-$deduct2; 
+	       
 
 
 // Make a MySQL Connection
@@ -88,10 +93,8 @@ mysql_query ("INSERT INTO onboard(answer) VALUES ('s1q4 $answer1_7a')") or die(m
 mysql_query ("INSERT INTO onboard(answer) VALUES ('s1q4 $answer1_7b')") or die(mysql_error());
 mysql_query ("INSERT INTO onboard(answer) VALUES ('s1q4 $answer1_7c')") or die(mysql_error());
 
-
-// echo "<h2>Section 1 results - </h2> <strong>Q1</strong> $answer1_1<br /> <strong>Q2</strong> $answer1_2, $answer1_3, $answer1_4, $answer1_5<br /> <strong>Q3</strong> $answer1_6<br /> <strong>Q4</strong> $answer1_7,$answer1_7a,$answer1_7b,$answer1_7c <br />
-// <h2>wrong answers</h2>";
-// 
+$_SESSION['section1total'] = $sumTotal;
+echo "sectiontotal ". $_SESSION['section1total']; //retrieve data
 
             echo "       
             	    
@@ -102,12 +105,13 @@ mysql_query ("INSERT INTO onboard(answer) VALUES ('s1q4 $answer1_7c')") or die(m
             				<p class='scorecard-title'>You scored</p>
             
             				<p class='scorecard-score'>$sumTotal</p>
+
             
             			
             ";
          
          
-          if ($sumTotal == "8") echo "<p class='scorecard-wrong'>Well done maximum points !</p>";
+          if ($sumTotal == "9") echo "<p class='scorecard-wrong'>Well done maximum points !</p>";
             
             if (($answer1_1 == "wrong2") || ($answer1_1 == "wrong3") || ($answer1_5 == "wrongD")) echo "<p class='scorecard-wrong'>You answered the following incorrectly:</p>";
             
@@ -191,8 +195,11 @@ mysql_query ("INSERT INTO onboard(answer) VALUES ('s1q4 $answer1_7c')") or die(m
                     		                   				
                                   
           ?>      	
-          </div>			 
-            		</div>
+          </div>
+         
+          <input type='hidden' id='s1score' name='s1score' value='$sumTotal'>	
+          <a href="#" data-role="button" data-rel="back" data-theme="b">Close</a> 
+          </div>
             			
             		<div data-role='footer' data-theme='c' data-position='fixed' data-tap-toggle='false'></div>				
          	

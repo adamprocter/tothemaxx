@@ -11,14 +11,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 		<!-- jQuery bits -->
 	
-	<link rel="stylesheet" href="css/jquery.mobile-1.2.0-beta.1.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile-1.2.0-alpha.1.min.css" />
 	<link rel="stylesheet" href="css/custom.css" />
 	
 	<script src="phonegap.js"></script>
-	<script src="js/jquery-1.8.1.min.js"></script>
+	<script src="js/jquery-1.7.2.min.js"></script>
 <script src="js/energize.js"></script>
 <script src="js/application.js"></script>
-<script src="js/jquery.mobile-1.2.0-beta.1.min.js"></script>
+<script src="js/jquery.mobile-1.2.0-alpha.1.min.js"></script>
 
 </head> 
 <body> 
@@ -31,6 +31,8 @@
 		
 	
 	        <?php
+	        
+	        session_start(); 
 //section 5 q1  free form
  $answer5_1 = $_POST['textareaST'];
 
@@ -52,21 +54,26 @@
             
             
             //section5
-            if (strpos($answer5_1,"topic") !==false) { $totalCorrect++; }
+//            if (strpos($answer5_1,"topic") !==false) { $totalCorrect++; }
+
+$totalCorrect++;
             if ($answer5_2 == "correct") { $totalCorrect++; }
            
-                               
+                $sumTotal = $totalCorrect;               
+            
+$_SESSION['section5total'] = $sumTotal;
+$hello = $_SESSION['section2total']+$_SESSION['section1total']+$_SESSION['section3total']+$_SESSION['section4total']+$_SESSION['section5total'];
              
-           echo "                       	            	
+           echo "                      	            	
                		<div data-role='content' class='question-score'>
                			<div class='congratulations'>
                				<h4>Section 5 score</h4>
                
                				<p class='scorecard-title'>You scored</p>
                
-               				<p class='scorecard-score'>$totalCorrect</p>";
+               				<p class='scorecard-score'>$sumTotal</p>";
                
-  if ($totalCorrect == "2") echo "<p class='scorecard-wrong'>Well done maximum points !</p>";
+  if ($sumTotal == "2") echo "<p class='scorecard-wrong'>Well done maximum points !</p>";
                			
 if ( ($answer5_2 == "wrong")  
 
@@ -97,7 +104,10 @@ if ( ($answer5_2 == "wrong")
            ?>
 	
 	
-			</div> 	</div>
+			</div> 	
+			          <a href="#" data-role="button" data-rel="back" data-theme="b">Close</a> 		 
+			
+			</div>
 		
 	<div data-role='footer' data-theme='c' data-position='fixed' data-tap-toggle='false'></div>	
 	</div>

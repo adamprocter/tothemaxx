@@ -11,8 +11,9 @@
 	START
 ----------------------------------------------------------------*/
 
-
 .ui-page { -webkit-backface-visibility: hidden; } 
+
+div.ui-slider { width: 58%; }
 
 
 body { 
@@ -48,6 +49,8 @@ h3 {
 .damagedevil {
 	margin: -8% 0 -6% 55%;
 	width: 35%; }
+
+
 
 /*----------------------------------------------------------------
 	WELCOME SCREEN
@@ -110,6 +113,11 @@ h3 {
 
 .question-score {	
 	background: url("../images/tkmaxx/texture_score_ipad.jpg") repeat;
+	background-size: 768px 1024px;
+	width: 768px; }
+
+.question-finalscore {	
+	background: url("../images/tkmaxx/texture_finalscore_ipad.jpg") repeat;
 	background-size: 768px 1024px;
 	width: 768px; }
 
@@ -342,15 +350,13 @@ h3 {
 		font: 60px/100% Helvetica, Arial, sans-serif;
 		font-weight: bold;
 		margin: 12% 0 0 0;
-		padding: 0;
-		text-transform: uppercase; }
+		padding: 0; }
 
 	p.scorecard-title {
 		font: 40px/100% Helvetica, Arial, sans-serif; 
 		font-weight: bold;
 		margin: 40px 0 0 0;
-		padding: 0;
-		text-transform: uppercase; }
+		padding: 0; }
 
 	p.scorecard-wrong {
 		font: 30px/100% Helvetica, Arial, sans-serif; 
@@ -411,7 +417,7 @@ h3 {
 		font: 90px/100% Helvetica, Arial, sans-serif;
 		font-weight: bold;
 		margin: 30px auto 0 auto;
-		padding: 35px 0 30px 0;
+		padding: 28px 0 30px 0;
 		width: 188px; }
 
 	p.scorecard-percent {
@@ -420,7 +426,7 @@ h3 {
 		font: 60px/100% Helvetica, Arial, sans-serif;
 		font-weight: bold;
 		margin: 30px auto 0 auto;
-		padding: 30px 0;
+		padding: 23px 0 37px 0;
 		width: 188px; }
 
 	p.scorecard-text {
@@ -456,6 +462,8 @@ h3 {
 				margin: 5% auto 5% auto;
 				text-transform: none;
 				width: 55%; }
+
+.nomargin { margin: 0 0 0 0; }
 
 /*----------------------------------------------------------------
 	MEDIA QUERIES
@@ -645,6 +653,11 @@ h3 {
 		background-size: 480px 100%;
 		width: 480px; }
 
+	.question-finalscore {	
+		background: url("../images/tkmaxx/texture_finalscore_iphone.jpg") no-repeat;
+		background-size: 480px;
+		width: 480px; }
+
 	/*--------------- HEADER ---------------*/
 
 	#header {	
@@ -716,27 +729,33 @@ h3 {
 
 	p.scorecard-title {
 		font: 20px/100% Helvetica, Arial, sans-serif; 
-		margin: 20px 0 0 0;}
-
-	p.scorecard-wrong {
-		font: 15px/100% Helvetica, Arial, sans-serif; 
 		margin: 20px 0 0 0; }
 
+	p.scorecard-wrong {
+		font: 16px/100% Helvetica, Arial, sans-serif; 
+		margin: 20px 0 25px 0; }
+
+	.scorecard-answers { padding: 15px 0 0 0; }
+
 		.scorecard-answers h5 { 
-			font-size: 10px;
-			line-height: 12px; }
+			font-size: 16px;
+			line-height: 20px; }
 
 		ul.wrong-answers, ul.correct-answers { margin-left: -40px; }
 
 			ul.wrong-answers li { 
-				background: url("../images/tkmaxx/cross.png") no-repeat 5px -1px;
-				background-size: 7px;
-				padding: 0 0 0 15px; }
+				background: url("../images/tkmaxx/cross.png") no-repeat 5px 1px;
+				background-size: 14px;
+				padding: 0 0 0 23px; }
 
 			ul.correct-answers li { 
-				background: url("../images/tkmaxx/correct.png") no-repeat 7px -1px;
-				background-size: 7px;
-				padding: 0 0 0 15px; }
+				background: url("../images/tkmaxx/correct.png") no-repeat 3px 1px;
+				background-size: 14px;
+				padding: 0 0 0 20px; }
+
+	p.scorecard-text {
+		font: 17px/20px Helvetica, Arial, sans-serif; 
+		margin: 20px auto; }
 
 }
 

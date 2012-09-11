@@ -11,14 +11,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<!-- jQuery bits -->
 
-<link rel="stylesheet" href="css/jquery.mobile-1.2.0-beta.1.min.css" />
+<link rel="stylesheet" href="css/jquery.mobile-1.2.0-alpha.1.min.css" />
 <link rel="stylesheet" href="css/custom.css" />
 
 <script src="phonegap.js"></script>
-<script src="js/jquery-1.8.1.min.js"></script>
+<script src="js/jquery-1.7.2.min.js"></script>
 <script src="js/energize.js"></script>
 <script src="js/application.js"></script>
-<script src="js/jquery.mobile-1.2.0-beta.1.min.js"></script>
+<script src="js/jquery.mobile-1.2.0-alpha.1.min.js"></script>
 
 
 </head> 
@@ -31,6 +31,7 @@
 		
 	
 	        <?php
+	        session_start(); 
 //section 4 q1
   $answer4_1 = $_POST['radio-s4q1'];
   
@@ -73,7 +74,11 @@ $answer4_3 = $_POST['radio-s4q3'];
   
   //question10
   $answer4_15 = $_POST['radio-s4q10'];                        
-          
+  
+  $deduct13 = $_POST['deduct13'];
+   $deduct14 = $_POST['deduct14'];
+   $deduct15 = $_POST['deduct15'];
+      
                 
             $totalCorrect = 0;
             
@@ -139,6 +144,8 @@ mysql_query ("INSERT INTO onboard(answer) VALUES ('s4q9 $answer4_14')") or die(m
 
 mysql_query ("INSERT INTO onboard(answer) VALUES ('s4q10 $answer4_15')") or die(mysql_error());
 
+$_SESSION['section4total'] = $sumTotal;
+$_SESSION['section2total']+$_SESSION['section1total']+$_SESSION['section3total']+$_SESSION['section4total'];
 
            echo "    
                	            	
@@ -414,6 +421,8 @@ if ($answer4_12 < 75 ) echo "<div class='question-top'></div>
            ?>
 	
 	</div>
+	          <a href="#" data-role="button" data-rel="back" data-theme="b">Close</a> 		 
+	
 	</div>
 		
 	<div data-role='footer' data-theme='c' data-position='fixed' data-tap-toggle='false'></div>	

@@ -9,6 +9,7 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no" />
 		<!-- jQuery bits -->
 	
 	<link rel="stylesheet" href="css/jquery.mobile-1.2.0-beta.1.min.css" />
@@ -87,16 +88,43 @@
 			<div class="question-bottom"></div>
 		
 			<button data-prefetch type="submit" name="submit" data-rel="dialog" value="submit-value">Final Section Score</button>
+
+<!--			<a href="#finalscore" class="nextquestion" data-role="button">Finish</a>-->
+							<a href="finalscore.php" class="nextquestion" data-role="button">Finish</a>
 				
 		</div>
 		
 		<div data-role="footer" id="footer" data-theme="c" data-position="fixed" data-tap-toggle="false">			<p></p>
-		</div>						
+		</div>		
 	</div>
 
-</form>
+<!--	<div data-role="page" id="finalscore" class="question-finalscore">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Final Score</h1>
+		</div>
 	
+		<div data-role="content">
+			<div class="congratulations">
+   				<h4>Congratulations!</h4>
 
-		
+   				<p class="scorecard-title">You've finished the quiz!</p>
+   
+   				<p class="scorecard-title">You scored</p>
+   
+   				<p class="scorecard-score">152</p>			<!-- total score goes here --*>
+
+   				<p class="scorecard-percent">100%</p>		<!-- percentage goes here if included --*>
+
+   				<p class="scorecard-text">Go to the Store leaderboard poster and record your store.</p>
+
+   				<a href="index.html" class="nextquestion" data-role="button">Home</a>
+   			</div>
+		</div>	
+
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed" data-tap-toggle="false">			<p></p>
+		</div>			
+	</div>-->
+</form>
+			
 </body>
 </html>
