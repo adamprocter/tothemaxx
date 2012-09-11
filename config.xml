@@ -63,5 +63,6 @@
 	    <access origin="http://apps.intermediasolutions.com" subdomains="true" />
 	    <preference name="orientation" value="portrait"/>
 	    <preference name="prerendered-icon" value="true" />
+	    <preference name="useBrowserHistory" value="true" />
 
 </widget>
