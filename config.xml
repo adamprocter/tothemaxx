@@ -2,12 +2,12 @@
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
 	id		= "uk.co.groovyapps.tkmaxxonboard"
-	version 	= "0.77">
+	version 	= "0.78">
 
-	<name>TKMaxx</name>
+	<name>ShrinkAppd</name>
 
 	<description>
-TKMaxx OnBoard - Mark Applin and Adam Procter.
+	ShrinkAppd
 	http://www.intermediasolutions.com
 	@IntermediaSolutions
 	</description>

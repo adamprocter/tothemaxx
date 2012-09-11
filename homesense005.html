@@ -1,0 +1,130 @@
+<!--
+	jQuery Mobile Boilerplate
+	index.html
+-->
+<!doctype html>
+<html>
+<head>
+	<title>Do The Right Thing TK</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no" />
+		<!-- jQuery bits -->
+	
+	<link rel="stylesheet" href="css/jquery.mobile-1.2.0-beta.1.min.css" />
+	<link rel="stylesheet" href="css/custom.css" />
+	
+	<script src="phonegap.js"></script>
+	<script src="js/jquery-1.8.1.min.js"></script>
+<script src="js/energize.js"></script>
+<script src="js/application.js"></script>
+<script src="js/jquery.mobile-1.2.0-beta.1.min.js"></script>
+	
+
+</head> 
+<body> 
+<form action="http://intermediasolutions.com/apps/tkmaxx/section5hs.php" method="post">
+
+
+	<div data-role="page" id="s5q1" class="question-wood">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Shrink wall</h1>
+			<h2><span class="section-marker">Section</span> <span>5</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="selected">1</li>
+					<li>2</li>
+				</ul>
+
+				<h3 class="question">What was last month's Shrink topic?</h3>
+				
+				<div class="question-textarea">
+					<textarea cols="80" rows="20" name="textareaST" id="textarea-small"></textarea>
+				</div>
+			</div>
+			<div class="question-bottom"></div>
+			<a href="#s5q2" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+		</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed" data-tap-toggle="false">			<p class="countdown"></p>
+		</div>				
+	</div>
+
+	<div data-role="page" id="s5q2" class="question-wood">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Shrink wall</h1>
+			<h2><span class="section-marker">Section</span> <span>5</span> <em>of</em> <span>5</span></h2>
+		</div>
+	
+		<div data-role="content">
+			<div class="question-top"></div>
+			<div class="question-box">
+				<ul class="question-numbers">
+					<li class="correct">1</li>
+					<li class="selected">2</li>
+				</ul>
+
+				<h3 class="question">Who is the Shrink Hero?</h3>
+
+				<img src="images/tkmaxx/shrink-hero-penguin.jpg" width="45%" alt="Penguin the Profit Protector" />
+				<img src="images/tkmaxx/shrink-hero-ant.jpg" width="45%" alt="Ant-I Shrink" />
+				
+				<div class="question-multiple">
+					<fieldset data-role="controlgroup">
+						<legend>Select the correct answer:</legend>
+						<input type="radio" name="radio-s5q2" id="radio-s5q2a" value="wrong"  />
+						<label for="radio-s5q2a">Penguin the Profit Protector</label>
+
+						<input type="radio" name="radio-s5q2" id="radio-s5q2b" value="correct"  />
+						<label for="radio-s5q2b">Ant-i Shrink</label>
+				   	</fieldset>
+			   </div>
+			</div>
+			<div class="question-bottom"></div>
+		
+			<button data-prefetch type="submit" name="submit" data-rel="dialog" value="submit-value">Final Section Score</button>
+
+<!--			<a href="#finalscore" class="nextquestion" data-role="button">Finish</a>-->
+							<a href="finalscorehs.php" class="nextquestion" data-role="button">Finish</a>
+				
+		</div>
+		
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed" data-tap-toggle="false">			<p></p>
+		</div>		
+	</div>
+
+<!--	<div data-role="page" id="finalscore" class="question-finalscore">	
+		<div data-role="header" id="header" data-theme="c">
+			<h1>Final Score</h1>
+		</div>
+	
+		<div data-role="content">
+			<div class="congratulations">
+   				<h4>Congratulations!</h4>
+
+   				<p class="scorecard-title">You've finished the quiz!</p>
+   
+   				<p class="scorecard-title">You scored</p>
+   
+   				<p class="scorecard-score">152</p>			<!-- total score goes here --*>
+
+   				<p class="scorecard-percent">100%</p>		<!-- percentage goes here if included --*>
+
+   				<p class="scorecard-text">Go to the Store leaderboard poster and record your store.</p>
+
+   				<a href="index.html" class="nextquestion" data-role="button">Home</a>
+   			</div>
+		</div>	
+
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed" data-tap-toggle="false">			<p></p>
+		</div>			
+	</div>-->
+</form>
+			
+</body>
+</html>
