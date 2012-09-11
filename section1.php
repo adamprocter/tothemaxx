@@ -94,7 +94,6 @@ mysql_query ("INSERT INTO onboard(answer) VALUES ('s1q4 $answer1_7b')") or die(m
 mysql_query ("INSERT INTO onboard(answer) VALUES ('s1q4 $answer1_7c')") or die(mysql_error());
 
 $_SESSION['section1total'] = $sumTotal;
-echo "sectiontotal ". $_SESSION['section1total']; //retrieve data
 
             echo "       
             	    
@@ -199,6 +198,8 @@ echo "sectiontotal ". $_SESSION['section1total']; //retrieve data
          
           <input type='hidden' id='s1score' name='s1score' value='$sumTotal'>	
           <a href="#" data-role="button" data-rel="back" data-theme="b">Close</a> 
+          <a href="tkmaxx002.html" data-role="button" data-direction="reverse" data-theme="b">REVERSE</a> 
+          
           </div>
             			
             		<div data-role='footer' data-theme='c' data-position='fixed' data-tap-toggle='false'></div>				
