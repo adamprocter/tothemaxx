@@ -8,7 +8,7 @@
 $(document).on("pageinit", function(event){
 
 
-//$.mobile.page.prototype.options.domCache = true;
+$.mobile.page.prototype.options.domCache = true;
 $.mobile.buttonMarkup.hoverDelay = 0;
 $.preloadCssImages();
 
