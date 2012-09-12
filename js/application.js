@@ -4,11 +4,20 @@
 //document.addEventListener("deviceready", onDeviceReady, false);
 
 
+
 $(document).on("pageinit", function(event){
 
 
 $.mobile.buttonMarkup.hoverDelay = 0;
 $.preloadCssImages();
+
+$('.resultsbutton').click(function() {
+//alert('HELLO!');
+
+ $('.nextsection').css("visibility", "visible");
+ $('#resultsbutton').css("visibility", "hidden");
+  });
+
 
 $('#stuck1').click(function() {
    $('#hide1').css("display", "none");

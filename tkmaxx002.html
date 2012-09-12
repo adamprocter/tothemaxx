@@ -778,7 +778,7 @@
 							<option>Select...</option>
 							<option value="correct">Ticket does not match Gold Pen</option>
 							<option value="wrong_1b">The ticket does not match the price indicator</option>
-							<option value="wrong_1c">The white ticket has been switched</option>
+							<option value="wrong_1c">The whole ticket has been switched</option>
 							<option value="wrong_1d">The ticket has not been switched</option>												
 						</select>
 					</li>
@@ -786,9 +786,9 @@
 						<img src="images/tkmaxx/switch-price.jpg" width="87%" alt="1" />
 						<select name="select-s2q13b" id="select-choice-s2q13b">
 							<option>Select...</option>
-							<option value="wrong_2a">Red Ticket doesn't match the original ticket data</option>
+							<option value="wrong_2a">Ticket does not match Gold Pen</option>
 							<option value="wrong_2b">The ticket does not match the price indicator</option>
-							<option value="wrong_2c">The white ticket has been switched</option>
+							<option value="wrong_2c">The whole ticket has been switched</option>
 							<option value="correct">The ticket has not been switched</option>						
 						</select>
 					</li>
@@ -796,9 +796,9 @@
 						<img src="images/tkmaxx/switch-nothing.jpg" width="87%" alt="1" />
 						<select name="select-s2q13c" id="select-choice-s2q13c">
 							<option>Select...</option>
-							<option value="wrong_3a">Red Ticket doesn't match the original ticket data</option>
+							<option value="wrong_3a">Ticket does not match Gold Pen</option>
 							<option value="wrong_3b">The ticket does not match the price indicator</option>
-							<option value="correct">The white ticket has been switched</option>
+							<option value="correct">The whole ticket has been switched</option>
 							<option value="wrong_3d">The ticket has not been switched</option>						
 						</select>
 					</li>
@@ -806,9 +806,9 @@
 						<img src="images/tkmaxx/switch-sticker.jpg" width="87%" alt="1" />
 						<select name="select-s2q13d" id="select-choice-s2q13d">
 							<option>Select...</option>
-							<option value="wrong_4a">Red Ticket doesn't match the original ticket data</option>
+							<option value="wrong_4a">Ticket does not match Gold Pen</option>
 							<option value="correct">The ticket does not match the price indicator</option>
-							<option value="wrong_4c">The white ticket has been switched</option>
+							<option value="wrong_4c">The whole ticket has been switched</option>
 							<option value="wrong_4d">The ticket has not been switched</option>						
 						</select>
 					</li>
@@ -1096,9 +1096,10 @@
 			<input type="hidden" id="deduct6" name="deduct6" value="0">
 			<input type="hidden" id="deduct7" name="deduct7" value="0">
 				
-			
-			<button type="submit" name="submit" data-rel="dialog" value="submit-value" data-prefetch>Section Results</button>
-			<a href="tkmaxx003.html" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right" data-ajax="false" data-prefetch>Next Section</a>
+			<span id="resultsbutton">
+			<button class="resultsbutton" type="submit" name="submit" data-rel="dialog" value="submit-value" data-prefetch>Section Results</button>
+			</span>
+			<a href="tkmaxx003.html" class="nextquestion nextsection" data-role="button" data-icon="arrow-r" data-iconpos="right" data-ajax="false" data-prefetch>Next Section</a>
 		</div>
 			
 		<div data-role="footer" id="footer" data-theme="c" data-position="fixed" data-tap-toggle="false">			<p class="countdown"></p>

@@ -50,7 +50,13 @@ h3 {
 	margin: -8% 0 -6% 55%;
 	width: 35%; }
 
+.nextsection{
+	visibility: hidden;
+}
 
+#resultsbutton{
+	visibility: visible;
+}
 
 /*----------------------------------------------------------------
 	WELCOME SCREEN
@@ -301,7 +307,7 @@ h3 {
 .nextquestion { 
 	margin: 5% auto 10% auto;
 	text-transform: none;
-	width: 35%; }
+	width: 55%; }
 
 /*--------------- SUBMIT SCORE BUTTON ---------------*/
 /*notworking ?*/
