@@ -7,12 +7,14 @@
 
 $(document).on("pageinit", function(event){
 
- $('.nextsection').css("visibility", "hidden");
- $('#resultsbutton').css("visibility", "visible");
 
-
+//$.mobile.page.prototype.options.domCache = true;
 $.mobile.buttonMarkup.hoverDelay = 0;
 $.preloadCssImages();
+
+//
+// $('.nextsection').css("visibility", "hidden");
+// $('#resultsbutton').css("visibility", "visible");
 
 $('.resultsbutton').click(function() {
 //alert('HELLO!');
