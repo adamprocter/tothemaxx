@@ -4,17 +4,20 @@
 //document.addEventListener("deviceready", onDeviceReady, false);
 
 
-
+ 
 $(document).on("pageinit", function(event){
 
 
-$.mobile.page.prototype.options.domCache = true;
+//$.mobile.page.prototype.options.domCache = true;
 $.mobile.buttonMarkup.hoverDelay = 0;
 $.preloadCssImages();
 
-//
-// $('.nextsection').css("visibility", "hidden");
-// $('#resultsbutton').css("visibility", "visible");
+$('#pumque').click(function(){
+alert('HELLO!');
+$('.nextsection').css("visibility", "hidden");
+$('#resultsbutton').css("visibility", "visible");
+});
+
 
 $('.resultsbutton').click(function() {
 //alert('HELLO!');
