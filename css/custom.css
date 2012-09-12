@@ -469,7 +469,7 @@ h3 {
 	MEDIA QUERIES
 ----------------------------------------------------------------*/
 
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 720px) {
 
 	/*--------------- BUTTONS ---------------*/
 
@@ -491,7 +491,7 @@ h3 {
 	/*--------------- WELCOME ---------------*/
 
 	#welcome {	
-		background: url("../images/tkmaxx/welcome_iphone.png") no-repeat;
+		background: url("../images/tkmaxx/welcome_iphone.jpg") no-repeat;
 		background-size: 100%;
 		height: 100%;
 		width: 100%; }
