@@ -7,6 +7,9 @@
 
 $(document).on("pageinit", function(event){
 
+ $('.nextsection').css("visibility", "hidden");
+ $('#resultsbutton').css("visibility", "visible");
+
 
 $.mobile.buttonMarkup.hoverDelay = 0;
 $.preloadCssImages();
