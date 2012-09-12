@@ -13,7 +13,7 @@ $.mobile.buttonMarkup.hoverDelay = 0;
 $.preloadCssImages();
 
 $('#pumque').click(function(){
-alert('HELLO!');
+//alert('HELLO!');
 $('.nextsection').css("visibility", "hidden");
 $('#resultsbutton').css("visibility", "visible");
 });

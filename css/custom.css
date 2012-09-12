@@ -52,11 +52,11 @@ h3 {
 
 /*.nextsection{
 	visibility: hidden;
-}
+}*/
 
 #resultsbutton{
-	visibility: visible;
-}*/
+	visibility: hidden;
+}
 
 /*----------------------------------------------------------------
 	WELCOME SCREEN
