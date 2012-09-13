@@ -25,7 +25,7 @@
 
 </head> 
 <body> 
-<form action="http://intermediasolutions.com/apps/tkmaxx/section1hs.php" method="post">
+<form action="http://intermediasolutions.com/apps/tkmaxx/section1.php" method="post">
 
 	<div data-role="page" id="welcome">
 		<!--<div data-role="header">
@@ -193,17 +193,17 @@
 			
 				<div class="question-multiple">
 					<fieldset data-role="controlgroup">
-						<legend>Select all that apply:</legend>
-						<input type="checkbox" name="checkbox-s1q3" id="checkbox-s1q3a" class="custom" value="benefits"/>
+						<legend>Select one:</legend>
+						<input type="radio" name="checkbox-s1q3a" id="checkbox-s1q3a" class="custom" value="correct"/>
 						<label for="checkbox-s1q3a">Better benefits</label>
 <span id="hide2">
-						<input type="checkbox" name="checkbox-s1q3" id="checkbox-s1q3b" class="custom" value="associates"/>
+						<input type="radio" name="checkbox-s1q3b" id="checkbox-s1q3b" class="custom" value="correct"/>
 						<label for="checkbox-s1q3b">More associates</label>
 </span>
-						<input type="checkbox" name="checkbox-s1q3" id="checkbox-s1q3c" class="custom" value="Facilities"/>
+						<input type="radio" name="checkbox-s1q3c" id="checkbox-s1q3c" class="custom" value="correct"/>
 						<label for="checkbox-s1q3c">Better store facilities</label>
 						
-						<input type="checkbox" name="checkbox-s1q3" id="checkbox-s1q3d" class="custom" value="Ferrari"/>
+						<input type="radio" name="checkbox-s1q3d" id="checkbox-s1q3d" class="custom" value="wrong"/>
 						<label for="checkbox-s1q3d">Buy everyone in LP a Ferrari</label>
 						
 				   	</fieldset>
@@ -213,7 +213,7 @@
 				<a href="#" class="stuck-button" id="stuck2" data-role="button">Remove one option but lose a point</a>
 			</div>
 			<div class="question-bottom"></div>
-			<a href="#s1q4" id="pumque" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right">Next Question</a>
+			<a href="#s1q4" id="pumque" class="nextquestion" data-role="button" data-icon="arrow-r" data-iconpos="right" >Next Question</a>
 		</div>
 			
 		<div data-role="footer" id="footer" data-theme="c" data-position="fixed" data-tap-toggle="false">			<p class="countdown"></p>
@@ -259,9 +259,10 @@
 	
 			<div class="question-bottom"></div>
 			<span id="resultsbutton">
-			<button class="resultsbutton" data-prefetch type="submit" name="submit" data-rel="dialog" value="submit-value">Section Results</button>
-			</span>
-			<a data-prefetch href="homesense002.html" class="nextquestion nextsection" data-role="button" data-icon="arrow-r" data-iconpos="right" data-ajax="false" >Next Section</a>
+			<button data-prefetch class="resultsbutton" type="submit" name="submit" data-rel="dialog" value="submit-value">Section Results</button>
+			<span>
+						
+			<a data-prefetch href="tkmaxx002.html" class="nextquestion nextsection" data-role="button" data-icon="arrow-r" data-iconpos="right" data-ajax="false" >Next Section</a>
 					</div>
 			
 		<div data-role="footer" id="footer" data-theme="c" data-position="fixed" data-tap-toggle="false">			<p class="countdown"></p>
@@ -282,7 +283,7 @@
 				<h3 class="title">How it works</h3>
 
 				<div class="page-content">
-					Thanks for downloading the TKMaxx Shrink App. You'll be able to use your device to answer questions, perform tasks and learn how to help TKMaxx tackle loss.</div>
+					Thanks for downloading the ShrinkAppd. You'll be able to use your device to answer questions, perform tasks and learn how to help TKMaxx tackle loss.</div>
 				
 			</div>
 			<div class="question-bottom"></div>
@@ -381,7 +382,7 @@
 					<br /><br />
 					Designed and built by Intermedia Solutions &copy; 2012
 					<br />
-						<a href="" data-icon="arrow-r" data-iconpos="right" data-role="button" rel="external" style="text-decoration: none;" onClick="window.plugins.childBrowser.showWebPage('http://intermediasolutions.com/');">www.intermediasolutions.com</a><br />
+					<a href="" data-icon="arrow-r" data-iconpos="right" data-role="button" rel="external" style="text-decoration: none;" onClick="window.plugins.childBrowser.showWebPage('http://intermediasolutions.com/');">www.intermediasolutions.com</a><br />
 					01794 368925
 					<br /><br />
 					<img src="images/jq-logo.png" width="49%" alt="jQuery Logo" />

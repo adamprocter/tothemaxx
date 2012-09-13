@@ -7,7 +7,7 @@
  
 $(document).on("pageinit", function(event){
 
-
+$.mobile.phonegapNavigationEnabled = true;
 //$.mobile.page.prototype.options.domCache = true;
 $.mobile.buttonMarkup.hoverDelay = 0;
 $.preloadCssImages();
