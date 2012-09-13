@@ -13,18 +13,17 @@ $.mobile.buttonMarkup.hoverDelay = 0;
 $.preloadCssImages();
 
 $('#pumque').click(function(){
-//alert('HELLO!');
 $('.nextsection').css("visibility", "hidden");
 $('#resultsbutton').css("visibility", "visible");
 });
 
-
-$('.resultsbutton').click(function() {
+//
+//$('.resultsbutton').click(function() {
 //alert('HELLO!');
-
- $('.nextsection').css("visibility", "visible");
- $('#resultsbutton').css("visibility", "hidden");
-  });
+//
+// $('.nextsection').css("visibility", "visible");
+// $('#resultsbutton').css("visibility", "hidden");
+//  });
 
 
 $('#stuck1').click(function() {
