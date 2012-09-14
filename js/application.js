@@ -135,13 +135,13 @@ $.preloadCssImages = function(){
  				"images/tkmaxx/scorecard-percent.png",
  				"images/tkmaxx/scorecard.png",
  				"images/tkmaxx/selected.png",
- 				"images/tkmaxx/texture_blue_ipad.png",
+ 				"images/tkmaxx/texture_blue_ipad.jpg",
  				"images/tkmaxx/texture_red.jpg",
  				"images/tkmaxx/texture_score_ipad.jpg",
  				"images/tkmaxx/texture_wood_ipad.jpg",
  				"images/tkmaxx/timer.png",
- 				"images/tkmaxx/welcome_ipad.png",
- 				"images/tkmaxx/welcome_iphone.png",
+ 				"images/tkmaxx/welcome_ipad.jpg",
+ 				"images/tkmaxx/welcome_iphone.jpg",
  				"http://www.adamprocter.co.uk/wip/tkmaxxquiz/images/texture_score_ipad.jpg"
  			)
  		//--><!]]>
