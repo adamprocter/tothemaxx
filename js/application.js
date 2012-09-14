@@ -136,7 +136,7 @@ $.preloadCssImages = function(){
  				"images/tkmaxx/scorecard.png",
  				"images/tkmaxx/selected.png",
  				"images/tkmaxx/texture_blue_ipad.jpg",
- 				"images/tkmaxx/texture_red.jpg",
+ 				"images/tkmaxx/texture_red_iphone.jpg",
  				"images/tkmaxx/texture_score_ipad.jpg",
  				"images/tkmaxx/texture_wood_ipad.jpg",
  				"images/tkmaxx/timer.png",
