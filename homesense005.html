@@ -21,9 +21,11 @@
 <script src="js/application.js"></script>
 <!--<script src="js/jquery.mobile-1.2.0-beta.1.min.js"></script>-->
 <script src="js/jquery.mobile.js"></script>
+	
+
 </head> 
 <body> 
-<form action="http://intermediasolutions.com/apps/tkmaxx/section5hs.php" method="post">
+<form action="http://intermediasolutions.com/apps/tkmaxx/section5.php" method="post">
 
 
 	<div data-role="page" id="s5q1" class="question-wood">	
@@ -40,7 +42,7 @@
 					<li>2</li>
 				</ul>
 
-				<h3 class="question">What was last month's Shrink topic?</h3>
+				<h3 class="question">What was this quarter's Shrink topic?</h3>
 				
 				<div class="question-textarea">
 					<textarea cols="80" rows="20" name="textareaST" id="textarea-small"></textarea>
@@ -65,22 +67,30 @@
 			<div class="question-box">
 				<ul class="question-numbers">
 					<li class="correct">1</li>
-					<li class="selected">2</li>
+					<li class="correct">2</li>
+					<li class="correct">3</li>
+					<li class="selected">4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>10</li>
 				</ul>
 
-				<h3 class="question">Who is the Shrink Hero?</h3>
-
-				<img src="images/tkmaxx/shrink-hero-penguin.jpg" width="45%" alt="Penguin the Profit Protector" />
-				<img src="images/tkmaxx/shrink-hero-ant.jpg" width="45%" alt="Ant-I Shrink" />
-				
+				<h3 class="question">Is shrink an important issue?</h3>
+			
 				<div class="question-multiple">
 					<fieldset data-role="controlgroup">
 						<legend>Select the correct answer:</legend>
-						<input type="radio" name="radio-s5q2" id="radio-s5q2a" value="wrong"  />
-						<label for="radio-s5q2a">Penguin the Profit Protector</label>
+						<input type="radio" name="radio-s5q2" id="radio-s5q2a" value="correct"  />
+						<label for="radio-s4q3a">Yes</label>
 
-						<input type="radio" name="radio-s5q2" id="radio-s5q2b" value="correct"  />
-						<label for="radio-s5q2b">Ant-i Shrink</label>
+						<input type="radio" name="radio-s5q2" id="radio-s5q2b" value="wrong" />
+						<label for="radio-s4q3b">Quite</label>
+
+						<input type="radio" name="radio-s5q2" id="radio-s5q2c" value="wrong" />
+						<label for="radio-s4q3c">Not at all</label>
 				   	</fieldset>
 			   </div>
 			</div>
@@ -89,7 +99,7 @@
 			<button class="resultsbutton" data-prefetch type="submit" name="submit" data-rel="dialog" value="submit-value">Final Section Score</button>
 		</span>
 <!--			<a href="#finalscore" class="nextquestion" data-role="button">Finish</a>-->
-							<a href="http://intermediasolutions.com/apps/tkmaxx/finalscorehs.php" dialog-rel="dialog" class="nextquestion nextsection" data-role="button">Finish</a>
+							<a href="http://intermediasolutions.com/apps/tkmaxx/finalscore.php" dialog-rel="dialog" class="nextquestion nextsection" data-role="button">Finish</a>
 				
 		</div>
 		

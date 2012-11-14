@@ -1,1 +1,838 @@
-.ui-page{ -webkit-backface-visibility:hidden; }div.ui-slider{ width:58%; }body{ font-size:16px;line-height:24px; }.ui-content{ padding:0; }.ui-body-c .ui-link:visited{ color:#000; }.ui-body-c .ui-link:active{ color:#05d700; }.clear:after{    content:".";    display:block;    height:0;    clear:both;    visibility:hidden; }@font-face{    font-family:'dearJoe';    src:url('../fonts/dj2trial-webfont.eot');    src:url('../fonts/dj2trial-webfont.eot?#iefix') format('embedded-opentype'),        url('../fonts/dj2trial-webfont.woff') format('woff'),        url('../fonts/dj2trial-webfont.ttf') format('truetype'),        url('../fonts/dj2trial-webfont.svg#dearJoe2Regular') format('svg');    font-weight:normal;    font-style:normal; }h3{ font:36px/44px 'dearJoe',Georgia,serif;text-shadow:none; }.damagedevil{margin:-8% 0 -6% 55%;width:35%; }.nextsection{visibility:visible}#welcome{background:url("../images/tkmaxx/welcome_ipad.jpg") no-repeat;background-size:768px 1024px;width:768px; }#content{ height:1024px; }#playgame,#how-button,#info-button,.choice{margin:0 auto;text-transform:uppercase; top:550px;z-index:2; }#playgame{margin:0 auto 50px auto;padding:10px 0;width:80%; }#how-button,#info-button{margin:10px auto;width:50%; }.choice{margin:0 auto 25px auto;padding:10px 0;width:80%; }.welcome_devil{bottom:0;left:0;margin:0 0 0.5% 1%;position:absolute;z-index:1}.question-blue{background:url("../images/tkmaxx/texture_blue_ipad.jpg") no-repeat;background-size:768px 100%;width:768px; }.question-red{background:url("../images/tkmaxx/texture_red_ipad.jpg") repeat;background-size:1199px;width:768px; }.question-wood{background:url("../images/tkmaxx/texture_wood_ipad.jpg") no-repeat;background-size:100% 100%;width:768px; }.question-score{background:url("../images/tkmaxx/texture_score_ipad.jpg") repeat;background-size:768px 1024px;width:768px; }.question-finalscore{background:url("../images/tkmaxx/texture_finalscore_ipad.jpg") repeat;background-size:768px 1024px;width:768px; }#header{background:url("../images/tkmaxx/header_ipad.png") no-repeat top left;background-size:100% 58px;border:none;color:#ff4444;height:58px;text-align:center;text-transform:uppercase; }#header h1{color:#ed1b2e;font-family:Helvetica,Arial,sans-serif;font-size:28px;line-height:100%;margin:0 0 0 0;padding:16px 0 0 0;text-shadow:none; }#header h2{color:#a3a3a3;font:18px/100% Helvetica,Arial,sans-serif;float:right;margin:-25px 0 0;padding-right:50px}#header h2 em{ text-transform:lowercase; }#header h2 span{ color:#ed1b2e}.question-top{background:url("../images/tkmaxx/notepadheader_ipad.png") no-repeat 0 0;background-size:100%;margin:40px auto 0 auto;padding:5.5% 0 0 0;width:85%; }.question-bottom{background:url("../images/tkmaxx/notepadfooter_ipad.png") no-repeat 0 0;background-size:100%;margin:0 auto;padding:4% 0 0 0;width:85%; }.question-box{background-color:#fff;margin:0 auto 0 auto;padding:0 0 10px 0;width:85%; }ul.question-numbers{ margin:0 0 5% 5%;padding:20px 0 0 0; }ul.question-numbers li{color:#bfbfbf;display:inline;font:25px/100% 'dearJoe',serif;padding:10px 8px;text-decoration:none; }ul.question-numbers li.correct{background:url("../images/tkmaxx/correct.png") no-repeat center center;background-size:15px;color:#000; }ul.question-numbers li.selected{background:url("../images/tkmaxx/selected.png") no-repeat center center;background-size:23px;color:#000; }h3.question,h3.title{background:#fff;margin:0 auto 4% auto;padding:0;width:90%; }h3.title{ padding:40px 0 0 0; }.question-multiple{ margin:0 auto;width:90%; }.ui-controlgroup-label{color:#9ca6ae;font-family:Helvetica,sans-serif;font-size:12px;margin:0 0 20px 0;padding:0; }h3.stuck-text{color:#ed1b2e;margin:60px 0 0px 5%; }a.stuck-button{ margin:-50px auto 40px auto;text-transform:none;width:57%; }ul.question-multipleimage{ margin:0 auto; width:90%; }ul.question-multipleimage li{ float:left; list-style:none;margin:0 9% 7% -20px;width:29%; }ul.question-multipleimage li:nth-child(3n){ margin:0 0 7% -20px; }ul.question-multipleimage li img{ background:url("../images/tkmaxx/image-background.png") no-repeat 0 0;background-size:100%;color:#000;display:block;line-height:22px;padding:10px 10px 25px 10px; }ul.question-imagelist{margin:0 auto;width:100%; }ul.question-imagelist li{float:left;list-style:none;margin:0 9% 0 0;padding:0;width:36%; }ul.question-imagelist li:nth-child(2n){ margin:0 0 0 0; }ul.question-imagelist li img{background:url("../images/tkmaxx/image-background.png") no-repeat 0 0;background-size:100%;padding:7% 7% 13% 7% }.ui-select{ margin:-5px 0 20px 0;padding:0;position:relative;width:100% }.question-textarea{ margin:0 auto;width:90%; }#textarea{ height:400px;padding:20px;text-shadow:none; }#textarea-small{ height:80px;padding:20px;text-shadow:none; }.nextquestion{ margin:5% auto 10% auto;text-transform:none;width:55%; }.submitscore{margin:5% auto 10% auto;text-transform:none;width:55%; }#footer{background:url("../images/tkmaxx/footer_ipad.png") no-repeat;background-size:100% 54px;border:none;bottom:0;font-family:Helvetica,Arial,sans-serif;font-size:28px;height:54px;text-shadow:none;width:100%;z-index:50; }#footer p{}.congratulations{ color:#fff;text-align:center;text-shadow:1px 1px 1px #000; }.congratulations h4{ font:60px/100% Helvetica,Arial,sans-serif;font-weight:bold;margin:12% 0 0 0;padding:0; }p.scorecard-title{font:40px/100% Helvetica,Arial,sans-serif; font-weight:bold;margin:40px 0 0 0;padding:0; }p.scorecard-wrong{font:30px/100% Helvetica,Arial,sans-serif; font-weight:bold;margin:40px 0 0 0;padding:0; }.scorecard-answers{ border-bottom:1px solid #000;margin:0 auto;padding:4% 0 1.5% 0;text-align:left;width:90%; }.scorecard-answers:last-child{ border:none; }.scorecard-answers h5{ color:#000;font-size:20px;font-weight:normal;line-height:24px;margin:0;padding:0 0 3% 0;text-shadow:none; }ul.wrong-answers,ul.correct-answers{ margin-left:-40px; }ul.wrong-answers li{ background:url("../images/tkmaxx/cross.png") no-repeat 10px -1px;background-size:14px;color:#ec0000;display:inline;font-weight:bold;list-style:none;padding:0 0 0 30px;text-shadow:none; }ul.correct-answers li{ background:url("../images/tkmaxx/correct.png") no-repeat 13px -1px;background-size:14px;color:#05d700;display:inline;font-weight:bold;list-style:none;padding:0 0 0 30px;text-shadow:none; }ul.wrong-answers li:first-child,ul.correct-answers li:first-child{ background:none;color:#000;margin:0;padding:0 0 0 0; }p.scorecard-score{background:url("../images/tkmaxx/scorecard.png") no-repeat 0 0;background-size:188px;font:90px/100% Helvetica,Arial,sans-serif;font-weight:bold;margin:30px auto 0 auto;padding:28px 0 30px 0;width:188px; }p.scorecard-percent{background:url("../images/tkmaxx/scorecard-percent.png") no-repeat 0 0;background-size:188px;font:60px/100% Helvetica,Arial,sans-serif;font-weight:bold;margin:30px auto 0 auto;padding:23px 0 37px 0;width:188px; }p.scorecard-text{font:34px/40px Helvetica,Arial,sans-serif; font-weight:bold;margin:40px auto 0 auto;width:80%; }p.scorecard-charges{font:12px/100% Helvetica,Arial,sans-serif; font-weight:normal;margin:20px 0 0 0; }.page-content{margin:0 auto 10px auto;width:90%; }.info-buttons{ margin:0 auto 10px auto;width:90%; }.ui-submit{margin:5% auto 5% auto;text-transform:none;width:55%; }.nomargin{ margin:0 0 0 0; }@media screen and (max-width:720px){.ui-btn{ padding:0}.ui-btn-inner{ font-size:12px;line-height:16px;padding:3%; }.ui-btn-text{ font-size:12px; }.question-red{background:url("../images/tkmaxx/texture_red_iphone.jpg") repeat;background-size:620px;width:720px; }#welcome{background:url("../images/tkmaxx/welcome_iphone.jpg") no-repeat;background-size:100%;height:100%;width:100%; }#content{ height:100%; }#playgame,#how-button ,#info-button{margin:3% 7% 3% 43%;top:60%;width:50%; }#playgame{left:0;padding:0; }#how-button,#info-button{left:0; }#header{background:url("../images/tkmaxx/header_ipad.png") no-repeat bottom right;background-size:768px;height:50px }#header h1{float:left; font-size:24px;padding:15px 0 0 10%; }#header h2{font:12px/100% Helvetica,Arial,sans-serif;float:right;margin:0;padding:19px 10% 0 0; }.question-top{background:url("../images/tkmaxx/notepadheader_iphone.png") no-repeat 0 0;background-size:100%;margin:5% auto 0 auto;padding:7% 0 0 0; }ul.question-numbers{ padding:3% 0 0 0; }ul.question-numbers li{font:18px/100% 'dearJoe',serif;padding:10px 4px; }ul.question-numbers li.correct{background:url("../images/tkmaxx/correct.png") no-repeat center center;background-size:10px; }ul.question-numbers li.selected{background:url("../images/tkmaxx/selected.png") no-repeat center center;background-size:15px; }h3.question,h3.title{background:#fff;margin:0 auto 4% auto;padding:0;width:90%; }h3.title{ padding:40px 0 0 0; }h3.question{ font-size:24px;line-height:28px; }h3.stuck-text{font-size:24px;margin:10px 0 0 5%; }a.stuck-button{ margin:0 auto 3% auto;text-transform:none;width:90%; }.question-textarea{ margin:0 auto; }#textarea{ height:200px;padding:6px; }#textarea-small{ height:40px;padding:6px; }.nextquestion{ margin:5% auto 5% auto; }#footer{background:url("../images/tkmaxx/footer_ipad.png") no-repeat;background-size:768px;font-size:24px;height:50px; }#footer p{background:none; }}@media screen and (max-width:480px){span.section-marker{ display:none; }#welcome{background-image:url("../images/tkmaxx/welcome_iphone.jpg"),url("../images/tkmaxx/texture_blue_iphone_reverse.jpg");background-repeat:no-repeat,repeat-y;background-size:100%;width:100%; }#content{ height:100%; }#playgame,#how-button ,#info-button{margin:0 0 10px 36%;top:58%;width:50%; }#playgame{left:0;padding:0; }#how-button,#info-button{left:0; }.question-blue{background:url("../images/tkmaxx/texture_blue_iphone.jpg") no-repeat;background-size:480px 100%;width:480px; }.question-red{background:url("../images/tkmaxx/texture_red_iphone.jpg") repeat-y;background-size:480px;width:480px; }.question-wood{background:url("../images/tkmaxx/texture_wood_iphone.jpg") no-repeat;background-size:480px 100%;width:480px; }.question-finalscore{background:url("../images/tkmaxx/texture_finalscore_iphone.jpg") no-repeat;background-size:480px;width:480px; }#header{background:url("../images/tkmaxx/header_iphone.png") no-repeat bottom right;background-size:480px;height:40px }#header h1{float:left; font-size:14px;padding:13px 0 0 10%; }#header h2{font:12px/100% Helvetica,Arial,sans-serif;float:right;margin:0;padding:13px 10% 0 0; }#footer{background:url("../images/tkmaxx/footer_iphone.png") no-repeat bottom right;background-size:480px;font-size:14px;height:40px; }#footer p{ background:none;padding:9px 0 0 0; }.question-top{margin:3% auto 0 auto; }h3.stuck-text{ display:none; }a.stuck-button{ margin:5% auto 1% auto; }ul.question-imagelist{margin:0 auto;width:80%; }ul.question-imagelist li{float:left;list-style:none;margin:0 0 0 0;padding:0;width:85%; }ul.question-multipleimage{ width:80%; }ul.question-multipleimage li{ margin:0 0 5% -5%;width:80%; }ul.question-multipleimage li:nth-child(3n){ margin:0 0 5% -5%; }.congratulations h4{ font:30px/100% Helvetica,Arial,sans-serif; }p.scorecard-title{font:20px/100% Helvetica,Arial,sans-serif; margin:20px 0 0 0; }p.scorecard-wrong{font:16px/100% Helvetica,Arial,sans-serif; margin:20px 0 25px 0; }.scorecard-answers{ padding:15px 0 0 0; }.scorecard-answers h5{ font-size:16px;line-height:20px; }ul.wrong-answers,ul.correct-answers{ margin-left:-40px; }ul.wrong-answers li{ background:url("../images/tkmaxx/cross.png") no-repeat 5px 1px;background-size:14px;padding:0 0 0 23px; }ul.correct-answers li{ background:url("../images/tkmaxx/correct.png") no-repeat 3px 1px;background-size:14px;padding:0 0 0 20px; }p.scorecard-text{font:17px/20px Helvetica,Arial,sans-serif; margin:20px auto; }}@media screen and (max-width:320px){span.section-marker{ display:none; }#welcome{background:url("../images/tkmaxx/welcome_iphone.jpg") no-repeat;background-size:320px;width:320px; }.question-blue{background:url("../images/tkmaxx/texture_blue_iphone.jpg") no-repeat;background-size:320px 100%;width:320px; }.question-red{background:url("../images/tkmaxx/texture_red_iphone.jpg") repeat-y;background-size:320px;width:320px; }.question-wood{background:url("../images/tkmaxx/texture_wood_iphone.jpg") no-repeat;background-size:320px 100%;width:320px; }}
+/* @override 
+	http://adamprocter.co.uk/wip/tkmaxxquiz/css/custom.css
+	http://www.adamprocter.co.uk/wip/tkmaxxquiz/css/custom.css */
+
+	/*
+	jQuery Mobile Boilerplate
+	css/custom.css
+*/
+
+/*----------------------------------------------------------------
+	START
+----------------------------------------------------------------*/
+
+.ui-page { -webkit-backface-visibility: hidden; } 
+
+div.ui-slider { width: 58%; }
+
+
+body { 
+	font-size: 16px;
+	line-height: 24px; }
+
+.ui-content { padding: 0; }
+
+.ui-body-c .ui-link:visited { color: #000; }
+.ui-body-c .ui-link:active { color: #05d700; }
+
+.clear:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+
+@font-face {
+    font-family: 'dearJoe';
+    src: url('../fonts/dj2trial-webfont.eot');
+    src: url('../fonts/dj2trial-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dj2trial-webfont.woff') format('woff'),
+         url('../fonts/dj2trial-webfont.ttf') format('truetype'),
+         url('../fonts/dj2trial-webfont.svg#dearJoe2Regular') format('svg');
+    font-weight: normal;
+    font-style: normal; }
+
+h3 { 
+	font: 36px/44px 'dearJoe', Georgia, serif;
+	text-shadow: none; }
+
+.damagedevil {
+	margin: -8% 0 -6% 55%;
+	width: 35%; }
+
+.nextsection{
+	visibility: visible;
+}
+
+/*#resultsbutton{
+	visibility: hidden;
+}*/
+
+/*----------------------------------------------------------------
+	WELCOME SCREEN
+----------------------------------------------------------------*/
+
+#welcome {	
+	background: url("../images/tkmaxx/welcome_ipad.jpg") no-repeat;
+	background-size: 768px 1024px;
+	width: 768px; }
+
+	#content { height: 1024px; }
+
+	#playgame, #how-button, #info-button, .choice {
+		margin: 0 auto;
+		text-transform: uppercase; 
+		top: 550px;
+		z-index: 2; }
+
+		#playgame {
+			margin: 0 auto 50px auto;
+			padding: 10px 0;
+			width: 80%; }
+
+		#how-button, #info-button {
+			margin: 10px auto;
+			width: 50%; }
+
+		.choice {
+			margin: 0 auto 25px auto;
+			padding: 10px 0;
+			width: 80%; }
+
+	.welcome_devil {
+		bottom: 0;
+		left: 0;
+		margin: 0 0 0.5% 1%;
+		position: absolute;
+		z-index: 1;	}
+
+/*----------------------------------------------------------------
+	QUESTION PAGES
+----------------------------------------------------------------*/
+
+/*--------------- BACKGROUNDS ---------------*/
+
+.question-blue {	
+	background: url("../images/tkmaxx/texture_blue_ipad.jpg") no-repeat;
+	background-size: 768px 100%;
+	width: 768px; }
+
+.question-red {	
+	background: url("../images/tkmaxx/texture_red_ipad.jpg") repeat;
+	background-size: 1199px;
+	width: 768px; }
+
+.question-wood {	
+	background: url("../images/tkmaxx/texture_wood_ipad.jpg") no-repeat;
+	background-size: 100% 100%;
+	width: 768px; }
+
+.question-score {	
+	background: url("../images/tkmaxx/texture_score_ipad.jpg") repeat;
+	background-size: 768px 1024px;
+	width: 768px; }
+
+.question-finalscore {	
+	background: url("../images/tkmaxx/texture_finalscore_ipad.jpg") repeat;
+	background-size: 768px 1024px;
+	width: 768px; }
+
+/*--------------- TITLE BAR ---------------*/
+
+#header {	
+	background: url("../images/tkmaxx/header_ipad.png") no-repeat top left;
+	background-size: 100% 58px;	
+	border: none;
+	color: #ff4444;
+	height: 58px;
+	text-align: center;
+	text-transform: uppercase; }
+
+	#header h1 {
+		color: #ed1b2e;
+		font-family: Helvetica, Arial, sans-serif;
+		font-size: 28px;
+		line-height: 100%;
+		margin: 0 0 0 0;
+		padding: 16px 0 0 0;
+		text-shadow: none; }
+
+		#header h2 {
+			color: #a3a3a3;
+			font: 18px/100% Helvetica, Arial, sans-serif;
+			float: right;
+			margin: -25px 0 0;
+			padding-right: 50px;
+		}
+
+			#header h2 em { text-transform: lowercase; }
+			#header h2 span { color: #ed1b2e;}
+
+/*--------------- NOTEPAD COIL AND SHADOWS ---------------*/
+
+.question-top {
+	background: url("../images/tkmaxx/notepadheader_ipad.png") no-repeat 0 0;
+	background-size: 100%;
+	margin: 40px auto 0 auto;
+	padding: 5.5% 0 0 0;
+	width: 85%; }
+
+.question-bottom {
+	background: url("../images/tkmaxx/notepadfooter_ipad.png") no-repeat 0 0;
+	background-size: 100%;
+	margin: 0 auto;
+	padding: 4% 0 0 0;
+	width: 85%; }
+
+/*--------------- WHITE BOX ---------------*/
+
+.question-box {
+	background-color: #fff;
+	/*box-shadow: 0 0 5px #bababa;*/
+	margin: 0 auto 0 auto;
+	padding: 0 0 10px 0;
+	width: 85%; }
+
+	/*--------------- HORIZONTAL QUESTION NUMBERS ---------------*/
+
+	ul.question-numbers { 
+		margin: 0 0 5% 5%;
+		padding: 20px 0 0 0; }
+
+		ul.question-numbers li {
+			color: #bfbfbf;
+			display: inline;
+			font: 25px/100% 'dearJoe', serif;
+			padding: 10px 8px;
+			text-decoration: none; }
+
+			ul.question-numbers li.correct {
+				background: url("../images/tkmaxx/correct.png") no-repeat center center;
+				background-size: 15px;
+				color: #000; }
+
+			ul.question-numbers li.selected {
+				background: url("../images/tkmaxx/selected.png") no-repeat center center;
+				background-size: 23px;
+				color: #000; }
+
+	/*--------------- THE WRITTEN QUESTION ---------------*/
+
+	h3.question, h3.title {
+		background: #fff;
+		margin: 0 auto 4% auto;
+		padding: 0;
+		width: 90%; }
+
+		h3.title { padding: 40px 0 0 0; }
+
+	/*--------------- MULTIPLE CHOICE  ---------------*/
+
+	.question-multiple { 
+		margin: 0 auto;
+		width: 90%; }
+
+		.ui-controlgroup-label {
+			color: #9ca6ae;
+			font-family: Helvetica, sans-serif;
+			font-size: 12px;
+			margin: 0 0 20px 0;
+			padding: 0; }
+
+	h3.stuck-text {
+		color: #ed1b2e;
+		margin: 60px 0 0px 5%; }
+
+	a.stuck-button { 
+		margin: -50px auto 40px auto;
+		text-transform: none;
+		width: 57%; }
+
+	/*--------------- MULTIPLE CHOICE WITH IMAGES ---------------*/
+
+	ul.question-multipleimage { 
+		margin: 0 auto; 
+		width: 90%; }
+
+		ul.question-multipleimage li { 			
+			float: left; 
+			list-style: none;
+			margin: 0 9% 7% -20px;
+			width: 29%; }
+
+			ul.question-multipleimage li:nth-child(3n) { margin: 0 0 7% -20px; }
+
+			ul.question-multipleimage li img { 
+				background: url("../images/tkmaxx/image-background.png") no-repeat 0 0;
+				background-size: 100%;
+				color: #000;
+				display: block;
+				line-height: 22px;
+				padding: 10px 10px 25px 10px; }
+
+	/*--------------- IMAGES WITH LISTS ---------------*/
+
+	ul.question-imagelist {
+		margin: 0 auto;
+		width: 100%; }
+
+		ul.question-imagelist li {
+			float: left;
+			list-style: none;
+			margin: 0 9% 0 0;
+			padding: 0;
+			width: 36%; }
+
+			ul.question-imagelist li:nth-child(2n) { margin: 0 0 0 0; } 
+
+			ul.question-imagelist li img {
+				background: url("../images/tkmaxx/image-background.png") no-repeat 0 0;
+				background-size: 100%;
+				padding: 7% 7% 13% 7% }
+
+		.ui-select { 
+			margin: -5px 0 20px 0;
+			padding: 0;
+			position: relative;
+			width: 100% }		
+
+	/*--------------- FREE TEXT ---------------*/
+
+	.question-textarea { 
+		margin: 0 auto;
+		width: 90%; }
+
+		#textarea { 
+			height: 400px;
+			padding: 20px;
+			text-shadow: none; }
+
+		#textarea-small { 
+			height: 80px;
+			padding: 20px;
+			text-shadow: none; }
+
+/*--------------- NEXT QUESTION BUTTON ---------------*/
+
+.nextquestion { 
+	margin: 5% auto 10% auto;
+	text-transform: none;
+	width: 55%; }
+
+/*--------------- SUBMIT SCORE BUTTON ---------------*/
+/*notworking ?*/
+
+.submitscore {
+	margin: 5% auto 10% auto;
+	text-transform: none;
+	width: 55%; }
+
+/*--------------- FOOTER ---------------*/
+
+#footer {	
+	background: url("../images/tkmaxx/footer_ipad.png") no-repeat;
+	background-size: 100% 54px;
+	border: none;
+	bottom: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 28px;
+	height: 54px;
+/*	position: fixed;*/
+	text-shadow: none;
+	width: 100%;
+	z-index: 50; }
+
+	#footer p {
+	/*	background: url("../images/tkmaxx/timer.png") no-repeat 10px 10px; 
+		background-size: 25px;
+		color: #000;
+		margin: 0 auto; 
+		padding:15px 0 0;
+		text-align: center;
+		width: 20%;
+		height: 100%;*/
+	}
+
+/*----------------------------------------------------------------
+	SCORE CARD
+----------------------------------------------------------------*/
+
+.congratulations { 
+	color: #fff;
+	text-align: center;
+	text-shadow: 1px 1px 1px #000; }
+
+	.congratulations h4 { 
+		font: 60px/100% Helvetica, Arial, sans-serif;
+		font-weight: bold;
+		margin: 12% 0 0 0;
+		padding: 0; }
+
+	p.scorecard-title {
+		font: 40px/100% Helvetica, Arial, sans-serif; 
+		font-weight: bold;
+		margin: 40px 0 0 0;
+		padding: 0; }
+
+	p.scorecard-wrong {
+		font: 30px/100% Helvetica, Arial, sans-serif; 
+		font-weight: bold;
+		margin: 40px 0 0 0;
+		padding: 0; }
+
+	.scorecard-answers { 
+		border-bottom: 1px solid #000;
+		margin: 0 auto;
+		padding: 4% 0 1.5% 0;
+		text-align: left;
+		width: 90%; }
+
+		.scorecard-answers:last-child { border: none; }
+
+		.scorecard-answers h5 { 
+			color: #000;
+			font-size: 20px;
+			font-weight: normal;
+			line-height: 24px;
+			margin: 0;
+			padding: 0 0 3% 0;
+			text-shadow: none; }
+
+		ul.wrong-answers, ul.correct-answers { margin-left: -40px; }
+
+			ul.wrong-answers li { 
+				background: url("../images/tkmaxx/cross.png") no-repeat 10px -1px;
+				background-size: 14px;
+				color: #ec0000;
+				display: inline;
+				font-weight: bold;
+				list-style: none;
+				padding: 0 0 0 30px;
+				text-shadow: none; }
+
+			ul.correct-answers li { 
+				background: url("../images/tkmaxx/correct.png") no-repeat 13px -1px;
+				background-size: 14px;
+				color: #05d700;
+				display: inline;
+				font-weight: bold;
+				list-style: none;
+				padding: 0 0 0 30px;
+				text-shadow: none; }
+
+				ul.wrong-answers li:first-child, 
+				ul.correct-answers li:first-child { 
+					background: none;
+					color: #000;
+					margin: 0;
+					padding: 0 0 0 0; }
+
+	p.scorecard-score {
+		background: url("../images/tkmaxx/scorecard.png") no-repeat 0 0;
+		background-size: 188px;
+		font: 90px/100% Helvetica, Arial, sans-serif;
+		font-weight: bold;
+		margin: 30px auto 0 auto;
+		padding: 28px 0 30px 0;
+		width: 188px; }
+
+	p.scorecard-percent {
+		background: url("../images/tkmaxx/scorecard-percent.png") no-repeat 0 0;
+		background-size: 188px;
+		font: 60px/100% Helvetica, Arial, sans-serif;
+		font-weight: bold;
+		margin: 30px auto 0 auto;
+		padding: 23px 0 37px 0;
+		width: 188px; }
+
+	p.scorecard-text {
+		font: 34px/40px Helvetica, Arial, sans-serif; 
+		font-weight: bold;
+		margin: 40px auto 0 auto;
+		width: 80%; }
+
+	p.scorecard-charges {
+		font: 12px/100% Helvetica, Arial, sans-serif; 
+		font-weight: normal;
+		margin: 20px 0 0 0; }
+
+/*----------------------------------------------------------------
+	PAGES
+----------------------------------------------------------------*/
+
+.page-content {
+	margin: 0 auto 10px auto;
+	width: 90%; }
+
+/*----------------------------------------------------------------
+	MORE INFO PAGE
+----------------------------------------------------------------*/
+
+.info-buttons { 
+	margin: 0 auto 10px auto;
+	width: 90%; }
+	
+	/*--------------- SUBMIT SCORE BUTTON ---------------*/
+	
+			.ui-submit {
+				margin: 5% auto 5% auto;
+				text-transform: none;
+				width: 55%; }
+
+.nomargin { margin: 0 0 0 0; }
+
+/*----------------------------------------------------------------
+	MEDIA QUERIES
+----------------------------------------------------------------*/
+
+@media screen and (max-width: 720px) {
+
+	/*--------------- BUTTONS ---------------*/
+
+	.ui-btn { padding: 0;
+	}
+	.ui-btn-inner { 
+		font-size: 12px;
+		line-height: 16px;
+		padding: 3%; }
+	.ui-btn-text { font-size: 12px; }
+
+	/*--------------- BACKGROUNDS ---------------*/
+
+	.question-red {	
+		background: url("../images/tkmaxx/texture_red_iphone.jpg") repeat;
+		background-size: 620px;
+		width: 720px; }
+
+	/*--------------- WELCOME ---------------*/
+
+	#welcome {	
+		background: url("../images/tkmaxx/welcome_iphone.jpg") no-repeat;
+		background-size: 100%;
+		height: 100%;
+		width: 100%; }
+
+	#content { height: 100%; }
+
+	#playgame, #how-button , #info-button {
+		margin: 3% 7% 3% 43%;
+		top: 60%;
+		width: 50%; }
+
+		#playgame {
+			left: 0;
+			padding: 0; }
+			
+			#playgame .dot { 
+				height:5%; }
+
+		#how-button, #info-button {
+			left: 0; }
+
+	/*--------------- HEADER ---------------*/
+
+	#header {	
+		background: url("../images/tkmaxx/header_ipad.png") no-repeat bottom right;
+		background-size: 768px;	
+		height: 50px }
+
+	#header h1 {
+		float: left; 
+		font-size: 24px;
+		padding: 15px 0 0 10%; }
+
+		#header h2 {
+			font: 12px/100% Helvetica, Arial, sans-serif;
+			float: right;
+			margin: 0;
+			padding: 19px 10% 0 0; }
+
+	/*--------------- NOTEPAD COIL AND SHADOWS ---------------*/
+
+	.question-top {
+		background: url("../images/tkmaxx/notepadheader_iphone.png") no-repeat 0 0;
+		background-size: 100%;
+		margin: 5% auto 0 auto;
+		padding: 7% 0 0 0; }
+
+	/*--------------- HORIZONTAL QUESTION NUMBERS ---------------*/
+
+	ul.question-numbers { 
+		padding: 3% 0 0 0; }
+
+		ul.question-numbers li {
+			font: 18px/100% 'dearJoe', serif;
+			padding: 10px 4px; }
+
+			ul.question-numbers li.correct {
+				background: url("../images/tkmaxx/correct.png") no-repeat center center;
+				background-size: 10px; }
+
+			ul.question-numbers li.selected {
+				background: url("../images/tkmaxx/selected.png") no-repeat center center;
+				background-size: 15px; }
+
+	/*--------------- THE WRITTEN QUESTION ---------------*/
+
+	h3.question, h3.title {
+		background: #fff;
+		margin: 0 auto 4% auto;
+		padding: 0;
+		width: 90%; }
+
+		h3.title { padding: 40px 0 0 0; }
+
+	/*--------------- QUESTIONS ---------------*/
+
+	h3.question { 
+		font-size: 24px;
+		line-height: 28px; }
+
+	h3.stuck-text {
+		font-size: 24px;
+		margin: 10px 0 0 5%; }
+
+	a.stuck-button { 
+		margin: 0 auto 3% auto;
+		text-transform: none;
+		width: 90%; }
+
+	/*--------------- TEXT AREA ---------------*/
+
+	.question-textarea { margin: 0 auto; }
+
+		#textarea { 
+			height: 200px;
+			padding: 6px; }
+
+		#textarea-small { 
+			height: 40px;
+			padding: 6px; }
+
+	/*--------------- NEXT QUESTION BUTTON ---------------*/
+
+	.nextquestion { 
+		margin: 5% auto 5% auto; }
+
+	
+
+	/*--------------- FOOTER ---------------*/
+
+	#footer {	
+		background: url("../images/tkmaxx/footer_ipad.png") no-repeat;
+		background-size: 768px;
+		font-size: 24px;
+		height: 50px; }
+
+		#footer p {
+			background: none; 
+		}
+
+}
+
+@media screen and (max-width: 480px) {
+
+
+	span.section-marker { display: none; }
+
+	#welcome {	
+		background-image: url("../images/tkmaxx/welcome_iphone.jpg"), url("../images/tkmaxx/texture_blue_iphone_reverse.jpg");
+		background-repeat: no-repeat, repeat-y;
+		background-size: 100%;
+		width: 100%; }
+
+	#content { height: 100%; }
+
+	#playgame, #how-button , #info-button {
+		margin: 0 0 10px 36%;
+		top: 58%;
+		width: 50%; }
+
+		#playgame {
+			left: 0;
+			padding: 0; }
+			
+			#playgame .dot { 
+				height: 4%; }
+
+		#how-button, #info-button {
+			left: 0; }
+
+	/*--------------- BACKGROUNDS ---------------*/
+
+	.question-blue {	
+		background: url("../images/tkmaxx/texture_blue_iphone.jpg") no-repeat;
+		background-size: 480px 100%;
+		width: 480px; }
+
+	.question-red {	
+		background: url("../images/tkmaxx/texture_red_iphone.jpg") repeat-y;
+		background-size: 480px;
+		width: 480px; }
+
+	.question-wood {	
+		background: url("../images/tkmaxx/texture_wood_iphone.jpg") no-repeat;
+		background-size: 480px 100%;
+		width: 480px; }
+
+	.question-finalscore {	
+		background: url("../images/tkmaxx/texture_finalscore_iphone.jpg") no-repeat;
+		background-size: 480px;
+		width: 480px; }
+
+	/*--------------- HEADER ---------------*/
+
+	#header {	
+		background: url("../images/tkmaxx/header_iphone.png") no-repeat bottom right;
+		background-size: 480px;	
+		height: 40px }
+
+	#header h1 {
+		float: left; 
+		font-size: 14px;
+		padding: 13px 0 0 10%; }
+
+		#header h2 {
+			font: 12px/100% Helvetica, Arial, sans-serif;
+			float: right;
+			margin: 0;
+			padding: 13px 10% 0 0; }
+
+	/*--------------- FOOTER ---------------*/
+
+	#footer {	
+		background: url("../images/tkmaxx/footer_iphone.png") no-repeat bottom right;
+		background-size: 480px;
+		font-size: 14px;
+		height: 40px; }
+
+		#footer p { 
+			background: none;
+			padding: 9px 0 0 0; }
+
+	/*--------------- NOTEPAD COIL AND SHADOWS ---------------*/
+
+	.question-top {	margin: 3% auto 0 auto; }
+
+	/*--------------- QUESTIONS ---------------*/
+
+	h3.stuck-text { display: none; }
+
+	a.stuck-button { margin: 5% auto 1% auto; }
+
+	/*--------------- IMAGES WITH LISTS ---------------*/
+
+	ul.question-imagelist {
+		margin: 0 auto;
+		width: 80%; }
+
+		ul.question-imagelist li {
+			float: left;
+			list-style: none;
+			margin: 0 0 0 0;
+			padding: 0;
+			width: 85%; }
+
+	/*--------------- MULTIPLE CHOICE IMAGES ---------------*/
+
+	ul.question-multipleimage { 
+		width: 80%; }
+
+		ul.question-multipleimage li { 
+			margin: 0 0 5% -5%;
+			width: 80%; }
+
+			ul.question-multipleimage li:nth-child(3n) { margin: 0 0 5% -5%; }
+
+	/*--------------- SCORE CARD ---------------*/
+
+	.congratulations h4 { 
+		font: 30px/100% Helvetica, Arial, sans-serif; }
+
+	p.scorecard-title {
+		font: 20px/100% Helvetica, Arial, sans-serif; 
+		margin: 20px 0 0 0; }
+
+	p.scorecard-wrong {
+		font: 16px/100% Helvetica, Arial, sans-serif; 
+		margin: 20px 0 25px 0; }
+
+	.scorecard-answers { padding: 15px 0 0 0; }
+
+		.scorecard-answers h5 { 
+			font-size: 16px;
+			line-height: 20px; }
+
+		ul.wrong-answers, ul.correct-answers { margin-left: -40px; }
+
+			ul.wrong-answers li { 
+				background: url("../images/tkmaxx/cross.png") no-repeat 5px 1px;
+				background-size: 14px;
+				padding: 0 0 0 23px; }
+
+			ul.correct-answers li { 
+				background: url("../images/tkmaxx/correct.png") no-repeat 3px 1px;
+				background-size: 14px;
+				padding: 0 0 0 20px; }
+
+	p.scorecard-text {
+		font: 17px/20px Helvetica, Arial, sans-serif; 
+		margin: 20px auto; }
+
+}
+
+@media screen and (max-width: 320px) {
+
+
+	span.section-marker { display: none; }
+
+	#welcome {	
+		background: url("../images/tkmaxx/welcome_iphone.jpg") no-repeat;
+		background-size: 320px;
+		width: 320px; }
+
+	/*--------------- BACKGROUNDS ---------------*/
+
+	.question-blue {	
+		background: url("../images/tkmaxx/texture_blue_iphone.jpg") no-repeat;
+		background-size: 320px 100%;
+		width: 320px; }
+
+	.question-red {	
+		background: url("../images/tkmaxx/texture_red_iphone.jpg") repeat-y;
+		background-size: 320px;
+		width: 320px; }
+
+	.question-wood {	
+		background: url("../images/tkmaxx/texture_wood_iphone.jpg") no-repeat;
+		background-size: 320px 100%;
+		width: 320px; }
+
+}
+
+
+/*--------------- Tinting CSS ---------------*/
+
+/*.tint {
+   position: relative;
+}
+   
+.tint:before {
+
+   content: "";
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 65%;
+   margin: 10%;
+   width: 82%;
+   background-color: rgba(175, 85, 15, 0.5);
+}
+
+.t2:before {
+    background: rgba(0,0,255, 0.5);
+  }
+  
+  .t3:before {
+    background: rgba(255,0,0, 0.5);
+  }
+  
+  .t4:before {
+  	background-color: rgba(246, 255, 0, 0.5);
+  }*/
+
+
+
+
