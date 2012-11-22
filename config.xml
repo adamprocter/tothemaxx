@@ -64,5 +64,6 @@
 	    <preference name="orientation" value="portrait"/>
 	    <preference name="prerendered-icon" value="true" />
 	    <preference name="useBrowserHistory" value="true" />
+	    <preference name="phonegap-version" value="2.1.0" />
 
 </widget>
