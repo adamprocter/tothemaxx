@@ -12,10 +12,10 @@ $.mobile.phonegapNavigationEnabled = true;
 $.mobile.buttonMarkup.hoverDelay = 0;
 $.preloadCssImages();
 
-$('#pumque').click(function(){
-$('.nextsection').css("visibility", "hidden");
-$('#resultsbutton').css("visibility", "visible");
-});
+//$('#pumque').click(function(){
+//$('.nextsection').css("visibility", "hidden");
+//$('#resultsbutton').css("visibility", "visible");
+//});
 
 //
 //$('.resultsbutton').click(function() {
