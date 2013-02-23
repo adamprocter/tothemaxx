@@ -11,7 +11,7 @@
 	START
 ----------------------------------------------------------------*/
 
-.ui-page { -webkit-backface-visibility: hidden; } 
+/*.ui-page { -webkit-backface-visibility: hidden; } */
 
 div.ui-slider { width: 58%; }
 
