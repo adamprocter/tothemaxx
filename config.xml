@@ -68,8 +68,8 @@
 	   <!--  <feature name="http://api.phonegap.com/1.0/file"/> -->
 	    <!--<feature name="http://api.phonegap.com/1.0/media"/> -->
 	    <feature name="http://api.phonegap.com/1.0/network"/>
-	    <gap:plugin name="ChildBrowser" /> 
-<!--	    <access origin="http://intermediasolutions.com" subdomains="true" />-->
+	    <feature name="http://plugins.phonegap.com/ChildBrowser/3.0.4" />    
+	    <access origin="http://intermediasolutions.com" subdomains="true" />
 	    <access origin="http://www.intermediasolutions.com" subdomains="true" />
 	    <access origin="http://apps.intermediasolutions.com" subdomains="true" />
 	    <preference name="orientation" value="portrait"/>
