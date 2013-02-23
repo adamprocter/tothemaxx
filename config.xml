@@ -2,8 +2,8 @@
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
 	id		= "com.intermediasolutions.shrinkappd"
-	versionCode = "276" 
-	version 	= "1.71"
+	versionCode = "277" 
+	version 	= "1.72"
 	>
 
 	<name>ShrinkAppd</name>
